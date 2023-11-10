@@ -1,2 +1,6 @@
-# Biodiversity_threatened_species
-IUCN Red List Dataset: information source on the global conservation status of animal, fungi, and plant species. I have take a subset of the data that includes information about the number of threatened species. Full dataset can be seen on metadata page. 
+# EnviroMetrics Projects
+This repo contains all projects related to envirometrics social media. This includes everything from source data, code for data transformations and code for insights and visualisations. 
+
+Enjoy and feel free to give me some feedback!
+
+
