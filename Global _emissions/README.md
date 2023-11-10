@@ -1,0 +1,1 @@
+Source data for global emissions. This can also be found on Our World in Data or in the following link ; https://github.com/owid/co2-data
