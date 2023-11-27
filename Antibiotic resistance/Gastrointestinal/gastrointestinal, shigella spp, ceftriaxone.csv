@@ -1,0 +1,32 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Gastrointestinal,,,,,,,,,,
+Bacterial pathogen filter: Shigella spp.,,,,,,,,,,
+Antibiotic filter: Ceftriaxone,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,STOOL,Shigella spp.,Ceftriaxone,0,0.597133758,11.26765439,23.06110458,27.02702703,,
+2018,STOOL,Shigella spp.,Ceftriaxone,1.759133965,8.621601673,22.5,35.93403548,41.46341463,,
+2019,STOOL,Shigella spp.,Ceftriaxone,0.479233227,18.27770304,30.99415205,45.23148148,67.59259259,,
+2020,STOOL,Shigella spp.,Ceftriaxone,1.455301455,11.07811108,30.58035714,51.06534091,63.63636364,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,STOOL,Shigella spp.,Ceftriaxone,653,37,10,27.02702703
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,STOOL,Shigella spp.,Ceftriaxone,818,44,15,34.09090909
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,STOOL,Shigella spp.,Ceftriaxone,1005,45,17,37.77777778
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,STOOL,Shigella spp.,Ceftriaxone,1068,32,15,46.875
+CHE,Switzerland,European Region,2017,STOOL,Shigella spp.,Ceftriaxone,591,20,0,0
+CHE,Switzerland,European Region,2018,STOOL,Shigella spp.,Ceftriaxone,592,110,12,10.90909091
+CHE,Switzerland,European Region,2019,STOOL,Shigella spp.,Ceftriaxone,640,95,23,24.21052632
+CHE,Switzerland,European Region,2020,STOOL,Shigella spp.,Ceftriaxone,482,21,3,14.28571429
+OMN,Oman,Eastern Mediterranean Region,2017,STOOL,Shigella spp.,Ceftriaxone,334,23,5,21.73913043
+OMN,Oman,Eastern Mediterranean Region,2018,STOOL,Shigella spp.,Ceftriaxone,272,41,17,41.46341463
+OMN,Oman,Eastern Mediterranean Region,2019,STOOL,Shigella spp.,Ceftriaxone,119,108,73,67.59259259
+OMN,Oman,Eastern Mediterranean Region,2020,STOOL,Shigella spp.,Ceftriaxone,228,11,7,63.63636364
+ZAF,South Africa,African Region,2017,STOOL,Shigella spp.,Ceftriaxone,1338,628,5,0.796178344
+ZAF,South Africa,African Region,2018,STOOL,Shigella spp.,Ceftriaxone,1481,739,13,1.759133965
+ZAF,South Africa,African Region,2019,STOOL,Shigella spp.,Ceftriaxone,1225,626,3,0.479233227
+ZAF,South Africa,African Region,2020,STOOL,Shigella spp.,Ceftriaxone,1138,481,7,1.455301455

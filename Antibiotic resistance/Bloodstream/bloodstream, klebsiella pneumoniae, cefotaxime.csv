@@ -1,0 +1,84 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Bloodstream,,,,,,,,,,
+Bacterial pathogen filter: Klebsiella pneumoniae,,,,,,,,,,
+Antibiotic filter: Cefotaxime,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,5.985930326,34.42622951,61.53846154,82.15206186,100,,
+2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,5.831498684,32.53588517,60.75949367,80.89285714,97.63313609,,
+2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,5.757530045,37.22627737,61.32596685,78.67298578,96.42857143,,
+2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,6.482501077,32.65306122,63.7254902,81.92211504,100,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,1982,396,125,31.56565657
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,2452,418,136,32.53588517
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,2464,376,144,38.29787234
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,2925,441,144,32.65306122
+BIH,Bosnia and Herzegovina,European Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,634,126,80,63.49206349
+BIH,Bosnia and Herzegovina,European Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,841,200,139,69.5
+BIH,Bosnia and Herzegovina,European Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,1020,211,166,78.67298578
+BIH,Bosnia and Herzegovina,European Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,954,207,157,75.84541063
+CHE,Switzerland,European Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,9259,126,12,9.523809524
+CHE,Switzerland,European Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,19539,278,19,6.834532374
+CHE,Switzerland,European Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,10424,135,10,7.407407407
+CHE,Switzerland,European Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,10256,121,12,9.917355372
+EGY,Egypt,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,102,55,54,98.18181818
+EGY,Egypt,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,967,338,330,97.63313609
+EGY,Egypt,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,1114,385,368,95.58441558
+EGY,Egypt,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,901,181,174,96.13259669
+GEO,Georgia,European Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,105,25,22,88
+GEO,Georgia,European Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,216,59,51,86.44067797
+GEO,Georgia,European Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,433,120,92,76.66666667
+GEO,Georgia,European Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,741,191,153,80.10471204
+IND,India,South-East Asia Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,8532,1552,1275,82.15206186
+IND,India,South-East Asia Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,14459,1680,1359,80.89285714
+IND,India,South-East Asia Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,24223,4013,3286,81.8838774
+IND,India,South-East Asia Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,12371,2799,2293,81.92211504
+JPN,Japan,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,168145,23739,1421,5.985930326
+JPN,Japan,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,126859,18623,1086,5.831498684
+JPN,Japan,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,136246,19887,1145,5.757530045
+JPN,Japan,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,142185,20887,1354,6.482501077
+KOR,Republic of Korea,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,3518,693,181,26.11832612
+KOR,Republic of Korea,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,3519,701,190,27.10413695
+KOR,Republic of Korea,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,3646,716,178,24.8603352
+KOR,Republic of Korea,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,4095,870,221,25.40229885
+MKD,North Macedonia,European Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,175,11,11,100
+MKD,North Macedonia,European Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,176,17,16,94.11764706
+MKD,North Macedonia,European Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,276,28,27,96.42857143
+MKD,North Macedonia,European Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,293,99,99,100
+MLT,Malta,European Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,574,122,42,34.42622951
+MLT,Malta,European Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,1116,142,75,52.81690141
+MLT,Malta,European Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,624,137,51,37.22627737
+MLT,Malta,European Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,530,132,45,34.09090909
+MYS,Malaysia,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,25686,5511,1990,36.10959898
+MYS,Malaysia,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,26268,5264,1860,35.3343465
+MYS,Malaysia,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,25194,5093,1665,32.6919301
+MYS,Malaysia,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,20249,4320,1455,33.68055556
+OMN,Oman,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,1043,81,42,51.85185185
+OMN,Oman,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,631,79,48,60.75949367
+OMN,Oman,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,1007,181,111,61.32596685
+OMN,Oman,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,876,84,72,85.71428571
+PHL,Philippines,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,5103,598,368,61.53846154
+PHL,Philippines,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,5595,726,418,57.57575758
+PHL,Philippines,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,6468,852,451,52.9342723
+PHL,Philippines,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,4276,616,333,54.05844156
+RUS,Russian Federation,European Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,321,125,114,91.2
+RUS,Russian Federation,European Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,427,163,135,82.82208589
+RUS,Russian Federation,European Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,1173,201,172,85.5721393
+RUS,Russian Federation,European Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,1305,375,352,93.86666667
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,1491,201,149,74.12935323
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,2420,494,362,73.27935223
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,2528,524,387,73.85496183
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,2458,570,432,75.78947368
+THA,Thailand,South-East Asia Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,1349,269,119,44.23791822
+THA,Thailand,South-East Asia Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,2629,419,116,27.6849642
+THA,Thailand,South-East Asia Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,5463,920,356,38.69565217
+THA,Thailand,South-East Asia Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,6159,917,289,31.51581243
+TUN,Tunisia,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Cefotaxime,835,160,117,73.125
+TUN,Tunisia,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Cefotaxime,1660,373,233,62.46648794
+TUN,Tunisia,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Cefotaxime,932,215,147,68.37209302
+TUN,Tunisia,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Cefotaxime,917,204,130,63.7254902

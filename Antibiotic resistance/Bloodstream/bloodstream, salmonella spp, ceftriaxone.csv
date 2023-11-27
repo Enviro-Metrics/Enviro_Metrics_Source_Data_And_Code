@@ -1,0 +1,64 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Bloodstream,,,,,,,,,,
+Bacterial pathogen filter: Salmonella spp.,,,,,,,,,,
+Antibiotic filter: Ceftriaxone,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,BLOOD,Salmonella spp.,Ceftriaxone,0,0,1.156417112,2.446862348,20.37617555,,
+2018,BLOOD,Salmonella spp.,Ceftriaxone,0,1.378745318,2.493083123,8.952702703,26.71232877,,
+2019,BLOOD,Salmonella spp.,Ceftriaxone,0,0.668864489,1.747974857,5.381130897,61.5509468,,
+2020,BLOOD,Salmonella spp.,Ceftriaxone,0,1.366175298,2.552243098,7.472527473,50.56947608,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,1982,40,1,2.5
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,2452,46,8,17.39130435
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,2464,62,9,14.51612903
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,2925,62,11,17.74193548
+BGD,Bangladesh,South-East Asia Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,49,12,0,0
+BGD,Bangladesh,South-East Asia Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,122,72,1,1.388888889
+BGD,Bangladesh,South-East Asia Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,170,97,5,5.154639175
+BGD,Bangladesh,South-East Asia Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,65,47,0,0
+CHE,Switzerland,European Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,9259,88,1,1.136363636
+CHE,Switzerland,European Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,19539,160,0,0
+CHE,Switzerland,European Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,10424,73,0,0
+CHE,Switzerland,European Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,10256,64,1,1.5625
+IND,India,South-East Asia Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,8532,508,3,0.590551181
+IND,India,South-East Asia Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,14459,489,10,2.044989775
+IND,India,South-East Asia Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,24223,1237,18,1.455133387
+IND,India,South-East Asia Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,12371,328,5,1.524390244
+JPN,Japan,Western Pacific Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,168145,425,5,1.176470588
+JPN,Japan,Western Pacific Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,126859,385,3,0.779220779
+JPN,Japan,Western Pacific Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,136246,368,2,0.543478261
+JPN,Japan,Western Pacific Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,142185,326,9,2.760736196
+LAO,Lao People's Democratic Republic,Western Pacific Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,209,26,0,0
+LAO,Lao People's Democratic Republic,Western Pacific Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,275,57,2,3.50877193
+LAO,Lao People's Democratic Republic,Western Pacific Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,314,49,1,2.040816327
+LAO,Lao People's Democratic Republic,Western Pacific Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,422,34,0,0
+MYS,Malaysia,Western Pacific Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,25686,935,20,2.139037433
+MYS,Malaysia,Western Pacific Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,26268,890,12,1.348314607
+MYS,Malaysia,Western Pacific Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,25194,985,7,0.710659898
+MYS,Malaysia,Western Pacific Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,20249,673,6,0.891530461
+NPL,Nepal,South-East Asia Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,102,90,0,0
+NPL,Nepal,South-East Asia Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,1202,426,6,1.408450704
+NPL,Nepal,South-East Asia Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,2380,455,5,1.098901099
+NPL,Nepal,South-East Asia Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,1515,55,2,3.636363636
+PAK,Pakistan,Eastern Mediterranean Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,2323,638,130,20.37617555
+PAK,Pakistan,Eastern Mediterranean Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,7410,438,117,26.71232877
+PAK,Pakistan,Eastern Mediterranean Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,8980,5545,3413,61.5509468
+PAK,Pakistan,Eastern Mediterranean Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,5623,1317,666,50.56947608
+PHL,Philippines,Western Pacific Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,5103,247,6,2.429149798
+PHL,Philippines,Western Pacific Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,5595,204,6,2.941176471
+PHL,Philippines,Western Pacific Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,6468,251,1,0.398406375
+PHL,Philippines,Western Pacific Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,4276,128,3,2.34375
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,1491,36,0,0
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,2420,37,4,10.81081081
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,2528,33,2,6.060606061
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,2458,28,2,7.142857143
+THA,Thailand,South-East Asia Region,2017,BLOOD,Salmonella spp.,Ceftriaxone,1349,31,2,6.451612903
+THA,Thailand,South-East Asia Region,2018,BLOOD,Salmonella spp.,Ceftriaxone,2629,96,8,8.333333333
+THA,Thailand,South-East Asia Region,2019,BLOOD,Salmonella spp.,Ceftriaxone,5463,103,3,2.912621359
+THA,Thailand,South-East Asia Region,2020,BLOOD,Salmonella spp.,Ceftriaxone,6159,130,11,8.461538462

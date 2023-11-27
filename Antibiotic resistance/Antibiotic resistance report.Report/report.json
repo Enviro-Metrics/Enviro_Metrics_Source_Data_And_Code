@@ -1,0 +1,783 @@
+{
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2},\"customTheme\":{\"name\":\"EnviroMetrics7184958021219103.json\",\"version\":\"5.48\",\"type\":1}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU08",
+            "path": "BaseThemes/CY23SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "EnviroMetrics7184958021219103.json",
+            "path": "EnviroMetrics7184958021219103.json",
+            "type": 201
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Consumption",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection0169208020cbc6a5d470",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"77d5eb801d11900e1910\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"z\":0,\"width\":685.7142857142858,\"height\":704.2857142857143,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Group\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 704.29,
+          "width": 685.71,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c4d30d340a53ab907454\",\"layouts\":[{\"id\":0,\"position\":{\"x\":706,\"y\":0,\"width\":574,\"height\":704,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Group\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"PathogenName (Disease)\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 704.00,
+          "width": 574.00,
+          "x": 706.00,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Resistance hotspots",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1600.00,
+      "name": "ReportSection0e204b2f126a7b0a0308",
+      "ordinal": 7,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"10eb5edfbde0580302e3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":116.66666666666667,\"z\":1000,\"width\":1600,\"height\":323.33333333333337,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Category\":[{\"queryRef\":\"Location.CountryTerritoryArea\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"},\"Name\":\"Location.CountryTerritoryArea\",\"NativeReferenceName\":\"CountryTerritoryArea\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"heatMap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color100\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FF3300'\"}}}}},\"color0\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0.6}}}}},\"color50\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.2}}}}},\"filterRadius\":{\"expr\":{\"Literal\":{\"Value\":\"31D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"51D\"}}}}}],\"bubbles\":[{\"properties\":{\"markerRangeType\":{\"expr\":{\"Literal\":{\"Value\":\"'magnitude'\"}}},\"bubbleSize\":{\"expr\":{\"Literal\":{\"Value\":\"14L\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.15}}}},\"Value\":{\"Literal\":{\"Value\":\"'#fd625e'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.08}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.15}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#fffc66'\"}}},{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.07}}}},\"Value\":{\"Literal\":{\"Value\":\"'#00ff7b'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'grayscale'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 323.33,
+          "width": 1600.00,
+          "x": 0.00,
+          "y": 116.67,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"cfe378186090484023b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":506.6666666666667,\"z\":0,\"width\":1600,\"height\":1093.3333333333335,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"Location.CountryTerritoryArea\",\"active\":true}],\"Size\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Series\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"},\"Name\":\"Location.CountryTerritoryArea\",\"NativeReferenceName\":\"CountryTerritoryArea\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"PathogenName (Disease)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"bubbles\":[{\"properties\":{\"bubbleSize\":{\"expr\":{\"Literal\":{\"Value\":\"-9L\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FF3300'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Escherichia coli'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FDD60'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Klebsiella pneumoniae'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#40D9F8'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Neisseria gonorrhoeae'\"}}}}}]}}],\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'grayscale'\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'LeftCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 1093.33,
+          "width": 1600.00,
+          "x": 0.00,
+          "y": 506.67,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e14fc5305d050bbbbd86\",\"layouts\":[{\"id\":0,\"position\":{\"x\":90.44334975369458,\"y\":0,\"z\":2000,\"width\":893.7931034482758,\"height\":117.04433497536945,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Resistance rate hotspots & resistance rate hotspot by pathogen\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"32pt\",\"textDecoration\":\"underline\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 117.04,
+          "width": 893.79,
+          "x": 90.44,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1600.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Hotspots",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1600.00,
+      "name": "ReportSection1c75ed12e09d55902c3c",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0adaa2f648430ac3c8a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":525,\"y\":1530,\"z\":3000,\"width\":700,\"height\":70,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data Source - World Health Organisation\",\"textStyle\":{\"fontSize\":\"28pt\",\"color\":\"#1e2138\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.00,
+          "width": 700.00,
+          "x": 525.00,
+          "y": 1530.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"160f20e0459e5c9b43c7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":666,\"y\":667,\"z\":6000,\"width\":55,\"height\":38,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Bosnia and Herzegovina'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 666.00,
+          "y": 667.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"203d386642cd91747620\",\"layouts\":[{\"id\":0,\"position\":{\"x\":890,\"y\":829,\"z\":17000,\"width\":55,\"height\":38,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Oman'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 890.00,
+          "y": 829.00,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"4c09f86d4b4bdd70b4ac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1292,\"y\":727,\"z\":4000,\"width\":55,\"height\":38,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Republic of Korea'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 1292.00,
+          "y": 727.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"54ad5895842c995c9e11\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1255,\"y\":792.5,\"z\":1000,\"width\":345,\"height\":737.5,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.CountryTerritoryArea\"},{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"},\"Name\":\"Location.CountryTerritoryArea\",\"NativeReferenceName\":\"Country\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"columnProperties\":{\"Location.CountryTerritoryArea\":{\"displayName\":\"Country\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"179.6510821623791D\"}}}},\"selector\":{\"metadata\":\"Location.CountryTerritoryArea\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"148.4999910326131D\"}}}},\"selector\":{\"metadata\":\"Measures (2).Resistance rate\"}}],\"grid\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"gridHorizontalColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}],\"values\":[{\"properties\":{\"backColorPrimary\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F3F2F2'\"}}}}},\"fontColorPrimary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"fontColorSecondary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"backColorSecondary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"23D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}}}}],\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Default'\"}}}}}],\"visualHeader\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"Literal\":{\"Value\":\"0.09D\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 737.50,
+          "width": 345.00,
+          "x": 1255.00,
+          "y": 792.50,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"56dc620e628a06590915\",\"layouts\":[{\"id\":0,\"position\":{\"x\":820,\"y\":808.75,\"z\":10000,\"width\":55,\"height\":37.5,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Saudi Arabia'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 37.50,
+          "width": 55.00,
+          "x": 820.00,
+          "y": 808.75,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"5db0c5f9dbc9b7610600\",\"layouts\":[{\"id\":0,\"position\":{\"x\":812.5,\"y\":681.25,\"z\":8000,\"width\":55,\"height\":38.75,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Georgia'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.75,
+          "width": 55.00,
+          "x": 812.50,
+          "y": 681.25,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"7606c04034a6adc06019\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1017,\"y\":821,\"z\":16000,\"width\":55,\"height\":38,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'India'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 1017.00,
+          "y": 821.00,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"817e37e6d01e921d90c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1080,\"y\":810,\"z\":12000,\"width\":55,\"height\":38,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Bangladesh'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 1080.00,
+          "y": 810.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"9152c4f6a193b33cb27b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":150,\"z\":0,\"width\":1600,\"height\":1380,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Category\":[{\"queryRef\":\"Location.CountryTerritoryArea\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"},\"Name\":\"Location.CountryTerritoryArea\",\"NativeReferenceName\":\"CountryTerritoryArea\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"heatMap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color100\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FF3300'\"}}}}},\"color0\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0.6}}}}},\"color50\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.2}}}}},\"filterRadius\":{\"expr\":{\"Literal\":{\"Value\":\"31D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"51D\"}}}}}],\"bubbles\":[{\"properties\":{\"markerRangeType\":{\"expr\":{\"Literal\":{\"Value\":\"'magnitude'\"}}},\"bubbleSize\":{\"expr\":{\"Literal\":{\"Value\":\"-19L\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.26}}}},\"Value\":{\"Literal\":{\"Value\":\"'#fd625e'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.12}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.25}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#fffc66'\"}}},{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.12}}}},\"Value\":{\"Literal\":{\"Value\":\"'#00bf5c'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'grayscale'\"}}},\"showLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"mapControls\":[{\"properties\":{\"showZoomButtons\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"geocodingCulture\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 1380.00,
+          "width": 1600.00,
+          "x": 0.00,
+          "y": 150.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a0c775206b3e720dd033\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1045,\"y\":781,\"z\":13000,\"width\":55,\"height\":38,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Nepal'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 1045.00,
+          "y": 781.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"acaf8a5d31d42e15b88a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":768.75,\"y\":737.5,\"z\":9000,\"width\":55,\"height\":38.75,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Lebanon'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{}}]}}]",
+          "height": 38.75,
+          "width": 55.00,
+          "x": 768.75,
+          "y": 737.50,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"bd33d914aa73031073c6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":737,\"y\":863,\"z\":15000,\"width\":55,\"height\":38,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Sudan'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 737.00,
+          "y": 863.00,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"c72f28e7ad0860906b7c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1130,\"y\":501,\"z\":5000,\"width\":55,\"height\":38,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Russian Federation'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 1130.00,
+          "y": 501.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"c93a320c17aa0073d955\",\"layouts\":[{\"id\":0,\"position\":{\"x\":752,\"y\":942,\"z\":14000,\"width\":55,\"height\":38,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Uganda'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 752.00,
+          "y": 942.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"ca31693a066ba0de5d5c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":687,\"y\":690,\"z\":7000,\"width\":55,\"height\":38,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'North Macedonia'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 687.00,
+          "y": 690.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"d56ba7e305bb0c8b01b9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1158.75,\"y\":840,\"z\":18000,\"width\":55,\"height\":37.5,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filtera652e42213ea8664d095\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Lao People''s Democratic Republic'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 37.50,
+          "width": 55.00,
+          "x": 1158.75,
+          "y": 840.00,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"dd1f273cbc7050ed4b07\",\"layouts\":[{\"id\":0,\"position\":{\"x\":737,\"y\":793,\"z\":11000,\"width\":55,\"height\":38,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter3c084d186dd83ad80dc3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"CountryTerritoryArea\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Egypt'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 38.00,
+          "width": 55.00,
+          "x": 737.00,
+          "y": 793.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"e0541ac9e610e0c34ca4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2000,\"width\":1583.3333333333335,\"height\":150,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"African and Asian Countries have the highest resistance rate against antibiotics \",\"textStyle\":{\"fontSize\":\"44pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 1583.33,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1600.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Relationships",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1600.00,
+      "name": "ReportSection25284270bccc61b98a7e",
+      "ordinal": 11,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2c0d3435e49a71bee105\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":10.64039408866995,\"z\":0,\"width\":1069.35960591133,\"height\":384.38423645320194,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"Measures (2).Resistance rate\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Test count\"}],\"Size\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Series\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Test count\"},\"Name\":\"Measures (2).Test count\",\"NativeReferenceName\":\"Test count\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'LeftCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"23D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 384.38,
+          "width": 1069.36,
+          "x": 0.00,
+          "y": 10.64,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"4f68d12fad1b4c6041a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":413.33333333333337,\"z\":1000,\"width\":1443.3333333333335,\"height\":416.6666666666667,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"Measures (2).Resistance rate\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Test count\"}],\"Size\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Series\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Test count\"},\"Name\":\"Measures (2).Test count\",\"NativeReferenceName\":\"Test count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"PathogenName (Disease)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'LeftCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 416.67,
+          "width": 1443.33,
+          "x": 0.00,
+          "y": 413.33,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e316a94c38c17990e04c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":900,\"z\":2000,\"width\":1600,\"height\":700,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"Measures (2).Resistant case count\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Test count\"}],\"Category\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\",\"active\":true}],\"Size\":[{\"queryRef\":\"Measures (2).Resistant case count\"}],\"Series\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistant case count\"},\"Name\":\"Measures (2).Resistant case count\",\"NativeReferenceName\":\"Resistant case count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Test count\"},\"Name\":\"Measures (2).Test count\",\"NativeReferenceName\":\"Test count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"PathogenName (Disease)\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 700.00,
+          "width": 1600.00,
+          "x": 0.00,
+          "y": 900.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1600.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Duplicate of Antibiotic effectiveness",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 3200.00,
+      "name": "ReportSection26b3b65aefcf79734248",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"004d30d2e51f2f9267e4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":973.3333333333334,\"y\":946.6666666666667,\"z\":3000,\"width\":433.33333333333337,\"height\":186.66666666666669,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Bacteria type - Acinetobacter                 (range of diseases commonly referred to as hospital germs / superbugs ) \",\"textStyle\":{\"fontSize\":\"24pt\",\"color\":\"#8d77e5\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 186.67,
+          "width": 433.33,
+          "x": 973.33,
+          "y": 946.67,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"183990e64c308400234e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":525,\"y\":1530,\"z\":7000,\"width\":700,\"height\":70,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data Source - World Health Organisation\",\"textStyle\":{\"fontSize\":\"28pt\",\"color\":\"#1e2138\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.00,
+          "width": 700.00,
+          "x": 525.00,
+          "y": 1530.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"1849dcfdb6568e26d5d5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":3200,\"height\":2750,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Series\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"Bacteria\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"columnProperties\":{\"Pathogen (bacteria/disease).PathogenName (Disease)\":{\"displayName\":\"Bacteria\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8D77E5'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Acinetobacter spp.'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#75E249'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Escherichia coli'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Neisseria gonorrhoeae'\"}}}}}]}}],\"categoryAxis\":[{\"properties\":{\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Antibiotic Type'\"}}},\"innerPadding\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"preferredCategoryWidth\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}},\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Resistance rates of bacterium against antibiotics'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"31D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'E. coli & Gonorrhoeae are the most resistant to certain antibiotics'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter1d1d6fb05307a386265d\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"Literal\":{\"Value\":\"0.048D\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0}]",
+          "height": 2750.00,
+          "width": 3200.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"444b0ebd04a59561ca88\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":453.33333333333337,\"z\":5000,\"width\":380,\"height\":136.66666666666669,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Bacteria type - E. coli                (disease found in the intestines) \",\"textStyle\":{\"fontSize\":\"24pt\",\"color\":\"#75e249\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 136.67,
+          "width": 380.00,
+          "x": 0.00,
+          "y": 453.33,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"4df772dcf1640ab45375\",\"layouts\":[{\"id\":0,\"position\":{\"x\":143.33333333333334,\"y\":590,\"z\":1000,\"width\":16.666666666666668,\"height\":90,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#75E249'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 16.67,
+          "x": 143.33,
+          "y": 590.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"99edd3a2323804169aba\",\"layouts\":[{\"id\":0,\"position\":{\"x\":576.6666666666667,\"y\":953.3333333333334,\"z\":2000,\"width\":16.666666666666668,\"height\":90,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 16.67,
+          "x": 576.67,
+          "y": 953.33,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"cfc01aae08e0ae733d15\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1143.3333333333335,\"y\":1086.6666666666667,\"z\":6000,\"width\":16.666666666666668,\"height\":90,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8D77E5'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 16.67,
+          "x": 1143.33,
+          "y": 1086.67,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"f59b4458a20e3f86ab76\",\"layouts\":[{\"id\":0,\"position\":{\"x\":490,\"y\":800,\"z\":4000,\"width\":356.6666666666667,\"height\":153.33333333333334,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Bacteria type - Gonorrhoeae (sexually transmitted disease) \",\"textStyle\":{\"fontSize\":\"24pt\",\"color\":\"#fd625e\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 153.33,
+          "width": 356.67,
+          "x": 490.00,
+          "y": 800.00,
+          "z": 4000.00
+        }
+      ],
+      "width": 3200.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Diease vs antiobotic",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1600.00,
+      "name": "ReportSection53a3832fe9c06aea9e6c",
+      "ordinal": 10,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0b711de534d31056b5be\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1080,\"height\":409.6551724137931,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Category\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 409.66,
+          "width": 1080.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"7a17f8a3950482511be1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1170,\"y\":0,\"z\":4000,\"width\":400,\"height\":225,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.CountryTerritoryArea\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"CountryTerritoryArea\"},\"Name\":\"Location.CountryTerritoryArea\",\"NativeReferenceName\":\"CountryTerritoryArea\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 225.00,
+          "width": 400.00,
+          "x": 1170.00,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"92dd7ce674abdbb982b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":1236.6666666666667,\"z\":3000,\"width\":2000,\"height\":363.33333333333337,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName\",\"active\":true}],\"Columns\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\",\"active\":true}],\"Values\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName\",\"NativeReferenceName\":\"PathogenName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.1}}}},\"Value\":{\"Literal\":{\"Value\":\"'#fd625e'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.02}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.09}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#fffa00'\"}}},{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.01}}}},\"Value\":{\"Literal\":{\"Value\":\"'#33ff95'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"Measures (2).Resistance rate\"}}]}}}",
+          "filters": "[]",
+          "height": 363.33,
+          "width": 2000.00,
+          "x": 0.00,
+          "y": 1236.67,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"a72b54f9ad0692e06342\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":766.6666666666667,\"z\":0,\"width\":1600,\"height\":330,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName\",\"active\":true}],\"Columns\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\",\"active\":true}],\"Values\":[{\"queryRef\":\"Measures (2).Resistant Bacteria Count\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName\",\"NativeReferenceName\":\"PathogenName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistant case count\"},\"Name\":\"Measures (2).Resistant Bacteria Count\",\"NativeReferenceName\":\"Resistant Bacteria Count\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistant case count\"}},\"Right\":{\"Literal\":{\"Value\":\"5500D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistant case count\"}},\"Right\":{\"Literal\":{\"Value\":\"9999999999D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#fd625e'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistant case count\"}},\"Right\":{\"Literal\":{\"Value\":\"1000D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistant case count\"}},\"Right\":{\"Literal\":{\"Value\":\"5500D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#fffa00'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistant case count\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistant case count\"}},\"Right\":{\"Literal\":{\"Value\":\"1000D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#33ff95'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"Measures (2).Resistant Bacteria Count\"}}]}}}",
+          "filters": "[]",
+          "height": 330.00,
+          "width": 1600.00,
+          "x": 0.00,
+          "y": 766.67,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f7e3c70140743604ac6b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":420.29556650246303,\"z\":2000,\"width\":1080,\"height\":317.8817733990148,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Category\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"PathogenName (Disease)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 317.88,
+          "width": 1080.00,
+          "x": 0.00,
+          "y": 420.30,
+          "z": 2000.00
+        }
+      ],
+      "width": 2000.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Antibiotic effectiveness",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1600.00,
+      "name": "ReportSection5f2146453d2ca5da84a7",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"32cd22be7a009bd14248\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1143.3333333333335,\"y\":1086.6666666666667,\"z\":6000,\"width\":16.666666666666668,\"height\":90,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8D77E5'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 16.67,
+          "x": 1143.33,
+          "y": 1086.67,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"49f557c5100205cd2b69\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1600,\"height\":1503.3333333333335,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Series\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"Bacteria\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"columnProperties\":{\"Pathogen (bacteria/disease).PathogenName (Disease)\":{\"displayName\":\"Bacteria\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8D77E5'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Acinetobacter spp.'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#75E249'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Escherichia coli'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Neisseria gonorrhoeae'\"}}}}}]}}],\"categoryAxis\":[{\"properties\":{\"titleBold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Antibiotic Type'\"}}},\"innerPadding\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"preferredCategoryWidth\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}},\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Resistance rates of bacterium against antibiotics'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"31D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'E. coli & Gonorrhoeae are the most resistant to certain antibiotics'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter1d1d6fb05307a386265d\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures (2)\"}},\"Property\":\"Resistance rate\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}},\"Right\":{\"Literal\":{\"Value\":\"0.048D\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0}]",
+          "height": 1503.33,
+          "width": 1600.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"644f2b7a00e40c484792\",\"layouts\":[{\"id\":0,\"position\":{\"x\":490,\"y\":800,\"z\":4000,\"width\":356.6666666666667,\"height\":153.33333333333334,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Bacteria type - Gonorrhoeae (sexually transmitted disease) \",\"textStyle\":{\"fontSize\":\"24pt\",\"color\":\"#fd625e\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 153.33,
+          "width": 356.67,
+          "x": 490.00,
+          "y": 800.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6a804932c6208859b000\",\"layouts\":[{\"id\":0,\"position\":{\"x\":525,\"y\":1530,\"z\":7000,\"width\":700,\"height\":70,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data Source - World Health Organisation\",\"textStyle\":{\"fontSize\":\"28pt\",\"color\":\"#1e2138\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.00,
+          "width": 700.00,
+          "x": 525.00,
+          "y": 1530.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"7b4e330e977035a00bc3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":453.33333333333337,\"z\":5000,\"width\":380,\"height\":136.66666666666669,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Bacteria type - E. coli                (disease found in the intestines) \",\"textStyle\":{\"fontSize\":\"24pt\",\"color\":\"#75e249\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 136.67,
+          "width": 380.00,
+          "x": 0.00,
+          "y": 453.33,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"83553266d21d5ca05a0d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":143.33333333333334,\"y\":590,\"z\":1000,\"width\":16.666666666666668,\"height\":90,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#75E249'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 16.67,
+          "x": 143.33,
+          "y": 590.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a4101ead64e8aa51608c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":576.6666666666667,\"y\":953.3333333333334,\"z\":2000,\"width\":16.666666666666668,\"height\":90,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 16.67,
+          "x": 576.67,
+          "y": 953.33,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"bb722dc0211ce9c9a082\",\"layouts\":[{\"id\":0,\"position\":{\"x\":973.3333333333334,\"y\":946.6666666666667,\"z\":3000,\"width\":433.33333333333337,\"height\":186.66666666666669,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Bacteria type - Acinetobacter                 (range of diseases commonly referred to as hospital germs / superbugs ) \",\"textStyle\":{\"fontSize\":\"24pt\",\"color\":\"#8d77e5\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 186.67,
+          "width": 433.33,
+          "x": 973.33,
+          "y": 946.67,
+          "z": 3000.00
+        }
+      ],
+      "width": 1600.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "consumption patterns",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1080.00,
+      "name": "ReportSection61822e751dc847920718",
+      "ordinal": 8,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"53a057a0e0ada672e9e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":625.1231527093596,\"z\":0,\"width\":1080,\"height\":421.62561576354676,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact table.Antibiotic type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact table\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Fact table.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 421.63,
+          "width": 1080.00,
+          "x": 0.00,
+          "y": 625.12,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"8eb1e4a932e88cb40d58\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":21.2807881773399,\"z\":2000,\"width\":1080,\"height\":562.6108374384236,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"PathogenName (Disease)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Neisseria gonorrhoeae'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.4}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Klebsiella pneumoniae'\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 562.61,
+          "width": 1080.00,
+          "x": 0.00,
+          "y": 21.28,
+          "z": 2000.00
+        }
+      ],
+      "width": 1080.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "consumption patterns 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1080.00,
+      "name": "ReportSection86b064c911b81a1ae18d",
+      "ordinal": 9,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1dfe1f58c9bda8427502\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":571.9211822660099,\"z\":1000,\"width\":489.4581280788177,\"height\":508.07881773399015,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"decompositionTreeVisual\",\"projections\":{\"Analyze\":[{\"queryRef\":\"Measures (2).Resistant case count\"}],\"ExplainBy\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistant case count\"},\"Name\":\"Measures (2).Resistant case count\",\"NativeReferenceName\":\"Resistant case count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"PathogenName (Disease)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistant case count\"}}}]},\"expansionStates\":[{\"roles\":[\"ExplainBy\"],\"levels\":[{\"queryRefs\":[\"Pathogen (bacteria/disease).PathogenName (Disease)\"],\"isCollapsed\":true,\"isPinned\":true,\"AIInformation\":{\"method\":\"MaxSplit\"}}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"tree\":[{\"properties\":{\"effectiveBarsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"insights\":[{\"properties\":{\"isAINode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Pathogen (bacteria/disease)\"}},\"Property\":\"PathogenName (Disease)\"}},\"Right\":{\"Literal\":{\"Value\":\"'Escherichia coli'\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 508.08,
+          "width": 489.46,
+          "x": 0.00,
+          "y": 571.92,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"345197a1ed2329ee0c92\",\"layouts\":[{\"id\":0,\"position\":{\"x\":559.9507389162561,\"y\":575.9113300492611,\"z\":3000,\"width\":489.4581280788177,\"height\":504.0886699507389,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"decompositionTreeVisual\",\"projections\":{\"ExplainBy\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"active\":true}],\"Analyze\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"PathogenName (Disease)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"expansionStates\":[{\"roles\":[\"ExplainBy\"],\"levels\":[{\"queryRefs\":[\"Pathogen (bacteria/disease).PathogenName (Disease)\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"tree\":[{\"properties\":{\"effectiveBarsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"insights\":[{\"properties\":{\"isAINode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Antibiotic type\"}},\"Property\":\"Antibiotic type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Ampicillin'\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 504.09,
+          "width": 489.46,
+          "x": 559.95,
+          "y": 575.91,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"475923ec409d76cae090\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":446.6666666666667,\"height\":490,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"decompositionTreeVisual\",\"projections\":{\"ExplainBy\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\",\"active\":true}],\"Analyze\":[{\"queryRef\":\"Measures (2).Resistant case count\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistant case count\"},\"Name\":\"Measures (2).Resistant case count\",\"NativeReferenceName\":\"Resistant case count\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistant case count\"}}}]},\"expansionStates\":[{\"roles\":[\"ExplainBy\"],\"levels\":[{\"queryRefs\":[\"Antibiotic type.Antibiotic type\"],\"isCollapsed\":true,\"isPinned\":true,\"AIInformation\":{\"method\":\"MaxSplit\"}}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"tree\":[{\"properties\":{\"effectiveBarsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"insights\":[{\"properties\":{\"isAINode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Antibiotic type\"}},\"Property\":\"Antibiotic type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Ampicillin'\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 490.00,
+          "width": 446.67,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"adc75f6cc06700b0dba3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":489.4581280788177,\"y\":17.29064039408867,\"z\":2000,\"width\":489.4581280788177,\"height\":504.0886699507389,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"decompositionTreeVisual\",\"projections\":{\"ExplainBy\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\",\"active\":true}],\"Analyze\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"expansionStates\":[{\"roles\":[\"ExplainBy\"],\"levels\":[{\"queryRefs\":[\"Antibiotic type.Antibiotic type\"],\"isCollapsed\":true,\"isPinned\":true,\"AIInformation\":{\"method\":\"MaxSplit\"}}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"tree\":[{\"properties\":{\"effectiveBarsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"insights\":[{\"properties\":{\"isAINode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Antibiotic type\"}},\"Property\":\"Antibiotic type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Ampicillin'\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 504.09,
+          "width": 489.46,
+          "x": 489.46,
+          "y": 17.29,
+          "z": 2000.00
+        }
+      ],
+      "width": 1080.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Resistance rate & time",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1600.00,
+      "name": "ReportSectionab5375a830a4bd3d906c",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4a6f86490a32b100803e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":810,\"y\":672.5,\"z\":2000,\"width\":332.5,\"height\":102.5,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Resistance Rate\",\"textStyle\":{\"fontSize\":\"36pt\",\"color\":\"#fd625e\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 102.50,
+          "width": 332.50,
+          "x": 810.00,
+          "y": 672.50,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"67381c454bbb782c2c69\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":96.66666666666667,\"z\":6000,\"width\":573.3333333333334,\"height\":53.333333333333336,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Resistance rate for each year \",\"textStyle\":{\"fontSize\":\"28pt\",\"color\":\"#cccccc\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 53.33,
+          "width": 573.33,
+          "x": 20.00,
+          "y": 96.67,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"87821942b591ee51d14d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":215,\"z\":0,\"width\":1580,\"height\":1315,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"year\"},\"Name\":\"Calendar.year\",\"NativeReferenceName\":\"year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"29D\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"31D\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures (2).Resistance rate\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 1315.00,
+          "width": 1580.00,
+          "x": 20.00,
+          "y": 215.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"8ba7be872040a0dd04b0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1046.6666666666667,\"y\":146.66666666666669,\"z\":1000,\"width\":393.33333333333337,\"height\":103.33333333333334,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Plateau due to Covid-19\",\"textStyle\":{\"fontSize\":\"28pt\",\"color\":\"#1e2138\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 103.33,
+          "width": 393.33,
+          "x": 1046.67,
+          "y": 146.67,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"cbd6258c900008d33022\",\"layouts\":[{\"id\":0,\"position\":{\"x\":6.666666666666667,\"y\":0,\"z\":4000,\"width\":1593.3333333333335,\"height\":100,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Global Resistance Rates of Bacteria Increasing Against Antibiotics \",\"textStyle\":{\"fontSize\":\"44pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 100.00,
+          "width": 1593.33,
+          "x": 6.67,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"d7278ffa34137054c9a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":525,\"y\":1530,\"z\":5000,\"width\":700,\"height\":70,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data Source - World Health Organisation\",\"textStyle\":{\"fontSize\":\"28pt\",\"color\":\"#1e2138\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.00,
+          "width": 700.00,
+          "x": 525.00,
+          "y": 1530.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"f53c07400eb2a3e2c49d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1225,\"y\":205,\"z\":3000,\"width\":15,\"height\":90,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 15.00,
+          "x": 1225.00,
+          "y": 205.00,
+          "z": 3000.00
+        }
+      ],
+      "width": 1600.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Resistance over time for each type",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1600.00,
+      "name": "ReportSectiondc8d3acf92d5d81b2184",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2030f2d7e4770aa8d798\",\"layouts\":[{\"id\":0,\"position\":{\"x\":910,\"y\":0,\"z\":1000,\"width\":690,\"height\":1600,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.Date.Variation.Date Hierarchy.Year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Rows\":[{\"queryRef\":\"Antibiotic type.Antibiotic type\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Antibiotic type\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Calendar.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Antibiotic type\"},\"Name\":\"Antibiotic type.Antibiotic type\",\"NativeReferenceName\":\"Antibiotic type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"smallMultiplesLayout\":[{\"properties\":{\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"sharedAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"scaleToFit\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 1600.00,
+          "width": 690.00,
+          "x": 910.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"64406aaf1b09e365d5a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":14,\"y\":0,\"z\":0,\"width\":744,\"height\":1600,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"stackedAreaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.Date.Variation.Date Hierarchy.Year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Rows\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Calendar.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"PathogenName (Disease)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"smallMultiplesLayout\":[{\"properties\":{\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"sharedAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"scaleToFit\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 1600.00,
+          "width": 744.00,
+          "x": 14.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1600.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Resistance over time ",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1600.00,
+      "name": "ReportSectiondcb4d35f4c5e774ceb9a",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2c7e4fdb12bbe70aa29b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":520,\"y\":126.66666666666667,\"z\":1000,\"width\":1080,\"height\":233.33333333333334,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendar.year\"},{\"queryRef\":\"Measures (2).Resistant cases\"},{\"queryRef\":\"Measures (2).Resistance rate\"},{\"queryRef\":\"Measures (2).Overall Growth rate %\"},{\"queryRef\":\"Measures (2).YoY Growth rate %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistant case count\"},\"Name\":\"Measures (2).Resistant cases\",\"NativeReferenceName\":\"Resistant cases\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"year\"},\"Name\":\"Calendar.year\",\"NativeReferenceName\":\"year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Overall Growth rate %\"},\"Name\":\"Measures (2).Overall Growth rate %\",\"NativeReferenceName\":\"Overall Growth rate %\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"YoY Growth rate of resistant cases\"},\"Name\":\"Measures (2).YoY Growth rate %\",\"NativeReferenceName\":\"YoY Growth rate %\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"297.4343216273215D\"}}}},\"selector\":{\"metadata\":\"Measures (2).Overall Growth rate %\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"193.50496164316047D\"}}}},\"selector\":{\"metadata\":\"Measures (2).Resistance rate\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"258.49999416684705D\"}}}},\"selector\":{\"metadata\":\"Measures (2).Resistant cases\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"110.50001294272639D\"}}}},\"selector\":{\"metadata\":\"Calendar.year\"}}]}}}",
+          "filters": "[]",
+          "height": 233.33,
+          "width": 1080.00,
+          "x": 520.00,
+          "y": 126.67,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"37d09a4282085402e2c6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":463.33333333333337,\"height\":590,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.Date.Variation.Date Hierarchy.Year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Resistant cases\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Calendar.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistant case count\"},\"Name\":\"Measures (2).Resistant cases\",\"NativeReferenceName\":\"Resistant cases\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 590.00,
+          "width": 463.33,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"70b1f04f0b576be414d8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":653.3333333333334,\"z\":2000,\"width\":463.33333333333337,\"height\":280,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"year\"},\"Name\":\"Calendar.year\",\"NativeReferenceName\":\"year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 463.33,
+          "x": 0.00,
+          "y": 653.33,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"81bdfe91705a9de30bae\",\"layouts\":[{\"id\":0,\"position\":{\"x\":520,\"y\":503.33333333333337,\"z\":3000,\"width\":1080,\"height\":856.6666666666667,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures (2).Resistance rate\"}],\"Series\":[{\"queryRef\":\"Pathogen (bacteria/disease).PathogenName (Disease)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Pathogen (bacteria/disease)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"year\"},\"Name\":\"Calendar.year\",\"NativeReferenceName\":\"year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"},\"Name\":\"Measures (2).Resistance rate\",\"NativeReferenceName\":\"Resistance rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"PathogenName (Disease)\"},\"Name\":\"Pathogen (bacteria/disease).PathogenName (Disease)\",\"NativeReferenceName\":\"PathogenName (Disease)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Resistance rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 856.67,
+          "width": 1080.00,
+          "x": 520.00,
+          "y": 503.33,
+          "z": 3000.00
+        }
+      ],
+      "width": 1600.00
+    }
+  ],
+  "theme": "EnviroMetrics7184958021219103.json"
+}

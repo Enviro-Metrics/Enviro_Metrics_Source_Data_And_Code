@@ -1,0 +1,68 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Bloodstream,,,,,,,,,,
+Bacterial pathogen filter: Klebsiella pneumoniae,,,,,,,,,,
+Antibiotic filter: Co-trimoxazole,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,18.61471861,35.75009641,46.31147541,54.58786936,100,,
+2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,23.53780314,33.32035054,51.14503817,58.65102639,83.33333333,,
+2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,23.46368715,33.33333333,50.24154589,64.66212027,85.71428571,,
+2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,21.72413793,33.12829525,55.09259259,61.31578947,81.81818182,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,1982,496,162,32.66129032
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,2452,564,215,38.12056738
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,2464,511,176,34.44227006
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,2925,618,228,36.89320388
+ARG,Argentina,Region of the Americas,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,6657,1286,702,54.58786936
+ARG,Argentina,Region of the Americas,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,7385,1472,766,52.03804348
+ARG,Argentina,Region of the Americas,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,5783,1147,603,52.57192677
+ARG,Argentina,Region of the Americas,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,7376,1744,1003,57.51146789
+BHR,Bahrain,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,196,169,88,52.07100592
+BHR,Bahrain,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,633,119,54,45.37815126
+BHR,Bahrain,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,780,207,104,50.24154589
+BHR,Bahrain,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,568,168,93,55.35714286
+IND,India,South-East Asia Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,8532,528,451,85.41666667
+IND,India,South-East Asia Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,14459,341,200,58.65102639
+IND,India,South-East Asia Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,24223,1613,1043,64.66212027
+IND,India,South-East Asia Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,12371,760,466,61.31578947
+KOR,Republic of Korea,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,3518,693,129,18.61471861
+KOR,Republic of Korea,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,3519,701,165,23.53780314
+KOR,Republic of Korea,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,3646,716,168,23.46368715
+KOR,Republic of Korea,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,4095,870,189,21.72413793
+LAO,Lao People's Democratic Republic,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,209,30,9,30
+LAO,Lao People's Democratic Republic,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,275,36,10,27.77777778
+LAO,Lao People's Democratic Republic,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,314,40,13,32.5
+LAO,Lao People's Democratic Republic,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,422,81,19,23.45679012
+MYS,Malaysia,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,25686,5186,1854,35.75009641
+MYS,Malaysia,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,26268,5135,1711,33.32035054
+MYS,Malaysia,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,25194,4785,1538,32.14211076
+MYS,Malaysia,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,20249,4007,1273,31.76940354
+OMN,Oman,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,1043,244,113,46.31147541
+OMN,Oman,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,631,131,67,51.14503817
+OMN,Oman,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,1007,341,166,48.68035191
+OMN,Oman,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,876,216,119,55.09259259
+PAK,Pakistan,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,2323,137,94,68.61313869
+PAK,Pakistan,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,7410,94,72,76.59574468
+PAK,Pakistan,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,8980,351,259,73.78917379
+PAK,Pakistan,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,5623,241,171,70.95435685
+PHL,Philippines,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,5103,1033,554,53.63020329
+PHL,Philippines,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,5595,1161,655,56.416882
+PHL,Philippines,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,6468,1483,783,52.79838166
+PHL,Philippines,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,4276,1108,563,50.81227437
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,1491,325,148,45.53846154
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,2420,705,462,65.53191489
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,2528,792,521,65.78282828
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,2458,715,496,69.37062937
+THA,Thailand,South-East Asia Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,1349,250,115,46
+THA,Thailand,South-East Asia Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,2629,209,54,25.83732057
+THA,Thailand,South-East Asia Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,5463,750,250,33.33333333
+THA,Thailand,South-East Asia Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,6159,1138,377,33.12829525
+UGA,Uganda,African Region,2017,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,112,10,10,100
+UGA,Uganda,African Region,2018,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,76,12,10,83.33333333
+UGA,Uganda,African Region,2019,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,70,14,12,85.71428571
+UGA,Uganda,African Region,2020,BLOOD,Klebsiella pneumoniae,Co-trimoxazole,133,22,18,81.81818182

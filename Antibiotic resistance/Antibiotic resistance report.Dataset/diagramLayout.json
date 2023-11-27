@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 682.76192876316736,
+        "y": 746.74103481605312
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 762.13250955749186,
+            "y": 469.67597692577436
+          },
+          "nodeIndex": "Antibiotic type",
+          "nodeLineageTag": "4f246114-01f7-406d-9c14-a74da7505259",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1078.185650812869,
+            "y": 637.35249344947579
+          },
+          "nodeIndex": "Calendar",
+          "nodeLineageTag": "9ce1c4f3-f180-46d7-9308-b67be93a7f64",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 261.63301685126379,
+            "y": 934.9870655016623
+          },
+          "nodeIndex": "Fact table",
+          "nodeLineageTag": "24ab285d-e70f-44f4-b62c-a454b8784bfa",
+          "size": {
+            "height": 390.9722703863024,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 235.60798160637512,
+            "y": 413.67232419006029
+          },
+          "nodeIndex": "Location",
+          "nodeLineageTag": "742891fe-4c27-41f4-a6cb-91f3220e9d97",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1530.2586577871862,
+            "y": 746.74103481605312
+          },
+          "nodeIndex": "Measures (2)",
+          "nodeLineageTag": "2baa6abe-3d7b-4c88-b75b-cfcb66070a00",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 510.68842377423869,
+            "y": 435.98594564619276
+          },
+          "nodeIndex": "Pathogen (bacteria/disease)",
+          "nodeLineageTag": "c67856a5-c849-4228-873a-c0f4efaad1c7",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1400.5776692064937,
+            "y": 542.03428057897236
+          },
+          "nodeIndex": "Body type sample",
+          "nodeLineageTag": "746050a9-77d6-4c43-b51e-d7cfb6118c44",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 84.2351137596245,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

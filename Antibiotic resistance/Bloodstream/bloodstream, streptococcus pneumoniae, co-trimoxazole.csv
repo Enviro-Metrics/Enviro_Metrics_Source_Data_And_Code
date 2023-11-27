@@ -1,0 +1,48 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Bloodstream,,,,,,,,,,
+Bacterial pathogen filter: Streptococcus pneumoniae,,,,,,,,,,
+Antibiotic filter: Co-trimoxazole,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,5.64516129,19.85268288,30.52061495,34.05652866,60,,
+2018,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,13.90728477,22.44625559,24.4047619,29.88040123,42.5,,
+2019,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,13.28671329,20.25310559,26.30952381,34.17056075,48.50746269,,
+2020,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,14.07407407,19.83928571,21.42857143,29.02830189,49.5412844,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,1982,59,12,20.33898305
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,2452,84,20,23.80952381
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,2464,105,29,27.61904762
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,2925,50,13,26
+ARG,Argentina,Region of the Americas,2017,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,6657,386,71,18.39378238
+ARG,Argentina,Region of the Americas,2018,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,7385,381,81,21.25984252
+ARG,Argentina,Region of the Americas,2019,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,5783,322,58,18.01242236
+ARG,Argentina,Region of the Americas,2020,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,7376,135,19,14.07407407
+KOR,Republic of Korea,Western Pacific Region,2017,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,3518,54,17,31.48148148
+KOR,Republic of Korea,Western Pacific Region,2018,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,3519,48,13,27.08333333
+KOR,Republic of Korea,Western Pacific Region,2019,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,3646,36,9,25
+KOR,Republic of Korea,Western Pacific Region,2020,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,4095,28,5,17.85714286
+MYS,Malaysia,Western Pacific Region,2017,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,25686,636,188,29.55974843
+MYS,Malaysia,Western Pacific Region,2018,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,26268,556,127,22.84172662
+MYS,Malaysia,Western Pacific Region,2019,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,25194,600,126,21
+MYS,Malaysia,Western Pacific Region,2020,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,20249,200,41,20.5
+PHL,Philippines,Western Pacific Region,2017,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,5103,124,7,5.64516129
+PHL,Philippines,Western Pacific Region,2018,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,5595,151,21,13.90728477
+PHL,Philippines,Western Pacific Region,2019,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,6468,143,19,13.28671329
+PHL,Philippines,Western Pacific Region,2020,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,4276,42,9,21.42857143
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,1491,24,9,37.5
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,2420,36,9,25
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,2528,48,16,33.33333333
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,2458,28,6,21.42857143
+THA,Thailand,South-East Asia Region,2017,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,1349,30,18,60
+THA,Thailand,South-East Asia Region,2018,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,2629,40,17,42.5
+THA,Thailand,South-East Asia Region,2019,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,5463,134,65,48.50746269
+THA,Thailand,South-East Asia Region,2020,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,6159,109,54,49.5412844
+ZAF,South Africa,African Region,2017,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,2931,471,155,32.90870488
+ZAF,South Africa,African Region,2018,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,20691,405,155,38.27160494
+ZAF,South Africa,African Region,2019,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,20489,428,157,36.68224299
+ZAF,South Africa,African Region,2020,BLOOD,Streptococcus pneumoniae,Co-trimoxazole,23840,265,101,38.11320755

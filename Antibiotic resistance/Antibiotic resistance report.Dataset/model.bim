@@ -1,0 +1,1513 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Gastrointestinal\",\"Gonorrhoea\",\"Urinary tract\",\"SDG Indicator Bloodstream\",\"Bloodstream\",\"Append source\",\"Fact table\",\"Body type sample\",\"Location\",\"Calendar\",\"Pathogen (bacteria/disease)\",\"Antibiotic type\",\"Measures (2)\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.121.644.0 (23.09)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-GB",
+    "cultures": [
+      {
+        "name": "en-GB",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "Gastrointestinal",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Folder.Files(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Antibiotic resistance\\Gastrointestinal\"),",
+          "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"Content\", \"Name\"}),",
+          "    #\"Added Custom\" = Table.AddColumn(#\"Removed Other Columns\", \"DataLoad\", each Table.PromoteHeaders(Table.Skip(Csv.Document([Content]), 15), [PromoteAllScalars=true])),",
+          "    #\"Expanded DataLoad\" = Table.ExpandTableColumn(#\"Added Custom\", \"DataLoad\", {\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\", \"Year\", \"Specimen\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}, {\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\", \"Year\", \"Specimen\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}),",
+          "    #\"Removed Columns\" = Table.RemoveColumns(#\"Expanded DataLoad\",{\"Content\", \"Name\"})",
+          "in",
+          "    #\"Removed Columns\""
+        ],
+        "kind": "m",
+        "lineageTag": "550f67c9-aeeb-4bbf-adbb-c649121a86ce",
+        "queryGroup": "Source data"
+      },
+      {
+        "name": "Gonorrhoea",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Folder.Files(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Antibiotic resistance\\Gonorrhoea\"),",
+          "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"Content\", \"Name\"}),",
+          "    #\"Added Custom\" = Table.AddColumn(#\"Removed Other Columns\", \"DataLoad\", each Table.PromoteHeaders(Table.Skip(Csv.Document([Content]), 15), [PromoteAllScalars=true])),",
+          "    #\"Removed Columns\" = Table.RemoveColumns(#\"Added Custom\",{\"Content\"}),",
+          "    #\"Expanded DataLoad\" = Table.ExpandTableColumn(#\"Removed Columns\", \"DataLoad\", {\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\", \"Year\", \"Specimen\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}, {\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\", \"Year\", \"Specimen\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}),",
+          "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Expanded DataLoad\",{\"Name\"})",
+          "in",
+          "    #\"Removed Columns1\""
+        ],
+        "kind": "m",
+        "lineageTag": "fbe8fb9a-1f4b-4c5e-acf9-c52d25f56497",
+        "queryGroup": "Source data"
+      },
+      {
+        "name": "Urinary tract",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Folder.Files(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Antibiotic resistance\\Urinary tract\"),",
+          "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"Content\", \"Name\"}),",
+          "    #\"Added Custom\" = Table.AddColumn(#\"Removed Other Columns\", \"DataLoad\", each Table.PromoteHeaders(Table.Skip(Csv.Document([Content]), 15), [PromoteAllScalars=true])),",
+          "    #\"Removed Columns\" = Table.RemoveColumns(#\"Added Custom\",{\"Content\"}),",
+          "    #\"Expanded DataLoad\" = Table.ExpandTableColumn(#\"Removed Columns\", \"DataLoad\", {\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\", \"Year\", \"Specimen\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}, {\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\", \"Year\", \"Specimen\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}),",
+          "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Expanded DataLoad\",{\"Name\"})",
+          "in",
+          "    #\"Removed Columns1\""
+        ],
+        "kind": "m",
+        "lineageTag": "c1495ead-eb58-4370-90dd-6e0d35cedce9",
+        "queryGroup": "Source data"
+      },
+      {
+        "name": "SDG Indicator Bloodstream",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Folder.Files(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Antibiotic resistance\\SDG Indicator Bloodstream\"),",
+          "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"Content\", \"Name\"}),",
+          "    #\"Added Custom\" = Table.AddColumn(#\"Removed Other Columns\", \"DataLoad\", each Table.PromoteHeaders(Table.Skip(Csv.Document([Content]), 15), [PromoteAllScalars=true])),",
+          "    #\"Removed Columns\" = Table.RemoveColumns(#\"Added Custom\",{\"Content\"}),",
+          "    #\"Expanded DataLoad\" = Table.ExpandTableColumn(#\"Removed Columns\", \"DataLoad\", {\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\", \"Year\", \"Specimen\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}, {\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\", \"Year\", \"Specimen\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}),",
+          "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Expanded DataLoad\",{\"Name\"})",
+          "in",
+          "    #\"Removed Columns1\""
+        ],
+        "kind": "m",
+        "lineageTag": "07c3960e-21f2-4d28-9ea1-6c134970f062",
+        "queryGroup": "Source data"
+      },
+      {
+        "name": "Bloodstream",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Folder.Files(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Antibiotic resistance\\bloodstream\"),",
+          "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"Content\", \"Name\"}),",
+          "    #\"Added Custom\" = Table.AddColumn(#\"Removed Other Columns\", \"DataLoad\", each Table.PromoteHeaders(Table.Skip(Csv.Document([Content]), 15), [PromoteAllScalars=true])),",
+          "    #\"Removed Columns\" = Table.RemoveColumns(#\"Added Custom\",{\"Content\"}),",
+          "    #\"Expanded DataLoad\" = Table.ExpandTableColumn(#\"Removed Columns\", \"DataLoad\", {\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\", \"Year\", \"Specimen\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}, {\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\", \"Year\", \"Specimen\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded DataLoad\",{{\"Name\", type text}, {\"Iso3\", type text}, {\"CountryTerritoryArea\", type text}, {\"WHORegionName\", type text}, {\"Year\", Int64.Type}, {\"Specimen\", type text}, {\"PathogenName\", type text}, {\"AbTargets\", type text}, {\"TotalSpecimenIsolates\", Int64.Type}, {\"InterpretableAST\", Int64.Type}, {\"Resistant\", Int64.Type}, {\"PercentResistant\", type number}}),",
+          "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Changed Type\",{\"Name\"})",
+          "in",
+          "    #\"Removed Columns1\""
+        ],
+        "kind": "m",
+        "lineageTag": "50e8cd24-d7ab-43c9-904f-0896737c4a9f",
+        "queryGroup": "Source data"
+      },
+      {
+        "name": "Append source",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Table.Combine({Bloodstream, Gastrointestinal, Gonorrhoea, #\"Urinary tract\"})",
+          "in",
+          "    Source"
+        ],
+        "kind": "m",
+        "lineageTag": "b76239c5-174c-46af-8a7a-384322176af9",
+        "queryGroup": "Source data"
+      }
+    ],
+    "queryGroups": [
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ],
+        "folder": "Fact table"
+      },
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "1"
+          }
+        ],
+        "folder": "Dimension table"
+      },
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "2"
+          }
+        ],
+        "folder": "Source data"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "1bdcfede-79f7-4bd2-ba96-57766e6976d3",
+        "fromColumn": "Date",
+        "fromTable": "Calendar",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_1f3dda77-7186-41e9-b290-e07ca310456b"
+      },
+      {
+        "name": "dda6577e-755a-48b3-9eb6-ae77622f007d",
+        "fromColumn": "Iso3",
+        "fromTable": "Fact table",
+        "toColumn": "Iso3",
+        "toTable": "Location"
+      },
+      {
+        "name": "2adf6062-83d9-47ad-ac4b-39be25b2e952",
+        "fromColumn": "PathogenName (Disease)",
+        "fromTable": "Fact table",
+        "toColumn": "PathogenName (Disease)",
+        "toTable": "Pathogen (bacteria/disease)"
+      },
+      {
+        "name": "729e1e9e-0c6a-49e0-8b02-5db2c50bb319",
+        "fromColumn": "Antibiotic type",
+        "fromTable": "Fact table",
+        "toColumn": "Antibiotic type",
+        "toTable": "Antibiotic type"
+      },
+      {
+        "name": "0be8792e-578b-48a3-9b64-1837786ad84a",
+        "fromColumn": "Date",
+        "fromTable": "Fact table",
+        "toColumn": "Date",
+        "toTable": "Calendar"
+      },
+      {
+        "name": "7dad75f9-2a04-4a4c-8854-cd332cbbc937",
+        "fromColumn": "Body type sample",
+        "fromTable": "Fact table",
+        "toColumn": "Body type sample",
+        "toTable": "Body type sample"
+      }
+    ],
+    "sourceQueryCulture": "en-GB",
+    "tables": [
+      {
+        "name": "DateTableTemplate_a74bd668-7aef-49fa-9c68-d5fc34d2fa9e",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "8c7ecf73-ee02-4fc4-b0fc-0f1c0b3650ef",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e2a7b917-997b-40d5-be8b-a9f35122ae80",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "07a2a0f1-1d47-4d3b-9ead-7ec089aead9f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "f2ee9ec8-eefd-4437-b1a3-3824b54ec76b",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b73f0708-ecdd-4909-8dbd-9ace595fde56",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "cee2a064-0056-4d0c-8ded-bd26515972d6",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "6c4f1803-8418-40cc-beff-5a457abf031f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "fcc52501-506d-42ea-a766-cd938fcc193b",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "46ae7139-648d-42b9-b30f-cf477f2c6e3b",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "de979342-7d5e-426f-84b1-21b0c30f3f3b",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "013adab5-519c-4466-b493-17df97db4450",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "343ca56e-6e2f-4544-a56c-30672bed8195"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "52464da2-9d44-46a7-b48f-9bc992af252c",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_a74bd668-7aef-49fa-9c68-d5fc34d2fa9e",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Fact table",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Iso3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cb1324d1-a0e8-4054-9c5b-1b61d427cec8",
+            "sourceColumn": "Iso3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4674618f-a2c4-4a37-b654-397fe5c5c49e",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Body type sample",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ad14d600-3b25-4545-addf-05e60bc13043",
+            "sourceColumn": "Body type sample",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PathogenName (Disease)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "48c388f8-786e-4410-bde5-d15805ee9237",
+            "sourceColumn": "PathogenName (Disease)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Antibiotic type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7c0d0cad-fcaf-4dd0-a8e3-d5ace4461094",
+            "sourceColumn": "Antibiotic type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Test count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "270a28c4-254d-467d-b104-2e9a5d9b3b17",
+            "sourceColumn": "Test count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Clear test count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8b5bae7a-fd69-46d0-9432-07c017c1a868",
+            "sourceColumn": "Clear test count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Resistant cases",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "25a74740-76e5-442e-8bce-bfd15ede9a4e",
+            "sourceColumn": "Resistant cases",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Antibiotic resistance (%)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "71cd714c-8ff1-475b-ab1f-f2cc6435b14f",
+            "sourceColumn": "Antibiotic resistance (%)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "7b738bce-6212-42d6-bff6-ddee6748dfb8",
+            "sourceColumn": "Date",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "24ab285d-e70f-44f4-b62c-a454b8784bfa",
+        "partitions": [
+          {
+            "name": "Fact table",
+            "mode": "import",
+            "queryGroup": "Fact table",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.Combine({Bloodstream, Gastrointestinal, Gonorrhoea, #\"Urinary tract\"}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(Source,{\"CountryTerritoryArea\", \"WHORegionName\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"Year\", Int64.Type}, {\"Iso3\", type text}, {\"Specimen\", type text}, {\"AbTargets\", type text}, {\"TotalSpecimenIsolates\", Int64.Type}, {\"InterpretableAST\", Int64.Type}, {\"Resistant\", Int64.Type}, {\"PercentResistant\", type number}}),",
+                "    #\"Added Custom\" = Table.AddColumn(#\"Changed Type\", \"Date\", each #date([Year], 1, 1)),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Added Custom\",\"BLOOD\",\"Bloodstream\",Replacer.ReplaceText,{\"Specimen\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Replaced Value\",{{\"Specimen\", \"Body type sample\"}}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Renamed Columns\",\"GENITAL\",\"Gonorrhoeae\",Replacer.ReplaceText,{\"Body type sample\"}),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",\"STOOL\",\"Gastrointestinal\",Replacer.ReplaceText,{\"Body type sample\"}),",
+                "    #\"Replaced Value3\" = Table.ReplaceValue(#\"Replaced Value2\",\"URINE\",\"Urinary tract\",Replacer.ReplaceText,{\"Body type sample\"}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Replaced Value3\",{\"Iso3\", \"Date\", \"Year\", \"Body type sample\", \"PathogenName\", \"AbTargets\", \"TotalSpecimenIsolates\", \"InterpretableAST\", \"Resistant\", \"PercentResistant\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Reordered Columns\",{{\"PathogenName\", \"PathogenName (Disease)\"}, {\"PercentResistant\", \"Antibiotic resistance (%)\"}, {\"AbTargets\", \"Antibiotic type\"}, {\"TotalSpecimenIsolates\", \"Test count\"}, {\"InterpretableAST\", \"Clear test count\"}, {\"Resistant\", \"Resistant cases\"}})",
+                "in",
+                "    #\"Renamed Columns1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Location",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Iso3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8db85d85-fc1b-455a-8eaf-86add9402af7",
+            "sourceColumn": "Iso3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CountryTerritoryArea",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "600d0b40-0c6c-4802-966d-796f17551b12",
+            "sourceColumn": "CountryTerritoryArea",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WHORegionName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "96d36380-265b-4449-a9d5-ce3dc1163786",
+            "sourceColumn": "WHORegionName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "742891fe-4c27-41f4-a6cb-91f3220e9d97",
+        "partitions": [
+          {
+            "name": "Location",
+            "mode": "import",
+            "queryGroup": "Dimension table",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.Combine({Bloodstream, Gastrointestinal, Gonorrhoea, #\"Urinary tract\"}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"Iso3\", \"CountryTerritoryArea\", \"WHORegionName\"}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\", {\"CountryTerritoryArea\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Duplicates\",{{\"Iso3\", type text}, {\"CountryTerritoryArea\", type text}, {\"WHORegionName\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Pathogen (bacteria/disease)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "PathogenName (Disease)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "330ff36f-9ccd-4c44-b267-0a2fe1d0e850",
+            "sourceColumn": "PathogenName (Disease)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "c67856a5-c849-4228-873a-c0f4efaad1c7",
+        "partitions": [
+          {
+            "name": "Pathogen (bacteria/disease)",
+            "mode": "import",
+            "queryGroup": "Dimension table",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.Combine({Bloodstream, Gastrointestinal, Gonorrhoea, #\"Urinary tract\"}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"PathogenName\"}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\"),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Duplicates\",{{\"PathogenName\", type text}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"PathogenName\", \"PathogenName (Disease)\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendar",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "ee0ccf23-c0bf-421b-8300-dbcffee6500b",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_1f3dda77-7186-41e9-b290-e07ca310456b"
+                },
+                "isDefault": true,
+                "relationship": "1bdcfede-79f7-4bd2-ba96-57766e6976d3"
+              }
+            ]
+          },
+          {
+            "name": "year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "85f0ed14-379f-488e-a023-2e6b5b129db8",
+            "sourceColumn": "year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "07353a95-fcb3-49ae-a606-6c41b8f9b997",
+            "sourceColumn": "Quarter",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "98935db4-9b52-4a3a-9456-36dba3d1147f",
+            "sourceColumn": "Month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "34de1737-c114-4e5d-8441-cfdbe71f92d4",
+            "sourceColumn": "Day",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DayOfWeekNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "61d2fe2b-53a6-494e-a2be-67032feb2b66",
+            "sourceColumn": "DayOfWeekNumber",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DayOfWeek",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ec97a9d1-67d4-41c1-80b0-21eb58f7c02c",
+            "sourceColumn": "DayOfWeek",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c45254ae-61ca-476a-8691-96cbfa94b4ca",
+            "sourceColumn": "MonthName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "9ce1c4f3-f180-46d7-9308-b67be93a7f64",
+        "partitions": [
+          {
+            "name": "Calendar",
+            "mode": "import",
+            "queryGroup": "Dimension table",
+            "source": {
+              "expression": [
+                "let",
+                "    StartDate = #date(2016, 1, 1),",
+                "    EndDate = #date(2021, 12, 31),",
+                "    NumberOfDates = Duration.Days(EndDate - StartDate) + 1,",
+                "    Dates = List.Dates(StartDate, NumberOfDates, #duration(1,0,0,0)),",
+                "    ToTable = Table.FromList(Dates, Splitter.SplitByNothing()),",
+                "    RenameDateColumn = Table.RenameColumns(ToTable,{{\"Column1\", \"Date\"}}),",
+                "    InsertYear = Table.AddColumn(RenameDateColumn, \"Year\", each Date.Year([Date])),",
+                "    InsertQuarter = Table.AddColumn(InsertYear, \"Quarter\", each \"Q\" & Number.ToText(Date.QuarterOfYear([Date]))),",
+                "    InsertMonth = Table.AddColumn(InsertQuarter, \"Month\", each Date.Month([Date])),",
+                "    InsertDay = Table.AddColumn(InsertMonth, \"Day\", each Date.Day([Date])),",
+                "    InsertDayOfWeekNumber = Table.AddColumn(InsertDay, \"DayOfWeekNumber\", each Date.DayOfWeek([Date])+1),",
+                "    InsertDayOfWeek = Table.AddColumn(InsertDayOfWeekNumber, \"DayOfWeek\", each Date.ToText([Date], \"dddd\")),",
+                "    InsertMonthName = Table.AddColumn(InsertDayOfWeek, \"MonthName\", each Date.ToText([Date], \"MMMM\")),",
+                "  #\"Transform columns\" = Table.TransformColumnTypes(InsertMonthName, {{\"Date\", type text}, {\"Year\", type text}, {\"Quarter\", type text}, {\"Month\", type text}, {\"Day\", type text}, {\"DayOfWeekNumber\", type text}, {\"DayOfWeek\", type text}, {\"MonthName\", type text}}),",
+                "  #\"Replace errors\" = Table.ReplaceErrorValues(#\"Transform columns\", {{\"Date\", null}, {\"Year\", null}, {\"Quarter\", null}, {\"Month\", null}, {\"Day\", null}, {\"DayOfWeekNumber\", null}, {\"DayOfWeek\", null}, {\"MonthName\", null}}),",
+                "  #\"Changed column type\" = Table.TransformColumnTypes(#\"Replace errors\",{{\"Date\", type date}, {\"Year\", Int64.Type}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed column type\",{{\"Year\", \"year\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_1f3dda77-7186-41e9-b290-e07ca310456b",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "be7c141d-f191-408c-8901-d2b68c135eac",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "13d26efa-1da0-437c-9611-dd8c1d20357e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "1768a19a-25bf-453b-bf1f-88d0e54f5281",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "12edf966-67a5-4480-8706-cd18d84f86c6",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "50bc2165-ceec-48c7-a60c-29ab568aeb15",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "5f171ce6-9c95-4042-b366-3060693d11fb",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "4cb7774a-c007-4b11-a3fc-e276934c9bbd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "37e7e3ef-2c59-4036-8f7b-4411039fc31a",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "07da86e6-25fa-4a81-8340-88f4ef285007",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "3de5262f-5b9c-4e9d-89c1-2fb83b385a62",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "dbb69258-8662-43a9-a27f-e8c60e35b917",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "ecd6ce2a-e83b-4718-b108-33f65e53dd0f"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "f765a3f4-ee8a-4e2f-9c3e-fc0f3fa49841",
+        "partitions": [
+          {
+            "name": "LocalDateTable_1f3dda77-7186-41e9-b290-e07ca310456b",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Calendar'[Date])), 1, 1), Date(Year(MAX('Calendar'[Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Antibiotic type",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Antibiotic type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "80383337-cac8-48b9-b824-f7e9c1f567e0",
+            "sourceColumn": "Antibiotic type",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "4f246114-01f7-406d-9c14-a74da7505259",
+        "partitions": [
+          {
+            "name": "Antibiotic type",
+            "mode": "import",
+            "queryGroup": "Dimension table",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.Combine({Bloodstream, Gastrointestinal, Gonorrhoea, #\"Urinary tract\"}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"AbTargets\"}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Duplicates\",{{\"AbTargets\", \"Antibiotic type\"}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"Antibiotic type\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Measures (2)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "2baa6abe-3d7b-4c88-b75b-cfcb66070a00",
+        "measures": [
+          {
+            "name": "Test count",
+            "expression": "SUM('Fact table'[Test count])",
+            "formatString": "#,0",
+            "lineageTag": "c514542a-1397-40c8-90f0-ebf2661c4029"
+          },
+          {
+            "name": "Clear test count",
+            "expression": "SUM('Fact table'[Clear test count])",
+            "formatString": "0",
+            "lineageTag": "b645e991-ad7f-419d-8b60-76120b98b967"
+          },
+          {
+            "name": "Antibiotic resistance (%)",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "SUM('Fact table'[Antibiotic resistance (%)])",
+            "lineageTag": "113cce5a-233a-4913-b6b4-296000cf943c"
+          },
+          {
+            "name": "Resistant case count",
+            "expression": "SUM('Fact table'[Resistant cases])",
+            "formatString": "0",
+            "lineageTag": "a3ea9ec3-84b0-4cc3-9832-0c5605f467af"
+          },
+          {
+            "name": "Overall Growth rate %",
+            "expression": [
+              "",
+              "",
+              "VAR CurrentYear = MAX('Fact table'[Year])",
+              "",
+              "VAR CurrentYearResistance = ",
+              "    CALCULATE(",
+              "        SUM('Fact table'[Resistant cases]),",
+              "        'Fact table'[Year] = CurrentYear",
+              "    )",
+              "",
+              "",
+              "VAR EarliestYear = MIN('Fact table'[Year])",
+              "",
+              "",
+              "VAR EarliestYearResistance = ",
+              "   CALCULATE(",
+              "        SUM('Fact table'[Resistant cases]),",
+              "        'Fact table'[Year]= EarliestYear",
+              "    )",
+              "RETURN",
+              "    IF(",
+              "        ISBLANK(CurrentYearResistance) ||",
+              "        ISBLANK(EarliestYearResistance) || ",
+              "        EarliestYearResistance = 0,",
+              "        BLANK(),",
+              "        (CurrentYearResistance - EarliestYearResistance) / EarliestYearResistance",
+              "    )",
+              ""
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "90004b82-ac4e-4450-aed8-df390a000d5c"
+          },
+          {
+            "name": "YoY Growth rate of resistant cases",
+            "expression": [
+              "",
+              "VAR CurrentYearResistance = ",
+              "    CALCULATE(",
+              "        SUM('Fact table'[Resistant cases]),",
+              "        'Fact table'[Year] = MAX('Fact table'[Year])",
+              "    )",
+              "VAR PreviousYearResistance = ",
+              "    CALCULATE(",
+              "        SUM('Fact table'[Resistant cases]),",
+              "        SAMEPERIODLASTYEAR('Fact table'[Date])",
+              "    )",
+              "RETURN",
+              "    IF(",
+              "        ISBLANK(CurrentYearResistance) || ",
+              "        ISBLANK(PreviousYearResistance) || ",
+              "        PreviousYearResistance = 0,",
+              "        BLANK(),",
+              "        DIVIDE(CurrentYearResistance - PreviousYearResistance, PreviousYearResistance)",
+              "    )",
+              ""
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "cc6b69fc-aa43-4972-9599-108dc87f4f7c"
+          },
+          {
+            "name": "Resistance rate",
+            "expression": "[Resistant case count] / [Test count]",
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "7839763e-820e-41e8-91ff-717db8dce0d1"
+          },
+          {
+            "name": "test",
+            "expression": [
+              "",
+              "",
+              "VAR CurrentYearDate = CALCULATE(MAX('Calendar'[Date]), ALL('Calendar'))",
+              "VAR CurrentYear = YEAR(CurrentYearDate)",
+              "VAR PreviousYearDate = DATEADD(CurrentYearDate, -1, YEAR)",
+              "VAR PreviousYear = YEAR(PreviousYearDate)",
+              "",
+              "VAR CurrentYearResistance = ",
+              "    CALCULATE(",
+              "        SUM('Fact table'[Resistant cases]),",
+              "        YEAR('Fact table'[Date]) = CurrentYear",
+              "    )",
+              "VAR PreviousYearResistance = ",
+              "    CALCULATE(",
+              "        SUM('Fact table'[Resistant cases]),",
+              "        YEAR('Fact table'[Date]) = PreviousYear",
+              "    )",
+              "",
+              "RETURN",
+              "    IF(",
+              "        ISBLANK(CurrentYearResistance) || ",
+              "        ISBLANK(PreviousYearResistance) || ",
+              "        PreviousYearResistance = 0,",
+              "        BLANK(),",
+              "        DIVIDE(CurrentYearResistance - PreviousYearResistance, PreviousYearResistance)",
+              "    )",
+              ""
+            ],
+            "lineageTag": "455c5b14-5788-4b1b-86ed-1cc9ebb62d3b"
+          },
+          {
+            "name": "old report test",
+            "expression": [
+              "",
+              "",
+              " ",
+              "VAR CurrentYear = MAX('Fact table'[Year])",
+              "",
+              "VAR CurrentYearConsumption = ",
+              "    CALCULATE(",
+              "        SUM('Fact table'[Resistant cases]),",
+              "        'Fact table'[Year] = CurrentYear",
+              "    )",
+              "",
+              "",
+              "VAR EarliestYear = MIN('Fact table'[Year])",
+              "",
+              "",
+              "VAR EarliestYearConsumption = ",
+              "   CALCULATE(",
+              "        SUM('Fact table'[Resistant cases]),",
+              "        'Fact table'[Year] = EarliestYear",
+              "    )",
+              "RETURN",
+              "    IF(",
+              "        ISBLANK(CurrentYearConsumption) ||",
+              "        ISBLANK(EarliestYearConsumption) || ",
+              "        EarliestYearConsumption = 0,",
+              "        BLANK(),",
+              "        (CurrentYearConsumption - EarliestYearConsumption) / EarliestYearConsumption",
+              "    )",
+              ""
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "2655b768-8ec4-4718-b8a3-970bb302936e"
+          },
+          {
+            "name": "test Year on Year Growth Rate",
+            "expression": [
+              "",
+              "VAR CurrentYearSum = CALCULATE(SUM('Fact table'[Resistant cases]), 'Calendar'[Year])",
+              "VAR PreviousYearSum = CALCULATE(SUM('Fact table'[Resistant cases]), DATEADD('Calendar'[Date], -1, YEAR))",
+              "RETURN",
+              "IF(",
+              "    NOT ISBLANK(CurrentYearSum) && NOT ISBLANK(PreviousYearSum) && PreviousYearSum <> 0,",
+              "    (CurrentYearSum - PreviousYearSum) / PreviousYearSum,",
+              "    BLANK()",
+              ")",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "ace67a6e-fe46-4dba-86cf-a6a5d9ff633e"
+          },
+          {
+            "name": "test finial value",
+            "expression": [
+              "CALCULATE(",
+              "    SUM('Fact table'[Resistant cases]),",
+              "    STARTOFYEAR('Calendar'[Date])",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "620fa033-1d03-4ce6-92f5-7a5f88260c1d"
+          },
+          {
+            "name": "Initial Value Date",
+            "expression": [
+              "CALCULATE (",
+              "    MIN ( 'Calendar'[Date] ),",
+              "    FILTER (",
+              "        ALL ( 'Calendar' ), -- This removes any filters that might limit the date range",
+              "        'FactTable'[Resistant Cases] > 0 -- Only consider dates with 'Resistant Cases' greater than 0",
+              "    )",
+              ")",
+              ""
+            ],
+            "lineageTag": "9c474783-34a8-4879-9eeb-bcb2813aa73d"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measures (2)",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
+                "in",
+                "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Body type sample",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Body type sample",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c4d0e523-2014-403e-bf33-3d211ee66c2e",
+            "sourceColumn": "Body type sample",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "746050a9-77d6-4c43-b51e-d7cfb6118c44",
+        "partitions": [
+          {
+            "name": "Body type sample",
+            "mode": "import",
+            "queryGroup": "Dimension table",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.Combine({Bloodstream, Gastrointestinal, Gonorrhoea, #\"Urinary tract\"}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(Source,{\"CountryTerritoryArea\", \"WHORegionName\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"Year\", Int64.Type}, {\"Iso3\", type text}, {\"Specimen\", type text}, {\"AbTargets\", type text}, {\"TotalSpecimenIsolates\", Int64.Type}, {\"InterpretableAST\", Int64.Type}, {\"Resistant\", Int64.Type}, {\"PercentResistant\", type number}}),",
+                "    #\"Added Custom\" = Table.AddColumn(#\"Changed Type\", \"Date\", each #date([Year], 1, 1)),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Added Custom\",\"BLOOD\",\"Bloodstream\",Replacer.ReplaceText,{\"Specimen\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Replaced Value\",{{\"Specimen\", \"Body type sample\"}}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Renamed Columns\",\"GENITAL\",\"Gonorrhoeae\",Replacer.ReplaceText,{\"Body type sample\"}),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced Value1\",\"STOOL\",\"Gastrointestinal\",Replacer.ReplaceText,{\"Body type sample\"}),",
+                "    #\"Replaced Value3\" = Table.ReplaceValue(#\"Replaced Value2\",\"URINE\",\"Urinary tract\",Replacer.ReplaceText,{\"Body type sample\"}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Replaced Value3\",{\"Body type sample\"}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\")",
+                "in",
+                "    #\"Removed Duplicates\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

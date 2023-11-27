@@ -1,0 +1,84 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Bloodstream,,,,,,,,,,
+Bacterial pathogen filter: Acinetobacter spp.,,,,,,,,,,
+Antibiotic filter: Gentamicin,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,BLOOD,Acinetobacter spp.,Gentamicin,6.666666667,40.29850746,64.28571429,76.19047619,96.42857143,,
+2018,BLOOD,Acinetobacter spp.,Gentamicin,5.042016807,36.01286174,60.05434783,75.86206897,98.48484848,,
+2019,BLOOD,Acinetobacter spp.,Gentamicin,8,37.80487805,63.44086022,70.27027027,96.50655022,,
+2020,BLOOD,Acinetobacter spp.,Gentamicin,3.571428571,46.5,64,76.31027254,94.82758621,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,1982,67,27,40.29850746
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,2452,103,46,44.66019417
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,2464,97,35,36.08247423
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,2925,122,59,48.36065574
+ARG,Argentina,Region of the Americas,2017,BLOOD,Acinetobacter spp.,Gentamicin,6657,366,225,61.47540984
+ARG,Argentina,Region of the Americas,2018,BLOOD,Acinetobacter spp.,Gentamicin,7385,368,221,60.05434783
+ARG,Argentina,Region of the Americas,2019,BLOOD,Acinetobacter spp.,Gentamicin,5783,279,177,63.44086022
+ARG,Argentina,Region of the Americas,2020,BLOOD,Acinetobacter spp.,Gentamicin,7376,615,464,75.44715447
+BIH,Bosnia and Herzegovina,European Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,634,112,108,96.42857143
+BIH,Bosnia and Herzegovina,European Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,841,132,130,98.48484848
+BIH,Bosnia and Herzegovina,European Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,1020,229,221,96.50655022
+BIH,Bosnia and Herzegovina,European Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,954,348,330,94.82758621
+CHE,Switzerland,European Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,9259,78,9,11.53846154
+CHE,Switzerland,European Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,19539,119,6,5.042016807
+CHE,Switzerland,European Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,10424,57,5,8.771929825
+CHE,Switzerland,European Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,10256,81,11,13.58024691
+EGY,Egypt,Eastern Mediterranean Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,102,10,8,80
+EGY,Egypt,Eastern Mediterranean Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,967,76,56,73.68421053
+EGY,Egypt,Eastern Mediterranean Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,1114,94,68,72.34042553
+EGY,Egypt,Eastern Mediterranean Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,901,42,33,78.57142857
+GEO,Georgia,European Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,105,21,16,76.19047619
+GEO,Georgia,European Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,216,29,22,75.86206897
+GEO,Georgia,European Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,433,82,31,37.80487805
+GEO,Georgia,European Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,741,166,93,56.02409639
+KOR,Republic of Korea,Western Pacific Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,3518,235,156,66.38297872
+KOR,Republic of Korea,Western Pacific Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,3519,247,143,57.89473684
+KOR,Republic of Korea,Western Pacific Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,3646,225,144,64
+KOR,Republic of Korea,Western Pacific Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,4095,217,131,60.36866359
+LAO,Lao People's Democratic Republic,Western Pacific Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,209,15,1,6.666666667
+LAO,Lao People's Democratic Republic,Western Pacific Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,275,24,4,16.66666667
+LAO,Lao People's Democratic Republic,Western Pacific Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,314,25,2,8
+LAO,Lao People's Democratic Republic,Western Pacific Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,422,28,1,3.571428571
+MKD,North Macedonia,European Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,175,21,16,76.19047619
+MKD,North Macedonia,European Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,176,23,21,91.30434783
+MKD,North Macedonia,European Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,276,37,26,70.27027027
+MKD,North Macedonia,European Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,293,39,32,82.05128205
+MYS,Malaysia,Western Pacific Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,25686,2135,880,41.21779859
+MYS,Malaysia,Western Pacific Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,26268,2093,890,42.5226947
+MYS,Malaysia,Western Pacific Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,25194,1818,737,40.53905391
+MYS,Malaysia,Western Pacific Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,20249,1600,744,46.5
+OMN,Oman,Eastern Mediterranean Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,1043,112,56,50
+OMN,Oman,Eastern Mediterranean Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,631,57,37,64.9122807
+OMN,Oman,Eastern Mediterranean Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,1007,133,77,57.89473684
+OMN,Oman,Eastern Mediterranean Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,876,75,48,64
+PAK,Pakistan,Eastern Mediterranean Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,2323,46,32,69.56521739
+PAK,Pakistan,Eastern Mediterranean Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,7410,151,27,17.8807947
+PAK,Pakistan,Eastern Mediterranean Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,8980,315,210,66.66666667
+PAK,Pakistan,Eastern Mediterranean Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,5623,171,110,64.32748538
+PHL,Philippines,Western Pacific Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,5103,913,320,35.04928806
+PHL,Philippines,Western Pacific Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,5595,939,297,31.62939297
+PHL,Philippines,Western Pacific Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,6468,1104,331,29.98188406
+PHL,Philippines,Western Pacific Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,4276,850,272,32
+RUS,Russian Federation,European Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,321,51,46,90.19607843
+RUS,Russian Federation,European Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,427,76,68,89.47368421
+RUS,Russian Federation,European Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,1173,94,84,89.36170213
+RUS,Russian Federation,European Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,1305,203,185,91.13300493
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,1491,182,117,64.28571429
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,2420,304,237,77.96052632
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,2528,297,205,69.02356902
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,2458,477,364,76.31027254
+THA,Thailand,South-East Asia Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,1349,164,61,37.19512195
+THA,Thailand,South-East Asia Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,2629,311,112,36.01286174
+THA,Thailand,South-East Asia Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,5463,522,213,40.8045977
+THA,Thailand,South-East Asia Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,6159,654,282,43.11926606
+ZAF,South Africa,African Region,2017,BLOOD,Acinetobacter spp.,Gentamicin,2931,486,428,88.06584362
+ZAF,South Africa,African Region,2018,BLOOD,Acinetobacter spp.,Gentamicin,20691,2976,2215,74.42876344
+ZAF,South Africa,African Region,2019,BLOOD,Acinetobacter spp.,Gentamicin,20489,2355,1785,75.79617834
+ZAF,South Africa,African Region,2020,BLOOD,Acinetobacter spp.,Gentamicin,23840,4544,3178,69.93838028

@@ -1,0 +1,64 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Urinary tract,,,,,,,,,,
+Bacterial pathogen filter: Klebsiella pneumoniae,,,,,,,,,,
+Antibiotic filter: Ertapenem,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,URINE,Klebsiella pneumoniae,Ertapenem,0,4.092119023,11.02850277,24.38067395,96.42857143,,
+2018,URINE,Klebsiella pneumoniae,Ertapenem,0.369482724,4.353192168,10.34748021,25.97394081,100,,
+2019,URINE,Klebsiella pneumoniae,Ertapenem,0.454338937,3.7315757,12.80354265,21.63886832,49.6,,
+2020,URINE,Klebsiella pneumoniae,Ertapenem,0.414559323,4.522934655,13.12165876,30.86598746,67.44186047,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,13558,1340,66,4.925373134
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,22331,2381,176,7.391852163
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,27055,3981,197,4.948505401
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,29681,4887,249,5.095150399
+BHR,Bahrain,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,477,28,27,96.42857143
+BHR,Bahrain,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,3706,31,31,100
+BHR,Bahrain,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,4535,125,62,49.6
+BHR,Bahrain,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,3517,185,74,40
+CHE,Switzerland,European Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,97650,1130,0,0
+CHE,Switzerland,European Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,118114,10014,37,0.369482724
+CHE,Switzerland,European Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,139721,11005,50,0.454338937
+CHE,Switzerland,European Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,153286,12061,50,0.414559323
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,810851,30605,350,1.143603986
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,863293,32648,508,1.555991179
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,880701,44910,541,1.204631485
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,651538,36044,479,1.328931306
+IND,India,South-East Asia Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,10034,1462,731,50
+IND,India,South-East Asia Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,25203,2055,844,41.07055961
+IND,India,South-East Asia Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,47746,4248,1788,42.09039548
+IND,India,South-East Asia Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,18235,2395,1143,47.72442589
+KOR,Republic of Korea,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,9130,1256,20,1.592356688
+KOR,Republic of Korea,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,8554,1299,13,1.000769823
+KOR,Republic of Korea,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,8565,1295,18,1.38996139
+KOR,Republic of Korea,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,8567,1274,37,2.904238619
+MYS,Malaysia,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,19286,4602,280,6.084311169
+MYS,Malaysia,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,19914,4692,248,5.285592498
+MYS,Malaysia,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,19312,4499,203,4.512113803
+MYS,Malaysia,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,18124,4800,243,5.0625
+OMN,Oman,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,4377,201,46,22.88557214
+OMN,Oman,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,3636,142,34,23.94366197
+OMN,Oman,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,8941,657,127,19.33028919
+OMN,Oman,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,3343,86,58,67.44186047
+PHL,Philippines,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,6689,1062,130,12.24105461
+PHL,Philippines,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,8074,1410,160,11.34751773
+PHL,Philippines,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,9132,2054,260,12.65822785
+PHL,Philippines,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,4560,1263,217,17.18131433
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,3860,485,140,28.86597938
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,5627,1235,396,32.06477733
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,5587,1177,316,26.84791844
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,4464,1276,355,27.82131661
+THA,Thailand,South-East Asia Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,2250,328,63,19.20731707
+THA,Thailand,South-East Asia Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,4301,565,106,18.76106195
+THA,Thailand,South-East Asia Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,9011,1231,245,19.90251828
+THA,Thailand,South-East Asia Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,11131,2299,482,20.96563723
+TUN,Tunisia,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Ertapenem,3523,1141,112,9.81595092
+TUN,Tunisia,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Ertapenem,12711,2268,212,9.347442681
+TUN,Tunisia,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Ertapenem,5444,919,119,12.94885745
+TUN,Tunisia,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Ertapenem,5309,629,57,9.06200318
