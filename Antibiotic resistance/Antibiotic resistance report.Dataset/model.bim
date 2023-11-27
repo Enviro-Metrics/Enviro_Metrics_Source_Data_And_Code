@@ -1433,6 +1433,12 @@
               ""
             ],
             "lineageTag": "9c474783-34a8-4879-9eeb-bcb2813aa73d"
+          },
+          {
+            "name": "test 2",
+            "expression": "SUM('Calendar'[year])",
+            "formatString": "0",
+            "lineageTag": "e4e3d1a3-a26c-48ee-9130-859b373e5584"
           }
         ],
         "partitions": [
