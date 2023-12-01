@@ -1,0 +1,76 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Bloodstream,,,,,,,,,,
+Bacterial pathogen filter: Klebsiella pneumoniae,,,,,,,,,,
+Antibiotic filter: Ertapenem,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,BLOOD,Klebsiella pneumoniae,Ertapenem,0.420757363,8.976833977,23.55816227,39.23076923,100,,
+2018,BLOOD,Klebsiella pneumoniae,Ertapenem,1.612903226,11.3172651,22.67106348,53.84779756,96.55172414,,
+2019,BLOOD,Klebsiella pneumoniae,Ertapenem,1.117318436,12.0691076,22.58064516,46.66666667,95.08196721,,
+2020,BLOOD,Klebsiella pneumoniae,Ertapenem,1.503759398,11.13087739,32.72292994,61.19894777,93.5483871,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,1982,259,29,11.1969112
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,2452,262,31,11.83206107
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,2464,291,30,10.30927835
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,2925,327,32,9.785932722
+ARG,Argentina,Region of the Americas,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,6657,1023,241,23.55816227
+ARG,Argentina,Region of the Americas,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,7385,1213,275,22.67106348
+ARG,Argentina,Region of the Americas,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,5783,885,182,20.56497175
+ARG,Argentina,Region of the Americas,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,7376,1256,411,32.72292994
+BHR,Bahrain,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,196,32,32,100
+BHR,Bahrain,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,633,29,28,96.55172414
+BHR,Bahrain,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,780,61,58,95.08196721
+BHR,Bahrain,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,568,103,80,77.66990291
+BIH,Bosnia and Herzegovina,European Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,634,74,5,6.756756757
+BIH,Bosnia and Herzegovina,European Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,841,130,21,16.15384615
+BIH,Bosnia and Herzegovina,European Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,1020,62,14,22.58064516
+BIH,Bosnia and Herzegovina,European Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,954,134,67,50
+CHE,Switzerland,European Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,9259,713,3,0.420757363
+CHE,Switzerland,European Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,19539,1426,23,1.612903226
+CHE,Switzerland,European Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,10424,766,9,1.174934726
+CHE,Switzerland,European Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,10256,931,14,1.503759398
+GEO,Georgia,European Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,105,13,5,38.46153846
+GEO,Georgia,European Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,216,13,8,61.53846154
+GEO,Georgia,European Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,433,99,42,42.42424242
+GEO,Georgia,European Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,741,168,113,67.26190476
+IND,India,South-East Asia Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,8532,1137,603,53.03430079
+IND,India,South-East Asia Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,14459,1306,750,57.42725881
+IND,India,South-East Asia Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,24223,2284,1316,57.61821366
+IND,India,South-East Asia Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,12371,1969,1177,59.77653631
+KOR,Republic of Korea,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,3518,693,7,1.01010101
+KOR,Republic of Korea,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,3519,701,15,2.139800285
+KOR,Republic of Korea,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,3646,716,8,1.117318436
+KOR,Republic of Korea,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,4095,870,35,4.022988506
+MYS,Malaysia,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,25686,5327,263,4.937112821
+MYS,Malaysia,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,26268,5096,260,5.102040816
+MYS,Malaysia,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,25194,4783,245,5.122308175
+MYS,Malaysia,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,20249,4336,261,6.019372694
+OMN,Oman,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,1043,78,25,32.05128205
+OMN,Oman,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,631,42,17,40.47619048
+OMN,Oman,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,1007,183,69,37.70491803
+OMN,Oman,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,876,31,29,93.5483871
+PHL,Philippines,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,5103,631,87,13.78763867
+PHL,Philippines,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,5595,756,90,11.9047619
+PHL,Philippines,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,6468,1251,173,13.82893685
+PHL,Philippines,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,4276,964,162,16.80497925
+RUS,Russian Federation,European Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,321,125,50,40
+RUS,Russian Federation,European Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,427,163,111,68.09815951
+RUS,Russian Federation,European Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,1173,196,120,61.2244898
+RUS,Russian Federation,European Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,1305,206,129,62.62135922
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,1491,190,92,48.42105263
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,2420,559,281,50.26833631
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,2528,605,308,50.90909091
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,2458,632,352,55.69620253
+THA,Thailand,South-East Asia Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,1349,189,25,13.22751323
+THA,Thailand,South-East Asia Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,2629,324,35,10.80246914
+THA,Thailand,South-East Asia Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,5463,740,120,16.21621622
+THA,Thailand,South-East Asia Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,6159,1034,129,12.47582205
+TUN,Tunisia,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Ertapenem,835,188,51,27.12765957
+TUN,Tunisia,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Ertapenem,1660,474,125,26.37130802
+TUN,Tunisia,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Ertapenem,932,256,71,27.734375
+TUN,Tunisia,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Ertapenem,917,150,45,30

@@ -1,0 +1,72 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Gastrointestinal,,,,,,,,,,
+Bacterial pathogen filter: Salmonella spp.,,,,,,,,,,
+Antibiotic filter: Ciprofloxacin,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,STOOL,Salmonella spp.,Ciprofloxacin,0,2.704858664,7.965587045,20.55649241,50.24630542,,
+2018,STOOL,Salmonella spp.,Ciprofloxacin,0,3.143310126,8.725804337,13.44273226,43.47826087,,
+2019,STOOL,Salmonella spp.,Ciprofloxacin,0,3.195825413,9.253285544,13.84952767,25.64102564,,
+2020,STOOL,Salmonella spp.,Ciprofloxacin,0,2.297652147,6.884998223,10.53235364,41.66666667,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,653,468,45,9.615384615
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,818,305,37,12.13114754
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,1005,416,48,11.53846154
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,1068,776,52,6.701030928
+ARG,Argentina,Region of the Americas,2017,STOOL,Salmonella spp.,Ciprofloxacin,3022,446,19,4.260089686
+ARG,Argentina,Region of the Americas,2018,STOOL,Salmonella spp.,Ciprofloxacin,3376,436,17,3.899082569
+ARG,Argentina,Region of the Americas,2019,STOOL,Salmonella spp.,Ciprofloxacin,2892,422,6,1.421800948
+ARG,Argentina,Region of the Americas,2020,STOOL,Salmonella spp.,Ciprofloxacin,2201,488,4,0.819672131
+BHR,Bahrain,Eastern Mediterranean Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,95,95,6,6.315789474
+BHR,Bahrain,Eastern Mediterranean Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,205,178,6,3.370786517
+BHR,Bahrain,Eastern Mediterranean Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,316,196,19,9.693877551
+BHR,Bahrain,Eastern Mediterranean Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,172,156,4,2.564102564
+CHE,Switzerland,European Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,591,158,17,10.75949367
+CHE,Switzerland,European Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,592,397,50,12.59445844
+CHE,Switzerland,European Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,640,465,43,9.247311828
+CHE,Switzerland,European Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,482,398,44,11.05527638
+FIN,Finland,European Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,1181,1171,250,21.34927412
+FIN,Finland,European Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,873,388,27,6.958762887
+FIN,Finland,European Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,927,583,91,15.60891938
+FIN,Finland,European Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,455,357,32,8.963585434
+JPN,Japan,Western Pacific Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,418,336,7,2.083333333
+JPN,Japan,Western Pacific Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,317,161,1,0.621118012
+JPN,Japan,Western Pacific Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,306,215,1,0.465116279
+JPN,Japan,Western Pacific Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,241,167,0,0
+KOR,Republic of Korea,Western Pacific Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,173,172,5,2.906976744
+KOR,Republic of Korea,Western Pacific Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,165,163,5,3.067484663
+KOR,Republic of Korea,Western Pacific Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,140,140,5,3.571428571
+KOR,Republic of Korea,Western Pacific Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,102,102,2,1.960784314
+MLT,Malta,European Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,99,97,23,23.71134021
+MLT,Malta,European Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,106,102,14,13.7254902
+MLT,Malta,European Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,115,108,10,9.259259259
+MLT,Malta,European Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,152,27,3,11.11111111
+MYS,Malaysia,Western Pacific Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,1922,1782,47,2.637485971
+MYS,Malaysia,Western Pacific Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,1999,1641,43,2.620353443
+MYS,Malaysia,Western Pacific Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,2165,1954,60,3.07062436
+MYS,Malaysia,Western Pacific Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,2083,1992,44,2.208835341
+PAK,Pakistan,Eastern Mediterranean Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,51,10,2,20
+PAK,Pakistan,Eastern Mediterranean Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,120,46,20,43.47826087
+PAK,Pakistan,Eastern Mediterranean Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,209,39,10,25.64102564
+PAK,Pakistan,Eastern Mediterranean Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,117,12,5,41.66666667
+PHL,Philippines,Western Pacific Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,62,37,0,0
+PHL,Philippines,Western Pacific Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,67,43,0,0
+PHL,Philippines,Western Pacific Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,77,44,0,0
+PHL,Philippines,Western Pacific Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,43,33,1,3.03030303
+POL,Poland,European Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,531,24,0,0
+POL,Poland,European Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,539,136,26,19.11764706
+POL,Poland,European Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,232,106,27,25.47169811
+POL,Poland,European Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,156,39,8,20.51282051
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,225,203,102,50.24630542
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,166,141,32,22.69503546
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,235,171,25,14.61988304
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,103,84,7,8.333333333
+ZAF,South Africa,African Region,2017,STOOL,Salmonella spp.,Ciprofloxacin,1338,593,123,20.74198988
+ZAF,South Africa,African Region,2018,STOOL,Salmonella spp.,Ciprofloxacin,1481,629,66,10.49284579
+ZAF,South Africa,African Region,2019,STOOL,Salmonella spp.,Ciprofloxacin,1225,560,43,7.678571429
+ZAF,South Africa,African Region,2020,STOOL,Salmonella spp.,Ciprofloxacin,1138,580,41,7.068965517

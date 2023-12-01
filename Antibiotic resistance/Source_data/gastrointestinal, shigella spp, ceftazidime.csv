@@ -1,0 +1,32 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Gastrointestinal,,,,,,,,,,
+Bacterial pathogen filter: Shigella spp.,,,,,,,,,,
+Antibiotic filter: Ceftazidime,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,STOOL,Shigella spp.,Ceftazidime,0.104166667,0.848410088,3.048245614,5.3125,6.25,,
+2018,STOOL,Shigella spp.,Ceftazidime,0.270513977,1.307297916,2.159779614,3.666666667,6.666666667,,
+2019,STOOL,Shigella spp.,Ceftazidime,0,0.422138837,1.281425891,2.888888889,5.555555556,,
+2020,STOOL,Shigella spp.,Ceftazidime,0.31496063,1.099148321,3.458049887,5.952380952,7.142857143,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,STOOL,Shigella spp.,Ceftazidime,653,32,2,6.25
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,STOOL,Shigella spp.,Ceftazidime,818,75,2,2.666666667
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,STOOL,Shigella spp.,Ceftazidime,1005,50,1,2
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,STOOL,Shigella spp.,Ceftazidime,1068,18,1,5.555555556
+ARG,Argentina,Region of the Americas,2017,STOOL,Shigella spp.,Ceftazidime,3022,960,1,0.104166667
+ARG,Argentina,Region of the Americas,2018,STOOL,Shigella spp.,Ceftazidime,3376,1109,3,0.270513977
+ARG,Argentina,Region of the Americas,2019,STOOL,Shigella spp.,Ceftazidime,2892,996,0,0
+ARG,Argentina,Region of the Americas,2020,STOOL,Shigella spp.,Ceftazidime,2201,635,2,0.31496063
+CHE,Switzerland,European Region,2017,STOOL,Shigella spp.,Ceftazidime,591,20,1,5
+CHE,Switzerland,European Region,2018,STOOL,Shigella spp.,Ceftazidime,592,90,6,6.666666667
+CHE,Switzerland,European Region,2019,STOOL,Shigella spp.,Ceftazidime,640,72,4,5.555555556
+CHE,Switzerland,European Region,2020,STOOL,Shigella spp.,Ceftazidime,482,14,1,7.142857143
+ZAF,South Africa,African Region,2017,STOOL,Shigella spp.,Ceftazidime,1338,456,5,1.096491228
+ZAF,South Africa,African Region,2018,STOOL,Shigella spp.,Ceftazidime,1481,605,10,1.652892562
+ZAF,South Africa,African Region,2019,STOOL,Shigella spp.,Ceftazidime,1225,533,3,0.562851782
+ZAF,South Africa,African Region,2020,STOOL,Shigella spp.,Ceftazidime,1138,441,6,1.360544218
