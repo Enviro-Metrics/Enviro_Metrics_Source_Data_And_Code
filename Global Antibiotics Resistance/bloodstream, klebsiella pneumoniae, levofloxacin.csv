@@ -1,0 +1,52 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Bloodstream,,,,,,,,,,
+Bacterial pathogen filter: Klebsiella pneumoniae,,,,,,,,,,
+Antibiotic filter: Levofloxacin,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,BLOOD,Klebsiella pneumoniae,Levofloxacin,1.777474491,17.11711712,40.625,51.68067227,67.39130435,,
+2018,BLOOD,Klebsiella pneumoniae,Levofloxacin,2.02787282,17.56756757,41.17647059,55.67765568,57.62711864,,
+2019,BLOOD,Klebsiella pneumoniae,Levofloxacin,2.140805163,18.51851852,26.13908873,58.03571429,65.32663317,,
+2020,BLOOD,Klebsiella pneumoniae,Levofloxacin,2.480654597,25.26315789,31.13879004,59.9009901,65.95744681,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Levofloxacin,1982,32,13,40.625
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Levofloxacin,2452,17,7,41.17647059
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Levofloxacin,2464,27,5,18.51851852
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Levofloxacin,2925,81,21,25.92592593
+BIH,Bosnia and Herzegovina,European Region,2017,BLOOD,Klebsiella pneumoniae,Levofloxacin,634,111,66,59.45945946
+BIH,Bosnia and Herzegovina,European Region,2018,BLOOD,Klebsiella pneumoniae,Levofloxacin,841,196,111,56.63265306
+BIH,Bosnia and Herzegovina,European Region,2019,BLOOD,Klebsiella pneumoniae,Levofloxacin,1020,199,130,65.32663317
+BIH,Bosnia and Herzegovina,European Region,2020,BLOOD,Klebsiella pneumoniae,Levofloxacin,954,202,121,59.9009901
+CHE,Switzerland,European Region,2017,BLOOD,Klebsiella pneumoniae,Levofloxacin,9259,355,28,7.887323944
+CHE,Switzerland,European Region,2018,BLOOD,Klebsiella pneumoniae,Levofloxacin,19539,884,105,11.87782805
+CHE,Switzerland,European Region,2019,BLOOD,Klebsiella pneumoniae,Levofloxacin,10424,472,44,9.322033898
+CHE,Switzerland,European Region,2020,BLOOD,Klebsiella pneumoniae,Levofloxacin,10256,588,44,7.482993197
+EGY,Egypt,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Levofloxacin,102,46,31,67.39130435
+EGY,Egypt,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Levofloxacin,967,273,152,55.67765568
+EGY,Egypt,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Levofloxacin,1114,362,224,61.87845304
+EGY,Egypt,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Levofloxacin,901,188,124,65.95744681
+GEO,Georgia,European Region,2017,BLOOD,Klebsiella pneumoniae,Levofloxacin,105,25,12,48
+GEO,Georgia,European Region,2018,BLOOD,Klebsiella pneumoniae,Levofloxacin,216,59,34,57.62711864
+GEO,Georgia,European Region,2019,BLOOD,Klebsiella pneumoniae,Levofloxacin,433,38,17,44.73684211
+GEO,Georgia,European Region,2020,BLOOD,Klebsiella pneumoniae,Levofloxacin,741,68,27,39.70588235
+JPN,Japan,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Levofloxacin,168145,30774,547,1.777474491
+JPN,Japan,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Levofloxacin,126859,23966,486,2.02787282
+JPN,Japan,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Levofloxacin,136246,25411,544,2.140805163
+JPN,Japan,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Levofloxacin,142185,27009,670,2.480654597
+PHL,Philippines,Western Pacific Region,2017,BLOOD,Klebsiella pneumoniae,Levofloxacin,5103,444,76,17.11711712
+PHL,Philippines,Western Pacific Region,2018,BLOOD,Klebsiella pneumoniae,Levofloxacin,5595,576,119,20.65972222
+PHL,Philippines,Western Pacific Region,2019,BLOOD,Klebsiella pneumoniae,Levofloxacin,6468,673,172,25.55720654
+PHL,Philippines,Western Pacific Region,2020,BLOOD,Klebsiella pneumoniae,Levofloxacin,4276,380,96,25.26315789
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,BLOOD,Klebsiella pneumoniae,Levofloxacin,1491,238,123,51.68067227
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,BLOOD,Klebsiella pneumoniae,Levofloxacin,2420,679,372,54.78645066
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,BLOOD,Klebsiella pneumoniae,Levofloxacin,2528,672,390,58.03571429
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,BLOOD,Klebsiella pneumoniae,Levofloxacin,2458,706,448,63.45609065
+THA,Thailand,South-East Asia Region,2017,BLOOD,Klebsiella pneumoniae,Levofloxacin,1349,112,32,28.57142857
+THA,Thailand,South-East Asia Region,2018,BLOOD,Klebsiella pneumoniae,Levofloxacin,2629,148,26,17.56756757
+THA,Thailand,South-East Asia Region,2019,BLOOD,Klebsiella pneumoniae,Levofloxacin,5463,417,109,26.13908873
+THA,Thailand,South-East Asia Region,2020,BLOOD,Klebsiella pneumoniae,Levofloxacin,6159,562,175,31.13879004
