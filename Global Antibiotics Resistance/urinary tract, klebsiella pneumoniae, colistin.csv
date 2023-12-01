@@ -1,0 +1,52 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Urinary tract,,,,,,,,,,
+Bacterial pathogen filter: Klebsiella pneumoniae,,,,,,,,,,
+Antibiotic filter: Colistin,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,URINE,Klebsiella pneumoniae,Colistin,0.714285714,1.901140684,5.132641292,10.71428571,26.51933702,,
+2018,URINE,Klebsiella pneumoniae,Colistin,0.657174151,1.809954751,2.869757174,7.894736842,32.25806452,,
+2019,URINE,Klebsiella pneumoniae,Colistin,1.405975395,1.834862385,5.769230769,7.703130496,20.68965517,,
+2020,URINE,Klebsiella pneumoniae,Colistin,0,3.03030303,8.429752066,10.97770154,22.85714286,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Colistin,13558,82,14,17.07317073
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Colistin,22331,453,13,2.869757174
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Colistin,27055,763,14,1.834862385
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Colistin,29681,528,19,3.598484848
+ARG,Argentina,Region of the Americas,2017,URINE,Klebsiella pneumoniae,Colistin,39782,3468,178,5.132641292
+ARG,Argentina,Region of the Americas,2018,URINE,Klebsiella pneumoniae,Colistin,44553,3714,173,4.658050619
+ARG,Argentina,Region of the Americas,2019,URINE,Klebsiella pneumoniae,Colistin,35830,2843,219,7.703130496
+ARG,Argentina,Region of the Americas,2020,URINE,Klebsiella pneumoniae,Colistin,29170,2313,195,8.430609598
+BHR,Bahrain,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Colistin,477,28,3,10.71428571
+BHR,Bahrain,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Colistin,3706,31,10,32.25806452
+BHR,Bahrain,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Colistin,4535,58,12,20.68965517
+BHR,Bahrain,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Colistin,3517,70,16,22.85714286
+CHE,Switzerland,European Region,2017,URINE,Klebsiella pneumoniae,Colistin,97650,140,1,0.714285714
+CHE,Switzerland,European Region,2018,URINE,Klebsiella pneumoniae,Colistin,118114,913,6,0.657174151
+CHE,Switzerland,European Region,2019,URINE,Klebsiella pneumoniae,Colistin,139721,569,8,1.405975395
+CHE,Switzerland,European Region,2020,URINE,Klebsiella pneumoniae,Colistin,153286,406,6,1.477832512
+MYS,Malaysia,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Colistin,19286,263,5,1.901140684
+MYS,Malaysia,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Colistin,19914,310,7,2.258064516
+MYS,Malaysia,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Colistin,19312,176,3,1.704545455
+MYS,Malaysia,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Colistin,18124,66,2,3.03030303
+OMN,Oman,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Colistin,4377,127,12,9.448818898
+OMN,Oman,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Colistin,3636,76,6,7.894736842
+OMN,Oman,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Colistin,8941,156,9,5.769230769
+OMN,Oman,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Colistin,3343,90,17,18.88888889
+PHL,Philippines,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Colistin,6689,464,7,1.50862069
+PHL,Philippines,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Colistin,8074,517,7,1.353965184
+PHL,Philippines,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Colistin,9132,488,11,2.254098361
+PHL,Philippines,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Colistin,4560,605,51,8.429752066
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Colistin,3860,181,48,26.51933702
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Colistin,5627,674,130,19.28783383
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Colistin,5587,700,114,16.28571429
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Colistin,4464,583,64,10.97770154
+TUN,Tunisia,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Colistin,3523,207,5,2.415458937
+TUN,Tunisia,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Colistin,12711,221,4,1.809954751
+TUN,Tunisia,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Colistin,5444,94,7,7.446808511
+TUN,Tunisia,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Colistin,5309,27,0,0

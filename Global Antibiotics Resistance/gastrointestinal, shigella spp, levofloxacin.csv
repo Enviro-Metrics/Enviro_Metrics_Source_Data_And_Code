@@ -1,0 +1,28 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Gastrointestinal,,,,,,,,,,
+Bacterial pathogen filter: Salmonella spp.,,,,,,,,,,
+Antibiotic filter: Levofloxacin,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,STOOL,Salmonella spp.,Levofloxacin,6.896551724,7.198275862,7.5,9.702380952,11.9047619,,
+2018,STOOL,Salmonella spp.,Levofloxacin,3.448275862,7.203589986,10.95890411,11.24868282,11.53846154,,
+2019,STOOL,Salmonella spp.,Levofloxacin,3.125,3.720773381,4.316546763,4.722375945,5.128205128,,
+2020,STOOL,Salmonella spp.,Levofloxacin,3.75,4.344135802,4.938271605,5.893793337,6.849315068,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,STOOL,Salmonella spp.,Levofloxacin,653,40,3,7.5
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,STOOL,Salmonella spp.,Levofloxacin,818,73,8,10.95890411
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,STOOL,Salmonella spp.,Levofloxacin,1005,139,6,4.316546763
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,STOOL,Salmonella spp.,Levofloxacin,1068,146,10,6.849315068
+CHE,Switzerland,European Region,2017,STOOL,Salmonella spp.,Levofloxacin,591,42,5,11.9047619
+CHE,Switzerland,European Region,2018,STOOL,Salmonella spp.,Levofloxacin,592,130,15,11.53846154
+CHE,Switzerland,European Region,2019,STOOL,Salmonella spp.,Levofloxacin,640,78,4,5.128205128
+CHE,Switzerland,European Region,2020,STOOL,Salmonella spp.,Levofloxacin,482,81,4,4.938271605
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,STOOL,Salmonella spp.,Levofloxacin,225,87,6,6.896551724
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,STOOL,Salmonella spp.,Levofloxacin,166,116,4,3.448275862
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,STOOL,Salmonella spp.,Levofloxacin,235,128,4,3.125
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,STOOL,Salmonella spp.,Levofloxacin,103,80,3,3.75

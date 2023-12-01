@@ -1,0 +1,84 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Urinary tract,,,,,,,,,,
+Bacterial pathogen filter: Klebsiella pneumoniae,,,,,,,,,,
+Antibiotic filter: Co-trimoxazole,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,0,29.1354663,39.11342894,50.49226442,69.22077922,,
+2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,0,30.36920306,38.9362192,50,68.02973978,,
+2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,0,25.65693431,38.82888005,48.06818182,57.69722814,,
+2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,8.628759211,22.31869879,35.87127159,51.19225037,63.88888889,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,13558,2938,856,29.1354663
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,22331,4442,1349,30.36920306
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,27055,5480,1406,25.65693431
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,29681,6143,1530,24.90639753
+ARG,Argentina,Region of the Americas,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,39782,3878,1781,45.92573491
+ARG,Argentina,Region of the Americas,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,44553,4483,1948,43.45304484
+ARG,Argentina,Region of the Americas,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,35830,4035,1854,45.94795539
+ARG,Argentina,Region of the Americas,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,29170,3653,1652,45.2231043
+BHR,Bahrain,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,477,467,190,40.68522484
+BHR,Bahrain,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,3706,462,168,36.36363636
+BHR,Bahrain,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,4535,985,350,35.53299492
+BHR,Bahrain,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,3517,914,288,31.50984683
+CHE,Switzerland,European Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,97650,1703,167,9.80622431
+CHE,Switzerland,European Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,118114,14194,1456,10.25785543
+CHE,Switzerland,European Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,139721,18377,1686,9.174511618
+CHE,Switzerland,European Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,153286,20084,1733,8.628759211
+FIN,Finland,European Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,281729,4106,404,9.83925962
+FIN,Finland,European Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,159588,2576,656,25.46583851
+FIN,Finland,European Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,159676,4809,974,20.253691
+FIN,Finland,European Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,146108,6028,1197,19.85733245
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,810851,6979,2409,34.51783923
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,863293,8686,3382,38.9362192
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,880701,7927,2127,26.83234515
+GBR,United Kingdom of Great Britain and Northern Ireland,European Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,651538,8177,1825,22.31869879
+IND,India,South-East Asia Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,10034,2310,1599,69.22077922
+IND,India,South-East Asia Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,25203,2256,1311,58.11170213
+IND,India,South-East Asia Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,47746,7998,4590,57.38934734
+IND,India,South-East Asia Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,18235,559,327,58.49731664
+KOR,Republic of Korea,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,9130,1256,436,34.7133758
+KOR,Republic of Korea,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,8554,1299,496,38.18321786
+KOR,Republic of Korea,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,8565,1295,519,40.07722008
+KOR,Republic of Korea,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,8567,1274,457,35.87127159
+LAO,Lao People's Democratic Republic,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,124,13,8,61.53846154
+LAO,Lao People's Democratic Republic,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,120,10,5,50
+LAO,Lao People's Democratic Republic,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,175,18,7,38.88888889
+LAO,Lao People's Democratic Republic,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,253,36,23,63.88888889
+MYS,Malaysia,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,19286,5087,1795,35.2860232
+MYS,Malaysia,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,19914,5362,1866,34.80044759
+MYS,Malaysia,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,19312,4545,1478,32.51925193
+MYS,Malaysia,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,18124,4793,1538,32.08846234
+NOR,Norway,European Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,2252,740,0,0
+NOR,Norway,European Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,2117,694,0,0
+NOR,Norway,European Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,2187,686,0,0
+NOR,Norway,European Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,3219,699,98,14.02002861
+OMN,Oman,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,4377,767,300,39.11342894
+OMN,Oman,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,3636,609,280,45.97701149
+OMN,Oman,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,8941,1759,683,38.82888005
+OMN,Oman,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,3343,644,287,44.56521739
+PAK,Pakistan,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,8946,711,359,50.49226442
+PAK,Pakistan,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,14284,269,183,68.02973978
+PAK,Pakistan,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,15455,2023,980,48.44290657
+PAK,Pakistan,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,28695,789,466,59.06210393
+PHL,Philippines,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,6689,1620,1018,62.83950617
+PHL,Philippines,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,8074,1887,1137,60.25437202
+PHL,Philippines,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,9132,2345,1353,57.69722814
+PHL,Philippines,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,4560,1425,819,57.47368421
+SAU,Saudi Arabia,Eastern Mediterranean Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,3860,647,288,44.51313756
+SAU,Saudi Arabia,Eastern Mediterranean Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,5627,1279,743,58.09225958
+SAU,Saudi Arabia,Eastern Mediterranean Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,5587,1410,717,50.85106383
+SAU,Saudi Arabia,Eastern Mediterranean Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,4464,1342,687,51.19225037
+SWE,Sweden,European Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,140606,3645,891,24.44444444
+SWE,Sweden,European Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,115520,9901,1845,18.63448137
+SWE,Sweden,European Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,229294,21036,3779,17.96444191
+SWE,Sweden,European Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,441656,40984,7130,17.39703299
+THA,Thailand,South-East Asia Region,2017,URINE,Klebsiella pneumoniae,Co-trimoxazole,2250,400,223,55.75
+THA,Thailand,South-East Asia Region,2018,URINE,Klebsiella pneumoniae,Co-trimoxazole,4301,564,281,49.82269504
+THA,Thailand,South-East Asia Region,2019,URINE,Klebsiella pneumoniae,Co-trimoxazole,9011,1760,846,48.06818182
+THA,Thailand,South-East Asia Region,2020,URINE,Klebsiella pneumoniae,Co-trimoxazole,11131,2481,1196,48.2063684

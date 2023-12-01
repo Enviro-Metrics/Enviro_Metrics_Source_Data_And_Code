@@ -1,0 +1,28 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Gastrointestinal,,,,,,,,,,
+Bacterial pathogen filter: Shigella spp.,,,,,,,,,,
+Antibiotic filter: Cefotaxime,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,STOOL,Shigella spp.,Cefotaxime,1.534170153,6.254889955,10.97560976,22.87910923,34.7826087,,
+2018,STOOL,Shigella spp.,Cefotaxime,1.603665521,3.365935325,5.128205128,17.71561772,30.3030303,,
+2019,STOOL,Shigella spp.,Cefotaxime,1.557632399,2.427167848,3.296703297,24.72527473,46.15384615,,
+2020,STOOL,Shigella spp.,Cefotaxime,4.096385542,15.56170628,27.02702703,38.51351351,50,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+ARE,United Arab Emirates,Eastern Mediterranean Region,2017,STOOL,Shigella spp.,Cefotaxime,653,23,8,34.7826087
+ARE,United Arab Emirates,Eastern Mediterranean Region,2018,STOOL,Shigella spp.,Cefotaxime,818,33,10,30.3030303
+ARE,United Arab Emirates,Eastern Mediterranean Region,2019,STOOL,Shigella spp.,Cefotaxime,1005,39,18,46.15384615
+ARE,United Arab Emirates,Eastern Mediterranean Region,2020,STOOL,Shigella spp.,Cefotaxime,1068,12,6,50
+ARG,Argentina,Region of the Americas,2017,STOOL,Shigella spp.,Cefotaxime,3022,717,11,1.534170153
+ARG,Argentina,Region of the Americas,2018,STOOL,Shigella spp.,Cefotaxime,3376,873,14,1.603665521
+ARG,Argentina,Region of the Americas,2019,STOOL,Shigella spp.,Cefotaxime,2892,963,15,1.557632399
+ARG,Argentina,Region of the Americas,2020,STOOL,Shigella spp.,Cefotaxime,2201,415,17,4.096385542
+JPN,Japan,Western Pacific Region,2017,STOOL,Shigella spp.,Cefotaxime,418,82,9,10.97560976
+JPN,Japan,Western Pacific Region,2018,STOOL,Shigella spp.,Cefotaxime,317,156,8,5.128205128
+JPN,Japan,Western Pacific Region,2019,STOOL,Shigella spp.,Cefotaxime,306,91,3,3.296703297
+JPN,Japan,Western Pacific Region,2020,STOOL,Shigella spp.,Cefotaxime,241,74,20,27.02702703

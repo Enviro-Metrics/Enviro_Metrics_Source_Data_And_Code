@@ -1,0 +1,24 @@
+Filters,,,,,,,,,,
+Region filter: All,,,,,,,,,,
+Infection syndrome filter: Urinary tract,,,,,,,,,,
+Bacterial pathogen filter: Klebsiella pneumoniae,,,,,,,,,,
+Antibiotic filter: Doripenem,,,,,,,,,,
+,,,,,,,,,,
+Data for time series,,,,,,,,,,
+Year,Specimen,PathogenName,AbTargets,Min,Q1,Median,Q3,Max,,
+2017,URINE,Klebsiella pneumoniae,Doripenem,2.040816327,3.480966855,4.921117383,6.361267911,7.80141844,,
+2018,URINE,Klebsiella pneumoniae,Doripenem,6.012658228,6.295207957,6.577757685,6.860307414,7.142857143,,
+2019,URINE,Klebsiella pneumoniae,Doripenem,5.072463768,10.94720497,16.82194617,22.69668737,28.57142857,,
+2020,URINE,Klebsiella pneumoniae,Doripenem,4.330708661,5.453913849,6.577119037,7.700324224,8.823529412,,
+,,,,,,,,,,
+,,,,,,,,,,
+Data for line plots for individual CTAs,,,,,,,,,,
+Iso3,CountryTerritoryArea,WHORegionName,Year,Specimen,PathogenName,AbTargets,TotalSpecimenIsolates,InterpretableAST,Resistant,PercentResistant
+MYS,Malaysia,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Doripenem,19286,282,22,7.80141844
+MYS,Malaysia,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Doripenem,19914,316,19,6.012658228
+MYS,Malaysia,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Doripenem,19312,276,14,5.072463768
+MYS,Malaysia,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Doripenem,18124,254,11,4.330708661
+PHL,Philippines,Western Pacific Region,2017,URINE,Klebsiella pneumoniae,Doripenem,6689,49,1,2.040816327
+PHL,Philippines,Western Pacific Region,2018,URINE,Klebsiella pneumoniae,Doripenem,8074,42,3,7.142857143
+PHL,Philippines,Western Pacific Region,2019,URINE,Klebsiella pneumoniae,Doripenem,9132,91,26,28.57142857
+PHL,Philippines,Western Pacific Region,2020,URINE,Klebsiella pneumoniae,Doripenem,4560,102,9,8.823529412
