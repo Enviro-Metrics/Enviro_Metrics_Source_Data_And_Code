@@ -58,7 +58,7 @@
   ],
   "sections": [
     {
-      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"297L\"}}}}}]},\"visibility\":1}",
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"297L\"}}}}}]},\"visibility\":0}",
       "displayName": "% of species in danger - insta",
       "displayOption": 1,
       "filters": "[]",

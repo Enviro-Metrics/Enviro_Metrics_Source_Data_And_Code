@@ -33,7 +33,7 @@
   ],
   "sections": [
     {
-      "config": "{\"visibility\":1}",
+      "config": "{\"visibility\":0}",
       "displayName": "Growth Rates - insta",
       "displayOption": 1,
       "filters": "[]",
@@ -116,7 +116,7 @@
       "width": 1080.00
     },
     {
-      "config": "{\"visibility\":0}",
+      "config": "{\"visibility\":1}",
       "displayName": "Growth Rates - linkdin",
       "displayOption": 1,
       "filters": "[]",
@@ -239,7 +239,7 @@
       "width": 1080.00
     },
     {
-      "config": "{\"visibility\":1}",
+      "config": "{\"visibility\":0}",
       "displayName": "Worlds Energy Consumption - insta",
       "displayOption": 1,
       "filters": "[]",
