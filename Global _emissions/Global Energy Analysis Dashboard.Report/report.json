@@ -1,0 +1,915 @@
+{
+  "config": "{\"version\":\"5.44\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU04\",\"version\":\"5.46\",\"type\":2},\"customTheme\":{\"name\":\"UKPN6233456573920992.json\",\"version\":\"5.46\",\"type\":1}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU04",
+            "path": "BaseThemes/CY23SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "UKPN6233456573920992.json",
+            "path": "UKPN6233456573920992.json",
+            "type": 201
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Growth Rates - insta",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1350.00,
+      "name": "ReportSection15522daa790c4c709bfc",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0d5e0ff66737b66a5e9b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":369.0886699507389,\"y\":1301.7857142857142,\"z\":5000,\"width\":367.4261083743842,\"height\":48.214285714285715,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data Source - Our World in Data\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 48.21,
+          "width": 367.43,
+          "x": 369.09,
+          "y": 1301.79,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"0e38a345c44b9cf67d22\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1078.8079470198675,\"height\":187.74834437086093,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"It looks like we are going to miss the 2050 Paris Agreement\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"36pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 187.75,
+          "width": 1078.81,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"228926109e05b8b4c86f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":214.47044334975368,\"z\":0,\"width\":1079.002463054187,\"height\":1087.3152709359606,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Measures Table.CAGR - Fossil Fuel Energy consumption\"},{\"queryRef\":\"Measures Table.CAGR - Renewable Energy consumption\"}],\"Category\":[{\"queryRef\":\"Calendar.year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CAGR - Fossil Fuel Energy consumption\"},\"Name\":\"Measures Table.CAGR - Fossil Fuel Energy consumption\",\"NativeReferenceName\":\"CAGR - Fossil Fuel Energy consumption\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CAGR - Renewable Energy consumption\"},\"Name\":\"Measures Table.CAGR - Renewable Energy consumption\",\"NativeReferenceName\":\"CAGR - Renewable Energy consumption\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"year\"},\"Name\":\"Calendar.year\",\"NativeReferenceName\":\"year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CAGR - Fossil Fuel Energy consumption\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"legendMarkerRendering\":{\"expr\":{\"Literal\":{\"Value\":\"'lineOnly'\"}}}}}],\"subheader\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"smallMultiplesLayout\":[{\"properties\":{\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}},\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"gridPadding\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"sharedAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"scaleToFit\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"titleFontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"y2Axis\":[{\"properties\":{\"secShowAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'United Kingdom'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'Japan'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0.2}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'India'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.4}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'Germany'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy Consumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Fossil Fuel Energy Consumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.FossilFuelConsumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.RenewableEnergyConsumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#33ae81'\"}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy consumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Fossil Fuel Energy consumption\"}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}},{\"properties\":{\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy\"}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"seriesPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Right'\"}}}}},{\"properties\":{\"seriesColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy\"}}],\"lineStyles\":[{\"properties\":{\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"26D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Growth Rates: Rising but Not Enough To Meet Paris Agreement'\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Global Growth Rates (Compound Annual Growth Rate): Fossil Fuel vs. Renewables'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 1087.32,
+          "width": 1079.00,
+          "x": 0.00,
+          "y": 214.47,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"2f7a699475b073c610ac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":884.4185727912164,\"y\":890.485139583529,\"z\":7000,\"width\":17.733990147783253,\"height\":78.91625615763547,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 78.92,
+          "width": 17.73,
+          "x": 884.42,
+          "y": 890.49,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"3fb7e15b26ceec6e3bd1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":927.7093596059113,\"y\":894.4581280788177,\"z\":4000,\"width\":151.29310344827584,\"height\":157.94334975369458,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Only 1.5% difference in 2021 \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"20pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 157.94,
+          "width": 151.29,
+          "x": 927.71,
+          "y": 894.46,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"687683aee018ec125452\",\"layouts\":[{\"id\":0,\"position\":{\"x\":444.03973509933775,\"y\":1150.3311258278145,\"z\":2000,\"width\":408.27814569536423,\"height\":74.50331125827815,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Fossil Fuel Growth Rates\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"24pt\",\"color\":\"#fd625e\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 74.50,
+          "width": 408.28,
+          "x": 444.04,
+          "y": 1150.33,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"9c88eb03dd2e5d14bc53\",\"layouts\":[{\"id\":0,\"position\":{\"x\":884.4185727912164,\"y\":961.421100174662,\"z\":6000,\"width\":17.733990147783253,\"height\":78.91625615763547,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 78.92,
+          "width": 17.73,
+          "x": 884.42,
+          "y": 961.42,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"cbfd7f7d69d5a2ffb3a6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":485.46798029556646,\"y\":741.5024630541872,\"z\":3000,\"width\":575.2463054187192,\"height\":64.83990147783251,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Renewable Energy Growth Rates\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"24pt\",\"color\":\"#33ae81\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 64.84,
+          "width": 575.25,
+          "x": 485.47,
+          "y": 741.50,
+          "z": 3000.00
+        }
+      ],
+      "width": 1080.00
+    },
+    {
+      "config": "{\"visibility\":0}",
+      "displayName": "Growth Rates - linkdin",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1200.00,
+      "name": "ReportSection1b6a5072392c6a13ca22",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"18fbc639091a4d9eb758\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1028.1329923273656,\"y\":794.8849104859335,\"z\":4000,\"width\":151.40664961636827,\"height\":158.56777493606137,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Only 1.5% difference in 2021 \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"20pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 158.57,
+          "width": 151.41,
+          "x": 1028.13,
+          "y": 794.88,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5d09badb97e89d756145\",\"layouts\":[{\"id\":0,\"position\":{\"x\":462.5,\"y\":1155,\"z\":8000,\"width\":367.5,\"height\":45,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data Source - Our World in Data\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 45.00,
+          "width": 367.50,
+          "x": 462.50,
+          "y": 1155.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"6b2c86f71e3bd7107e20\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1200,\"height\":187.5,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"It looks like we are going to miss the 2050 Paris Agreement\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"36pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 187.50,
+          "width": 1200.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"6ded4030e5529465ec0b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":462.4040920716112,\"y\":1014.8337595907929,\"z\":2000,\"width\":408.1841432225064,\"height\":74.68030690537084,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Fossil Fuel Growth Rates\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"24pt\",\"color\":\"#fd625e\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 74.68,
+          "width": 408.18,
+          "x": 462.40,
+          "y": 1014.83,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"7c5d9ff98a3a552bb6cb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1003.7500003167269,\"y\":856.9359612245095,\"z\":6000,\"width\":17.733990147783253,\"height\":78.91625615763547,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 78.92,
+          "width": 17.73,
+          "x": 1003.75,
+          "y": 856.94,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"85b4b2ea9bd5396013e6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.5,\"y\":188.75,\"z\":0,\"width\":1192.5,\"height\":966.25,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Measures Table.CAGR - Fossil Fuel Energy consumption\"},{\"queryRef\":\"Measures Table.CAGR - Renewable Energy consumption\"}],\"Category\":[{\"queryRef\":\"Calendar.year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CAGR - Fossil Fuel Energy consumption\"},\"Name\":\"Measures Table.CAGR - Fossil Fuel Energy consumption\",\"NativeReferenceName\":\"CAGR - Fossil Fuel Energy consumption\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CAGR - Renewable Energy consumption\"},\"Name\":\"Measures Table.CAGR - Renewable Energy consumption\",\"NativeReferenceName\":\"CAGR - Renewable Energy consumption\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"year\"},\"Name\":\"Calendar.year\",\"NativeReferenceName\":\"year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"CAGR - Fossil Fuel Energy consumption\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"legendMarkerRendering\":{\"expr\":{\"Literal\":{\"Value\":\"'lineOnly'\"}}}}}],\"subheader\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"smallMultiplesLayout\":[{\"properties\":{\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}},\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"gridPadding\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"sharedAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"scaleToFit\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"titleFontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"y2Axis\":[{\"properties\":{\"secShowAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'United Kingdom'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'Japan'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0.2}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'India'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.4}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'Germany'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy Consumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Fossil Fuel Energy Consumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.FossilFuelConsumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.RenewableEnergyConsumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#33ae81'\"}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy consumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Fossil Fuel Energy consumption\"}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}},{\"properties\":{\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy\"}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"seriesPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Right'\"}}}}},{\"properties\":{\"seriesColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy\"}}],\"lineStyles\":[{\"properties\":{\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"26D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Growth Rates: Rising but Not Enough To Meet Paris Agreement'\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Global Growth Rates (Compound Annual Growth Rate): Fossil Fuel vs. Renewables'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 966.25,
+          "width": 1192.50,
+          "x": 7.50,
+          "y": 188.75,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"90ca8931a74c60a0d768\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1003.7500003167269,\"y\":786.0000006333765,\"z\":7000,\"width\":17.733990147783253,\"height\":78.91625615763547,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 78.92,
+          "width": 17.73,
+          "x": 1003.75,
+          "y": 786.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"aa5781d78ae5090e0543\",\"layouts\":[{\"id\":0,\"position\":{\"x\":566.7519181585677,\"y\":654.7314578005115,\"z\":3000,\"width\":574.9360613810742,\"height\":64.45012787723785,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Renewable Energy Growth Rates\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"24pt\",\"color\":\"#33ae81\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 64.45,
+          "width": 574.94,
+          "x": 566.75,
+          "y": 654.73,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f77c6f9a517b41bd619e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":369.0886699507389,\"y\":1301.7857142857142,\"z\":5000,\"width\":367.4261083743842,\"height\":48.214285714285715,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data Source - Our World in Data\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 48.21,
+          "width": 367.43,
+          "x": 369.09,
+          "y": 1301.79,
+          "z": 5000.00
+        }
+      ],
+      "width": 1200.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Energy Composition",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1350.00,
+      "name": "ReportSection41b74040c77a9c2c1610",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"9602406fde630a23e665\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1080,\"height\":655.7142857142858,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Energy type.Energy type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Energy consumption.Energy consumption (terrawatts-hours))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Energy consumption\",\"Type\":0},{\"Name\":\"e1\",\"Entity\":\"Energy type\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e1\"}},\"Property\":\"Energy type\"},\"Name\":\"Energy type.Energy type\",\"NativeReferenceName\":\"Energy type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Energy consumption (terrawatts-hours)\"}},\"Function\":0},\"Name\":\"Sum(Energy consumption.Energy consumption (terrawatts-hours))\",\"NativeReferenceName\":\"Sum of Energy consumption (terrawatts-hours)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Energy consumption (terrawatts-hours)\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"percentageLabelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Energy consumption (terrawatts-hours) by Fossil Fuel Energy type'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter4ae9b1521cee6e110147\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Energy type\"}},\"Property\":\"Energy type\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Energy type\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Energy type\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Coal'\"}}],[{\"Literal\":{\"Value\":\"'Natural gas'\"}}],[{\"Literal\":{\"Value\":\"'Oil'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 655.71,
+          "width": 1080.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b5d011a0de7b8ba5ea32\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":720,\"z\":1000,\"width\":1080,\"height\":630,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Energy type.Energy type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Energy consumption.Energy consumption (terrawatts-hours))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Energy consumption\",\"Type\":0},{\"Name\":\"e1\",\"Entity\":\"Energy type\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e1\"}},\"Property\":\"Energy type\"},\"Name\":\"Energy type.Energy type\",\"NativeReferenceName\":\"Energy type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Energy consumption (terrawatts-hours)\"}},\"Function\":0},\"Name\":\"Sum(Energy consumption.Energy consumption (terrawatts-hours))\",\"NativeReferenceName\":\"Sum of Energy consumption (terrawatts-hours)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Energy consumption (terrawatts-hours)\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"percentageLabelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Energy type\"}},\"Property\":\"Energy type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Hydrogen'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Energy consumption (terrawatts-hours) by Renewable Energy type'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter827c54cca7d6d01d70a3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Energy type\"}},\"Property\":\"Energy type\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Energy type\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Energy type\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Biofuel'\"}}],[{\"Literal\":{\"Value\":\"'Hydrogen'\"}}],[{\"Literal\":{\"Value\":\"'Other Renewables'\"}}],[{\"Literal\":{\"Value\":\"'Renewable energy'\"}}],[{\"Literal\":{\"Value\":\"'Solar'\"}}],[{\"Literal\":{\"Value\":\"'Wind'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 630.00,
+          "width": 1080.00,
+          "x": 0.00,
+          "y": 720.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1080.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Worlds Energy Consumption - insta",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1350.00,
+      "name": "ReportSectione81d7c31ab2750bee750",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0574e1339a040e01ad15\",\"layouts\":[{\"id\":0,\"position\":{\"x\":958.1818181818181,\"y\":1233.6363636363635,\"z\":35000,\"width\":12.727272727272727,\"height\":19.09090909090909,\"tabOrder\":35000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 19.09,
+          "width": 12.73,
+          "x": 958.18,
+          "y": 1233.64,
+          "z": 35000.00
+        },
+        {
+          "config": "{\"name\":\"0b30dfc4eb70a616d041\",\"layouts\":[{\"id\":0,\"position\":{\"x\":859.5443349753695,\"y\":566.9334975369458,\"z\":20000,\"width\":18.288177339901477,\"height\":237.7463054187192,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 237.75,
+          "width": 18.29,
+          "x": 859.54,
+          "y": 566.93,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"0bacd48a5b4b3ced4c01\",\"layouts\":[{\"id\":0,\"position\":{\"x\":204.4950738916256,\"y\":866.1945812807882,\"z\":5000,\"width\":214.47044334975368,\"height\":66.50246305418719,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Second oil crisis \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 66.50,
+          "width": 214.47,
+          "x": 204.50,
+          "y": 866.19,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"104db8c1535b099e03d2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":375.7389162561576,\"y\":917.7339901477832,\"z\":16000,\"width\":28.263546798029555,\"height\":66.50246305418719,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"238L\"}}},\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.50,
+          "width": 28.26,
+          "x": 375.74,
+          "y": 917.73,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"25c7b4064c325edc5362\",\"layouts\":[{\"id\":0,\"position\":{\"x\":505.41871921182263,\"y\":844.5812807881773,\"z\":2000,\"width\":266.00985221674875,\"height\":113.05418719211822,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Fossil Fuel Energy Consumption\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\",\"color\":\"#fd625e\"}}]}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 113.05,
+          "width": 266.01,
+          "x": 505.42,
+          "y": 844.58,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"2bbbf74b406242979405\",\"layouts\":[{\"id\":0,\"position\":{\"x\":970,\"y\":1008.75,\"z\":27000,\"width\":15,\"height\":126.25,\"tabOrder\":27000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 126.25,
+          "width": 15.00,
+          "x": 970.00,
+          "y": 1008.75,
+          "z": 27000.00
+        },
+        {
+          "config": "{\"name\":\"2d36f4e48e177a504b13\",\"layouts\":[{\"id\":0,\"position\":{\"x\":958.6666666666666,\"y\":1140.6666666666667,\"z\":31000,\"width\":13.333333333333334,\"height\":32,\"tabOrder\":31000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 32.00,
+          "width": 13.33,
+          "x": 958.67,
+          "y": 1140.67,
+          "z": 31000.00
+        },
+        {
+          "config": "{\"name\":\"314cfb2e9c6a5eb90901\",\"layouts\":[{\"id\":0,\"position\":{\"x\":952.3076923076923,\"y\":693.0769230769231,\"z\":25000,\"width\":24.615384615384613,\"height\":35.38461538461539,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 35.38,
+          "width": 24.62,
+          "x": 952.31,
+          "y": 693.08,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"490c374b474c304de580\",\"layouts\":[{\"id\":0,\"position\":{\"x\":972.7272727272726,\"y\":1143.6363636363635,\"z\":8000,\"width\":108.18181818181817,\"height\":60.90909090909091,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Hydropower 79% \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"12pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "filters": "[]",
+          "height": 60.91,
+          "width": 108.18,
+          "x": 972.73,
+          "y": 1143.64,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"49b0451d64350d5c5b78\",\"layouts\":[{\"id\":0,\"position\":{\"x\":859.5443349753695,\"y\":804.679802955665,\"z\":19000,\"width\":18.288177339901477,\"height\":344.1502463054187,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 344.15,
+          "width": 18.29,
+          "x": 859.54,
+          "y": 804.68,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"4bcca5af70132a965007\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.8181818181818181,\"y\":226.36363636363635,\"z\":0,\"width\":1079.090909090909,\"height\":1093.6363636363635,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"stackedAreaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures Table.RenewableEnergyConsumption\"},{\"queryRef\":\"Measures Table.FossilFuelConsumption\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"year\"},\"Name\":\"Calendar.year\",\"NativeReferenceName\":\"year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"FossilFuelConsumption\"},\"Name\":\"Measures Table.FossilFuelConsumption\",\"NativeReferenceName\":\"Fossil Fuel Energy Consumption\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"RenewableEnergyConsumption\"},\"Name\":\"Measures Table.RenewableEnergyConsumption\",\"NativeReferenceName\":\"Renewable Energy Consumption\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"RenewableEnergyConsumption\"}}}]},\"columnProperties\":{\"Measures Table.FossilFuelConsumption\":{\"displayName\":\"Fossil Fuel Energy Consumption\"},\"Measures Table.RenewableEnergyConsumption\":{\"displayName\":\"Renewable Energy Consumption\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000D\"}}}},\"selector\":{\"metadata\":\"Measures Table.FossilFuelConsumption\"}},{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000D\"}}}},\"selector\":{\"metadata\":\"Measures Table.RenewableEnergyConsumption\"}},{\"properties\":{\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy\"}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Energy consumption - Terrawatts-Hours (TWH)'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"sharedAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"scaleToFit\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleFontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'United Kingdom'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'Japan'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0.2}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'India'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.4}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'Germany'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy Consumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Fossil Fuel Energy Consumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.FossilFuelConsumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.RenewableEnergyConsumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#33ae81'\"}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy\"}}],\"legend\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"smallMultiplesLayout\":[{\"properties\":{\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}},\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"gridPadding\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"subheader\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"y2Axis\":[{\"properties\":{\"secShowAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"seriesPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Right'\"}}}}},{\"properties\":{\"seriesColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.RenewableEnergyConsumption\"}},{\"properties\":{\"seriesColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Measures Table.FossilFuelConsumption\"}}],\"lineStyles\":[{\"properties\":{\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Renewables Far Behind Fossil Fuels In Bid to Fight Climate Change'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"29D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Global Energy Consumption in Terawatt Hours: Fossil Fuels vs. Renewables Over Time'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"23D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filterdf3e1f627046d0bbcd58\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 1093.64,
+          "width": 1079.09,
+          "x": 1.82,
+          "y": 226.36,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"5797a9113be8149b8851\",\"layouts\":[{\"id\":0,\"position\":{\"x\":955.3333333333334,\"y\":464.6666666666667,\"z\":22000,\"width\":22,\"height\":27.333333333333332,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 27.33,
+          "width": 22.00,
+          "x": 955.33,
+          "y": 464.67,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"65589d3f8a063ab1c0e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":960.9090909090909,\"y\":1251.8181818181818,\"z\":33000,\"width\":20.909090909090907,\"height\":21.818181818181817,\"tabOrder\":33000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 21.82,
+          "width": 20.91,
+          "x": 960.91,
+          "y": 1251.82,
+          "z": 33000.00
+        },
+        {
+          "config": "{\"name\":\"66f341a4d7b93a30b0a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":965.4545454545454,\"y\":1157.2727272727273,\"z\":30000,\"width\":12.727272727272727,\"height\":86.36363636363636,\"tabOrder\":30000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 86.36,
+          "width": 12.73,
+          "x": 965.45,
+          "y": 1157.27,
+          "z": 30000.00
+        },
+        {
+          "config": "{\"name\":\"6b939ab09ac1a9341dcc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":588.5467980295566,\"y\":541.9950738916256,\"z\":7000,\"width\":191.19458128078816,\"height\":53.20197044334975,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Financial crisis \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 53.20,
+          "width": 191.19,
+          "x": 588.55,
+          "y": 542.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"75376e1b44676936001d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":969.2733990147783,\"y\":478.81773399014776,\"z\":21000,\"width\":13.300492610837438,\"height\":224.44581280788177,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 224.45,
+          "width": 13.30,
+          "x": 969.27,
+          "y": 478.82,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"7998846f505ed37291b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":954.3103448275862,\"y\":1212.0073891625616,\"z\":14000,\"width\":126.35467980295566,\"height\":137.9926108374384,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Wind 8%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"},{\"textRuns\":[{\"value\":\"Solar 8% \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"},{\"textRuns\":[{\"value\":\"Biofuel 3%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"},{\"textRuns\":[{\"value\":\"Others 8%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "filters": "[]",
+          "height": 137.99,
+          "width": 126.35,
+          "x": 954.31,
+          "y": 1212.01,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"7b4c79dc41c21db367d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":983.3333333333334,\"y\":566.6666666666667,\"z\":11000,\"width\":96.66666666666667,\"height\":93.33333333333334,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Natural Gas 24%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "filters": "[]",
+          "height": 93.33,
+          "width": 96.67,
+          "x": 983.33,
+          "y": 566.67,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"831ac454e60805a48760\",\"layouts\":[{\"id\":0,\"position\":{\"x\":954.3103448275862,\"y\":804.679802955665,\"z\":10000,\"width\":126.35467980295566,\"height\":61.51477832512315,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Oil 44%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "filters": "[]",
+          "height": 61.51,
+          "width": 126.35,
+          "x": 954.31,
+          "y": 804.68,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"95670ac046e251699051\",\"layouts\":[{\"id\":0,\"position\":{\"x\":272.66009852216746,\"y\":950.9852216748768,\"z\":15000,\"width\":28.263546798029555,\"height\":66.50246305418719,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"238L\"}}},\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.50,
+          "width": 28.26,
+          "x": 272.66,
+          "y": 950.99,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"a1b9bd9f83b5a230d447\",\"layouts\":[{\"id\":0,\"position\":{\"x\":960,\"y\":1256.6666666666667,\"z\":34000,\"width\":13.333333333333334,\"height\":31.333333333333332,\"tabOrder\":34000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 31.33,
+          "width": 13.33,
+          "x": 960.00,
+          "y": 1256.67,
+          "z": 34000.00
+        },
+        {
+          "config": "{\"name\":\"aef609fa8a424021a01d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1078.8079470198675,\"height\":157.94701986754967,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"It looks like we are going to miss the 2050 Paris Agreement\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"36pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 157.95,
+          "width": 1078.81,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"bced9fb1c44bd6aad7e4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":952.6477832512315,\"y\":974.2610837438423,\"z\":26000,\"width\":23.275862068965516,\"height\":29.926108374384235,\"tabOrder\":26000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 29.93,
+          "width": 23.28,
+          "x": 952.65,
+          "y": 974.26,
+          "z": 26000.00
+        },
+        {
+          "config": "{\"name\":\"bf17dfa16c31075a2eea\",\"layouts\":[{\"id\":0,\"position\":{\"x\":694.9507389162561,\"y\":967.6108374384236,\"z\":13000,\"width\":206.1576354679803,\"height\":139.6551724137931,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Fossil Fuel 7x higher than renewables \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 139.66,
+          "width": 206.16,
+          "x": 694.95,
+          "y": 967.61,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"c9927b77cb87ae224cb5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":99.75369458128078,\"y\":932.6970443349753,\"z\":4000,\"width\":172.9064039408867,\"height\":51.539408866995075,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"First oil crisis \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 51.54,
+          "width": 172.91,
+          "x": 99.75,
+          "y": 932.70,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"c9ef927ad0d49411049d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":369.09090909090907,\"y\":1300,\"z\":12000,\"width\":367.27272727272725,\"height\":49.99999999999999,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data Source - Our World in Data\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 367.27,
+          "x": 369.09,
+          "y": 1300.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"dfd2a36939105b0a3097\",\"layouts\":[{\"id\":0,\"position\":{\"x\":968.608374384237,\"y\":709.2487684729062,\"z\":24000,\"width\":14.187192118226601,\"height\":280.1970443349754,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 280.20,
+          "width": 14.19,
+          "x": 968.61,
+          "y": 709.25,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"ed9452e7a4e7bc57be61\",\"layouts\":[{\"id\":0,\"position\":{\"x\":957.1428571428572,\"y\":1122.857142857143,\"z\":29000,\"width\":21.42857142857143,\"height\":25,\"tabOrder\":29000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 25.00,
+          "width": 21.43,
+          "x": 957.14,
+          "y": 1122.86,
+          "z": 29000.00
+        },
+        {
+          "config": "{\"name\":\"efda19a416480ed7634d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":958.5714285714287,\"y\":992.8571428571429,\"z\":28000,\"width\":20,\"height\":30.000000000000004,\"tabOrder\":28000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 30.00,
+          "width": 20.00,
+          "x": 958.57,
+          "y": 992.86,
+          "z": 28000.00
+        },
+        {
+          "config": "{\"name\":\"f00191f73a3242057702\",\"layouts\":[{\"id\":0,\"position\":{\"x\":736.5147783251231,\"y\":573.5837438423645,\"z\":17000,\"width\":28.263546798029555,\"height\":86.45320197044335,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"238L\"}}},\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"fill\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 86.45,
+          "width": 28.26,
+          "x": 736.51,
+          "y": 573.58,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"f85f456fad0a35306790\",\"layouts\":[{\"id\":0,\"position\":{\"x\":886.1453201970443,\"y\":458.8669950738916,\"z\":18000,\"width\":28.263546798029555,\"height\":66.50246305418719,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"238L\"}}},\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.50,
+          "width": 28.26,
+          "x": 886.15,
+          "y": 458.87,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"fc8202050c08a7860006\",\"layouts\":[{\"id\":0,\"position\":{\"x\":758.1280788177339,\"y\":427.2783251231527,\"z\":6000,\"width\":179.55665024630542,\"height\":63.17733990147783,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Covid - 19\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 63.18,
+          "width": 179.56,
+          "x": 758.13,
+          "y": 427.28,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"fca9f6864a321b447588\",\"layouts\":[{\"id\":0,\"position\":{\"x\":505.41871921182263,\"y\":1188.731527093596,\"z\":3000,\"width\":229.4334975369458,\"height\":84.79064039408867,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Renewable Energy Consumption\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\",\"color\":\"#33ae81\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 84.79,
+          "width": 229.43,
+          "x": 505.42,
+          "y": 1188.73,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"fdc41c1f8218e4733eeb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":959.090909090909,\"y\":1243.6363636363635,\"z\":32000,\"width\":12.727272727272727,\"height\":19.09090909090909,\"tabOrder\":32000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 19.09,
+          "width": 12.73,
+          "x": 959.09,
+          "y": 1243.64,
+          "z": 32000.00
+        },
+        {
+          "config": "{\"name\":\"ff4b7a2f589ae9dea816\",\"layouts\":[{\"id\":0,\"position\":{\"x\":952.6477832512315,\"y\":688.3004926108374,\"z\":23000,\"width\":24.938423645320196,\"height\":29.926108374384235,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 29.93,
+          "width": 24.94,
+          "x": 952.65,
+          "y": 688.30,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"ff64be1584b9e7a88729\",\"layouts\":[{\"id\":0,\"position\":{\"x\":976.6666666666667,\"y\":1036.6666666666667,\"z\":9000,\"width\":105,\"height\":71.66666666666667,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Coal 32%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "filters": "[]",
+          "height": 71.67,
+          "width": 105.00,
+          "x": 976.67,
+          "y": 1036.67,
+          "z": 9000.00
+        }
+      ],
+      "width": 1080.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Worlds Energy Consumption - linkdin",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1200.00,
+      "name": "ReportSectionf276235ae393cca00d0b",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"007288dd73aa6a462620\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1055.5555555555554,\"y\":906.6666666666666,\"z\":27000,\"width\":21.11111111111111,\"height\":108.88888888888889,\"tabOrder\":27000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 108.89,
+          "width": 21.11,
+          "x": 1055.56,
+          "y": 906.67,
+          "z": 27000.00
+        },
+        {
+          "config": "{\"name\":\"018d42d00ac4402a3cd8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1060.3223712217941,\"y\":606.8557592896605,\"z\":24000,\"width\":14.187192118226601,\"height\":280.1970443349754,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 280.20,
+          "width": 14.19,
+          "x": 1060.32,
+          "y": 606.86,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"02727351a58651d04928\",\"layouts\":[{\"id\":0,\"position\":{\"x\":418.75,\"y\":816.25,\"z\":16000,\"width\":28.75,\"height\":67.5,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"238L\"}}},\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.50,
+          "width": 28.75,
+          "x": 418.75,
+          "y": 816.25,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"04b6ace060e6d3a2830e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":977.2494303385477,\"y\":705.2462055610771,\"z\":19000,\"width\":18.288177339901477,\"height\":344.1502463054187,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 344.15,
+          "width": 18.29,
+          "x": 977.25,
+          "y": 705.25,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"16efa3cf9ee6e2c50941\",\"layouts\":[{\"id\":0,\"position\":{\"x\":802.5,\"y\":705,\"z\":13000,\"width\":175,\"height\":140,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Fossil Fuel 7x higher than renewables \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 140.00,
+          "width": 175.00,
+          "x": 802.50,
+          "y": 705.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"1b7890ca566405e08ba4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1044.0216891452494,\"y\":590.6839138936773,\"z\":25000,\"width\":24.615384615384613,\"height\":35.38461538461539,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 35.38,
+          "width": 24.62,
+          "x": 1044.02,
+          "y": 590.68,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"223ceb9a85575d6a1e26\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368.75,\"y\":1150,\"z\":12000,\"width\":367.5,\"height\":50,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data Source - Our World in Data\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 367.50,
+          "x": 368.75,
+          "y": 1150.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"388daf7d3b17e7cbd7b1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1050,\"y\":1129.090909090909,\"z\":32000,\"width\":12.727272727272727,\"height\":19.09090909090909,\"tabOrder\":32000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 19.09,
+          "width": 12.73,
+          "x": 1050.00,
+          "y": 1129.09,
+          "z": 32000.00
+        },
+        {
+          "config": "{\"name\":\"3a6b7e3ce0d544e30975\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1200,\"height\":167.5,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"It looks like we are going to miss the 2050 Paris Agreement\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"36pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 167.50,
+          "width": 1200.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"3b8989fd0a29d32adebb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1043.3333333333333,\"y\":872.2222222222222,\"z\":26000,\"width\":24.444444444444443,\"height\":30,\"tabOrder\":26000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 30.00,
+          "width": 24.44,
+          "x": 1043.33,
+          "y": 872.22,
+          "z": 26000.00
+        },
+        {
+          "config": "{\"name\":\"3e6371e4d149579ac9a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":291.25,\"y\":848.75,\"z\":15000,\"width\":27.5,\"height\":66.25,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"238L\"}}},\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.25,
+          "width": 27.50,
+          "x": 291.25,
+          "y": 848.75,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"5074ea80812dd73c80da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1050.9090909090908,\"y\":1139.090909090909,\"z\":33000,\"width\":20,\"height\":20.909090909090907,\"tabOrder\":33000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 20.91,
+          "width": 20.00,
+          "x": 1050.91,
+          "y": 1139.09,
+          "z": 33000.00
+        },
+        {
+          "config": "{\"name\":\"53c82fe1783a7e5580b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1060,\"y\":457.77777777777777,\"z\":21000,\"width\":14.444444444444445,\"height\":141.11111111111111,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 141.11,
+          "width": 14.44,
+          "x": 1060.00,
+          "y": 457.78,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"5c699c8b6831e080609a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1048.1817560429997,\"y\":1113.5455787764051,\"z\":35000,\"width\":12.727272727272727,\"height\":19.09090909090909,\"tabOrder\":35000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 19.09,
+          "width": 12.73,
+          "x": 1048.18,
+          "y": 1113.55,
+          "z": 35000.00
+        },
+        {
+          "config": "{\"name\":\"6500981d630ee01b70c8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":182.5,\"z\":0,\"width\":1200,\"height\":1017.5,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"stackedAreaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures Table.RenewableEnergyConsumption\"},{\"queryRef\":\"Measures Table.FossilFuelConsumption\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures Table\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"year\"},\"Name\":\"Calendar.year\",\"NativeReferenceName\":\"year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"FossilFuelConsumption\"},\"Name\":\"Measures Table.FossilFuelConsumption\",\"NativeReferenceName\":\"Fossil Fuel Energy Consumption\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"RenewableEnergyConsumption\"},\"Name\":\"Measures Table.RenewableEnergyConsumption\",\"NativeReferenceName\":\"Renewable Energy Consumption\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"RenewableEnergyConsumption\"}}}]},\"columnProperties\":{\"Measures Table.FossilFuelConsumption\":{\"displayName\":\"Fossil Fuel Energy Consumption\"},\"Measures Table.RenewableEnergyConsumption\":{\"displayName\":\"Renewable Energy Consumption\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000D\"}}}},\"selector\":{\"metadata\":\"Measures Table.FossilFuelConsumption\"}},{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000D\"}}}},\"selector\":{\"metadata\":\"Measures Table.RenewableEnergyConsumption\"}},{\"properties\":{\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy\"}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Energy consumption - Terrawatts-Hours (TWH)'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"sharedAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"scaleToFit\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleFontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'United Kingdom'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'Japan'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0.2}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'India'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.4}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"Right\":{\"Literal\":{\"Value\":\"'Germany'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy Consumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Fossil Fuel Energy Consumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.FossilFuelConsumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.RenewableEnergyConsumption\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#33ae81'\"}}}}}},\"selector\":{\"metadata\":\"Measures Table.CAGR - Renewable Energy\"}}],\"legend\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"smallMultiplesLayout\":[{\"properties\":{\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}},\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"gridPadding\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"subheader\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"y2Axis\":[{\"properties\":{\"secShowAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"seriesPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Right'\"}}}}},{\"properties\":{\"seriesColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures Table.RenewableEnergyConsumption\"}},{\"properties\":{\"seriesColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Measures Table.FossilFuelConsumption\"}}],\"lineStyles\":[{\"properties\":{\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Renewables Far Behind Fossil Fuels In Bid to Fight Climate Change'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"29D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Global Energy Consumption in Terawatt Hours: Fossil Fuels vs. Renewables Over Time'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"23D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filterdf3e1f627046d0bbcd58\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Country\"}},\"Property\":\"country\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 1017.50,
+          "width": 1200.00,
+          "x": 0.00,
+          "y": 182.50,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"670a877a5e170617e262\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1044.4444444444443,\"y\":886.6666666666666,\"z\":28000,\"width\":23.333333333333332,\"height\":43.333333333333336,\"tabOrder\":28000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 43.33,
+          "width": 23.33,
+          "x": 1044.44,
+          "y": 886.67,
+          "z": 28000.00
+        },
+        {
+          "config": "{\"name\":\"74c1900105eb810540cc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1075.5555555555554,\"y\":1003.3333333333333,\"z\":8000,\"width\":124.44444444444444,\"height\":66.66666666666667,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Hydropower 79% \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"12pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "filters": "[]",
+          "height": 66.67,
+          "width": 124.44,
+          "x": 1075.56,
+          "y": 1003.33,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"762e972a3d9777dd70b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":811.25,\"y\":512.5,\"z\":17000,\"width\":27.5,\"height\":86.25,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"238L\"}}},\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"fill\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 86.25,
+          "width": 27.50,
+          "x": 811.25,
+          "y": 512.50,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"7ac214a0c109209b905d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":977.5,\"y\":491.25,\"z\":20000,\"width\":17.5,\"height\":213.75,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 213.75,
+          "width": 17.50,
+          "x": 977.50,
+          "y": 491.25,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"7ae7773e8ca306e066eb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1083.3333333333333,\"y\":1065.5555555555554,\"z\":14000,\"width\":116.66666666666666,\"height\":134.44444444444443,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Wind 8%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"14pt\"}}],\"horizontalTextAlignment\":\"right\"},{\"textRuns\":[{\"value\":\"Solar 8% \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"14pt\"}}],\"horizontalTextAlignment\":\"right\"},{\"textRuns\":[{\"value\":\"Biofuel 3%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"14pt\"}}],\"horizontalTextAlignment\":\"right\"},{\"textRuns\":[{\"value\":\"Others 8%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"14pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "filters": "[]",
+          "height": 134.44,
+          "width": 116.67,
+          "x": 1083.33,
+          "y": 1065.56,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"8822dd2a05022a203acd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1073.3333333333333,\"y\":935.5555555555555,\"z\":9000,\"width\":126.66666666666666,\"height\":67.77777777777777,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Coal 32%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "filters": "[]",
+          "height": 67.78,
+          "width": 126.67,
+          "x": 1073.33,
+          "y": 935.56,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"91928d101430d370893a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1042.2222222222222,\"y\":584.4444444444445,\"z\":23000,\"width\":25.555555555555554,\"height\":30,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 30.00,
+          "width": 25.56,
+          "x": 1042.22,
+          "y": 584.44,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"92315a2b70c8d00721c5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":117.5,\"y\":831.25,\"z\":4000,\"width\":173.75,\"height\":52.5,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"First oil crisis \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 52.50,
+          "width": 173.75,
+          "x": 117.50,
+          "y": 831.25,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"a74ca3a1b576238b081c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1044.4444444444443,\"y\":444.44444444444446,\"z\":22000,\"width\":22.22222222222222,\"height\":26.666666666666664,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 26.67,
+          "width": 22.22,
+          "x": 1044.44,
+          "y": 444.44,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"ab7207855e9b963c8cd2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1055.454483315727,\"y\":1037.1819424127596,\"z\":30000,\"width\":12.727272727272727,\"height\":86.36363636363636,\"tabOrder\":30000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"270L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 86.36,
+          "width": 12.73,
+          "x": 1055.45,
+          "y": 1037.18,
+          "z": 30000.00
+        },
+        {
+          "config": "{\"name\":\"af0c3ff617530b3c01dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1049.090909090909,\"y\":1142.7272727272727,\"z\":34000,\"width\":13.636363636363635,\"height\":32.72727272727273,\"tabOrder\":34000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 32.73,
+          "width": 13.64,
+          "x": 1049.09,
+          "y": 1142.73,
+          "z": 34000.00
+        },
+        {
+          "config": "{\"name\":\"b7a85c40d19887dc877b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":981.25,\"y\":411.25,\"z\":18000,\"width\":27.5,\"height\":66.25,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'arrow'\"}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"arrowheadSize\":{\"expr\":{\"Literal\":{\"Value\":\"49L\"}}},\"arrowStemWidth\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"238L\"}}},\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.25,
+          "width": 27.50,
+          "x": 981.25,
+          "y": 411.25,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"c22992942d56249ae90a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":670,\"y\":486.25,\"z\":7000,\"width\":190,\"height\":52.5,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Financial crisis \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 52.50,
+          "width": 190.00,
+          "x": 670.00,
+          "y": 486.25,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"c91d6f805b3020b18e20\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1088.888888888889,\"y\":477.77777777777777,\"z\":11000,\"width\":111.11111111111111,\"height\":93.33333333333333,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Natural Gas 24%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "filters": "[]",
+          "height": 93.33,
+          "width": 111.11,
+          "x": 1088.89,
+          "y": 477.78,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"caa671b52b529adac120\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1048.6666045278482,\"y\":1020.5758818066988,\"z\":31000,\"width\":13.333333333333334,\"height\":32,\"tabOrder\":31000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 32.00,
+          "width": 13.33,
+          "x": 1048.67,
+          "y": 1020.58,
+          "z": 31000.00
+        },
+        {
+          "config": "{\"name\":\"d529b92517ba60c003b1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1042.2222222222222,\"y\":1002.2222222222222,\"z\":29000,\"width\":26.666666666666664,\"height\":25.555555555555554,\"tabOrder\":29000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 25.56,
+          "width": 26.67,
+          "x": 1042.22,
+          "y": 1002.22,
+          "z": 29000.00
+        },
+        {
+          "config": "{\"name\":\"d73dcac767db37e09442\",\"layouts\":[{\"id\":0,\"position\":{\"x\":241.25,\"y\":765,\"z\":5000,\"width\":206.25,\"height\":55,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Second oil crisis \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 55.00,
+          "width": 206.25,
+          "x": 241.25,
+          "y": 765.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"d99e88ec88c60b8280d4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":876.25,\"y\":370,\"z\":6000,\"width\":157.5,\"height\":52.5,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Covid - 19\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 52.50,
+          "width": 157.50,
+          "x": 876.25,
+          "y": 370.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"dabc77fb088420771856\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1083.3333333333333,\"y\":705.5555555555555,\"z\":10000,\"width\":105.55555555555556,\"height\":60,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Oil 44%\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "filters": "[]",
+          "height": 60.00,
+          "width": 105.56,
+          "x": 1083.33,
+          "y": 705.56,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"dbf50d1b309530125b95\",\"layouts\":[{\"id\":0,\"position\":{\"x\":483.75,\"y\":796.25,\"z\":2000,\"width\":266.25,\"height\":87.5,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Fossil Fuel Energy Consumption\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\",\"color\":\"#fd625e\"}}]}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 87.50,
+          "width": 266.25,
+          "x": 483.75,
+          "y": 796.25,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"f6dcd9f9a95ab97a946e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":608.75,\"y\":1065,\"z\":3000,\"width\":230,\"height\":85,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Renewable Energy Consumption\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\",\"color\":\"#33ae81\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 85.00,
+          "width": 230.00,
+          "x": 608.75,
+          "y": 1065.00,
+          "z": 3000.00
+        }
+      ],
+      "width": 1200.00
+    }
+  ],
+  "theme": "UKPN6233456573920992.json"
+}

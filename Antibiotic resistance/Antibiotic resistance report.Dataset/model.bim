@@ -1324,39 +1324,6 @@
             "lineageTag": "7839763e-820e-41e8-91ff-717db8dce0d1"
           },
           {
-            "name": "test",
-            "expression": [
-              "",
-              "",
-              "VAR CurrentYearDate = CALCULATE(MAX('Calendar'[Date]), ALL('Calendar'))",
-              "VAR CurrentYear = YEAR(CurrentYearDate)",
-              "VAR PreviousYearDate = DATEADD(CurrentYearDate, -1, YEAR)",
-              "VAR PreviousYear = YEAR(PreviousYearDate)",
-              "",
-              "VAR CurrentYearResistance = ",
-              "    CALCULATE(",
-              "        SUM('Fact table'[Resistant cases]),",
-              "        YEAR('Fact table'[Date]) = CurrentYear",
-              "    )",
-              "VAR PreviousYearResistance = ",
-              "    CALCULATE(",
-              "        SUM('Fact table'[Resistant cases]),",
-              "        YEAR('Fact table'[Date]) = PreviousYear",
-              "    )",
-              "",
-              "RETURN",
-              "    IF(",
-              "        ISBLANK(CurrentYearResistance) || ",
-              "        ISBLANK(PreviousYearResistance) || ",
-              "        PreviousYearResistance = 0,",
-              "        BLANK(),",
-              "        DIVIDE(CurrentYearResistance - PreviousYearResistance, PreviousYearResistance)",
-              "    )",
-              ""
-            ],
-            "lineageTag": "455c5b14-5788-4b1b-86ed-1cc9ebb62d3b"
-          },
-          {
             "name": "old report test",
             "expression": [
               "",
@@ -1419,20 +1386,6 @@
             ],
             "formatString": "0",
             "lineageTag": "620fa033-1d03-4ce6-92f5-7a5f88260c1d"
-          },
-          {
-            "name": "Initial Value Date",
-            "expression": [
-              "CALCULATE (",
-              "    MIN ( 'Calendar'[Date] ),",
-              "    FILTER (",
-              "        ALL ( 'Calendar' ), -- This removes any filters that might limit the date range",
-              "        'FactTable'[Resistant Cases] > 0 -- Only consider dates with 'Resistant Cases' greater than 0",
-              "    )",
-              ")",
-              ""
-            ],
-            "lineageTag": "9c474783-34a8-4879-9eeb-bcb2813aa73d"
           },
           {
             "name": "test 2",

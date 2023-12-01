@@ -1,0 +1,698 @@
+{
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2},\"customTheme\":{\"name\":\"UKPN5833030258006715.json\",\"version\":\"5.48\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU08",
+            "path": "BaseThemes/CY23SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "UKPN5833030258006715.json",
+            "path": "UKPN5833030258006715.json",
+            "type": 201
+          },
+          {
+            "name": "deer11797317411161101.png",
+            "path": "deer11797317411161101.png",
+            "type": 100
+          },
+          {
+            "name": "dove_-_Copy31484075842000303.png",
+            "path": "dove_-_Copy31484075842000303.png",
+            "type": 100
+          },
+          {
+            "name": "fish46083801262986746.png",
+            "path": "fish46083801262986746.png",
+            "type": 100
+          },
+          {
+            "name": "frog2237707895472485.png",
+            "path": "frog2237707895472485.png",
+            "type": 100
+          },
+          {
+            "name": "lizard08933806121978982.png",
+            "path": "lizard08933806121978982.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"297L\"}}}}}]},\"visibility\":1}",
+      "displayName": "% of species in danger - insta",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1350.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"023aaff85a5d1aad4740\",\"layouts\":[{\"id\":0,\"position\":{\"x\":84,\"y\":866,\"z\":4000,\"width\":58,\"height\":64,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"fish46083801262986746.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.00,
+          "width": 58.00,
+          "x": 84.00,
+          "y": 866.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"0559db4000c78ba0cb71\",\"layouts\":[{\"id\":0,\"position\":{\"x\":729.9337748344368,\"y\":351.15894039735093,\"z\":21000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 729.93,
+          "y": 351.16,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"135b9bbd94d4078d8b88\",\"layouts\":[{\"id\":0,\"position\":{\"x\":286.29139072847676,\"y\":351.15894039735093,\"z\":14000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 286.29,
+          "y": 351.16,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"412df0010a2643c9e890\",\"layouts\":[{\"id\":0,\"position\":{\"x\":413.0463576158939,\"y\":351.15894039735093,\"z\":16000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 413.05,
+          "y": 351.16,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"527fa8ec6e774b96e79a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":793.3112582781454,\"y\":351.15894039735093,\"z\":22000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 793.31,
+          "y": 351.16,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"594231f2a2c501d1ce2d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32.78145695364238,\"y\":351.15894039735093,\"z\":10000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 32.78,
+          "y": 351.16,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"59916e240c040d10dddc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":603.1788079470197,\"y\":351.15894039735093,\"z\":19000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 603.18,
+          "y": 351.16,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"605c857203edbc050adc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":666.5562913907282,\"y\":351.15894039735093,\"z\":20000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 666.56,
+          "y": 351.16,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"6155cac32800ebb0bdb0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":476.42384105960247,\"y\":351.15894039735093,\"z\":17000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 476.42,
+          "y": 351.16,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"6409d4175620a3680934\",\"layouts\":[{\"id\":0,\"position\":{\"x\":159.53642384105956,\"y\":351.15894039735093,\"z\":12000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 159.54,
+          "y": 351.16,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"72c0d855013b706e4534\",\"layouts\":[{\"id\":0,\"position\":{\"x\":160.9271523178808,\"y\":83.44370860927152,\"z\":0,\"width\":485.7615894039735,\"height\":381.4569536423841,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Measures table.% of species in danger\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species in danger\"},\"Name\":\"Measures table.% of species in danger\",\"NativeReferenceName\":\"% of species in danger\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species in danger\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"36L\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Total % of species in danger'\"}}},\"switchAxisPosition\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"innerPadding\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"preferredCategoryWidth\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#de6a73'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species'\"}}}}}]}},{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures table.% of species in danger\"}}],\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'18% of vertebrate animals are in danger, particularly amphibians'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Species compared to % of threated species'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter6ec5b4d119de75a89c75\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Species Analysis Type\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Species Sampling Method\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Number of species evaluated'\"}}],[{\"Literal\":{\"Value\":\"'Number of threatened species'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 381.46,
+          "width": 485.76,
+          "x": 160.93,
+          "y": 83.44,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7437cdaedc4880d48a1a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":983.4437086092711,\"y\":351.15894039735093,\"z\":25000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 983.44,
+          "y": 351.16,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"97b0f7368a1e337a1202\",\"layouts\":[{\"id\":0,\"position\":{\"x\":539.8013245033111,\"y\":351.15894039735093,\"z\":18000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 539.80,
+          "y": 351.16,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"98b79fee240d7d01223c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":222.91390728476816,\"y\":351.15894039735093,\"z\":13000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 222.91,
+          "y": 351.16,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"99c3f2809769bad0e40d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":920.0662251655625,\"y\":351.15894039735093,\"z\":24000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 920.07,
+          "y": 351.16,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"9c14f593b6025141b265\",\"layouts\":[{\"id\":0,\"position\":{\"x\":162,\"y\":1296,\"z\":7000,\"width\":846,\"height\":54,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data source - International Union for Conservation of Nature Red List Threatened Species\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"14pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 54.00,
+          "width": 846.00,
+          "x": 162.00,
+          "y": 1296.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"9d58e675727941306ba2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":4,\"y\":204,\"z\":9000,\"width\":160,\"height\":148,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Total % of species in danger \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 148.00,
+          "width": 160.00,
+          "x": 4.00,
+          "y": 204.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"b4b8d16874029146d79b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":78,\"y\":1008,\"z\":3000,\"width\":76,\"height\":64,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"dove_-_Copy31484075842000303.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.00,
+          "width": 76.00,
+          "x": 78.00,
+          "y": 1008.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c0fb8b4024aed70cd799\",\"layouts\":[{\"id\":0,\"position\":{\"x\":44.889162561576356,\"y\":408.9901477832512,\"z\":6000,\"width\":76.47783251231527,\"height\":69.82758620689656,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"frog2237707895472485.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 69.83,
+          "width": 76.48,
+          "x": 44.89,
+          "y": 408.99,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"cb76b64f2088e4e67020\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48,\"y\":554,\"z\":2000,\"width\":74,\"height\":74,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"deer11797317411161101.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.00,
+          "width": 74.00,
+          "x": 48.00,
+          "y": 554.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"d4971fe1e4eea1d91b45\",\"layouts\":[{\"id\":0,\"position\":{\"x\":856.688741721854,\"y\":351.15894039735093,\"z\":23000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 856.69,
+          "y": 351.16,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"d68c00f847e078c029b9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":56,\"y\":690,\"z\":5000,\"width\":90,\"height\":90,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"lizard08933806121978982.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 90.00,
+          "x": 56.00,
+          "y": 690.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"d71ce1712c13b606dace\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":351.65562913907286,\"z\":1000,\"width\":1051.9867549668875,\"height\":944.7019867549669,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Type of vertebrate.Type of Vertebrate\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures table.% of species in danger\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Type of vertebrate\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Type of Vertebrate\"},\"Name\":\"Type of vertebrate.Type of Vertebrate\",\"NativeReferenceName\":\"Type of Vertebrate\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species in danger\"},\"Name\":\"Measures table.% of species in danger\",\"NativeReferenceName\":\"% of species in danger\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species in danger\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'% of species in danger'\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"titleFontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"34L\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#de6a73'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species'\"}}}}}]}},{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'18% of vertebrate animals are in danger, particularly amphibians'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Species compared to % of threated species'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter6ec5b4d119de75a89c75\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Species Analysis Type\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Species Sampling Method\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Number of species evaluated'\"}}],[{\"Literal\":{\"Value\":\"'Number of threatened species'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 944.70,
+          "width": 1051.99,
+          "x": 0.00,
+          "y": 351.66,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"dad6bc98302e1b607134\",\"layouts\":[{\"id\":0,\"position\":{\"x\":349.6688741721853,\"y\":351.15894039735093,\"z\":15000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 349.67,
+          "y": 351.16,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"ed0b9b375b69ac2bce70\",\"layouts\":[{\"id\":0,\"position\":{\"x\":96.15894039735097,\"y\":351.15894039735093,\"z\":11000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 96.16,
+          "y": 351.16,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"fd83d1acd55876353a51\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":35.76158940397351,\"z\":8000,\"width\":1078.8079470198675,\"height\":149.0066225165563,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"18% of vertebrate animals are in danger, particularly amphibians\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"32pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 149.01,
+          "width": 1078.81,
+          "x": 0.00,
+          "y": 35.76,
+          "z": 8000.00
+        }
+      ],
+      "width": 1080.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"297L\"}}}}}]},\"visibility\":0}",
+      "displayName": "Amphibian threat factors - insta",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1350.00,
+      "name": "ReportSection27f4e246bb94d2939546",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"272818ac0e792a89d350\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1080,\"height\":1312,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Threat type.Threat\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures table.Total threat factors\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Threat type\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Threat\"},\"Name\":\"Threat type.Threat\",\"NativeReferenceName\":\"Threat\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total threat factors\"},\"Name\":\"Measures table.Total threat factors\",\"NativeReferenceName\":\"Total threat factors\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total threat factors\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Number of vertebrate species'\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"34L\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#de6a73'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures table\"}},\"Property\":\"Total threat factors\"}},\"Right\":{\"Literal\":{\"Value\":\"1200D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures table\"}},\"Property\":\"Total threat factors\"}},\"Right\":{\"Literal\":{\"Value\":\"10000D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#fd625e'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Deforestation stands as the main cause of amphibians loss'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Factors contributing to amphibian loss by number of vertebrate species '\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter41c4ef71725c67d032dc\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Threat type\"}},\"Property\":\"Threat\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Threat type\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Threat\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Bd (future)'\"}}],[{\"Literal\":{\"Value\":\"'Bd (ongoing)'\"}}],[{\"Literal\":{\"Value\":\"'Bsal (future)'\"}}],[{\"Literal\":{\"Value\":\"'Bsal (ongoing)'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 1312.00,
+          "width": 1080.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c2a28144ab541341e107\",\"layouts\":[{\"id\":0,\"position\":{\"x\":162,\"y\":1312,\"z\":1000,\"width\":860,\"height\":38,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data source - International Union for Conservation of Nature Red List Threatened Species\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"14pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 38.00,
+          "width": 860.00,
+          "x": 162.00,
+          "y": 1312.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1080.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Pinterest",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection2b5f644ba304e02d880b",
+      "ordinal": 8,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"297L\"}}}}}]},\"visibility\":1}",
+      "displayName": "% of species in danger - linkdin",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1200.00,
+      "name": "ReportSection695d9e115060b91e0802",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"00a6c07cc8b64495b352\",\"layouts\":[{\"id\":0,\"position\":{\"x\":286.29139072847676,\"y\":351.15894039735093,\"z\":14000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 286.29,
+          "y": 351.16,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"101c05e21435dbdc3ce5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":51.66666666666667,\"y\":613.3333333333334,\"z\":5000,\"width\":90,\"height\":90,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"lizard08933806121978982.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 90.00,
+          "x": 51.67,
+          "y": 613.33,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"178d84860290d2055b9b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":603.1788079470197,\"y\":351.15894039735093,\"z\":19000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 603.18,
+          "y": 351.16,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"2d432c8b4714dc2050c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":413.0463576158939,\"y\":351.15894039735093,\"z\":16000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 413.05,
+          "y": 351.16,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"3a993ccb58943d1a7c72\",\"layouts\":[{\"id\":0,\"position\":{\"x\":51.66666666666667,\"y\":496.6666666666667,\"z\":2000,\"width\":73.33333333333334,\"height\":75,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"deer11797317411161101.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 75.00,
+          "width": 73.33,
+          "x": 51.67,
+          "y": 496.67,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"3b9cd000184cd6acb428\",\"layouts\":[{\"id\":0,\"position\":{\"x\":43.333333333333336,\"y\":383.33333333333337,\"z\":6000,\"width\":76.66666666666667,\"height\":70,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"frog2237707895472485.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.00,
+          "width": 76.67,
+          "x": 43.33,
+          "y": 383.33,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"4dc9046e41c90329a047\",\"layouts\":[{\"id\":0,\"position\":{\"x\":729.9337748344368,\"y\":351.15894039735093,\"z\":21000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 729.93,
+          "y": 351.16,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"52c5e57c73dac760b316\",\"layouts\":[{\"id\":0,\"position\":{\"x\":85,\"y\":763.3333333333334,\"z\":4000,\"width\":60,\"height\":65,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"fish46083801262986746.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 65.00,
+          "width": 60.00,
+          "x": 85.00,
+          "y": 763.33,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"57eec6a0860dd095096a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":793.3112582781454,\"y\":351.15894039735093,\"z\":22000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 793.31,
+          "y": 351.16,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"58f6ecf16a875655d477\",\"layouts\":[{\"id\":0,\"position\":{\"x\":96.15894039735097,\"y\":351.15894039735093,\"z\":11000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 96.16,
+          "y": 351.16,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"597134b721e680a6631a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":5,\"y\":220,\"z\":9000,\"width\":161.66666666666669,\"height\":126.66666666666667,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Total % of species in danger \",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"18pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 126.67,
+          "width": 161.67,
+          "x": 5.00,
+          "y": 220.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"61911e8d77bd08a88173\",\"layouts\":[{\"id\":0,\"position\":{\"x\":476.42384105960247,\"y\":351.15894039735093,\"z\":17000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 476.42,
+          "y": 351.16,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"71674a966e6e7c38ea62\",\"layouts\":[{\"id\":0,\"position\":{\"x\":920.0662251655625,\"y\":351.15894039735093,\"z\":24000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 920.07,
+          "y": 351.16,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"7a3b7cb03031660b5640\",\"layouts\":[{\"id\":0,\"position\":{\"x\":983.4437086092711,\"y\":351.15894039735093,\"z\":25000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 983.44,
+          "y": 351.16,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"8ddc5f80e382419e6566\",\"layouts\":[{\"id\":0,\"position\":{\"x\":160.9271523178808,\"y\":83.44370860927152,\"z\":0,\"width\":485.7615894039735,\"height\":381.4569536423841,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Measures table.% of species in danger\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species in danger\"},\"Name\":\"Measures table.% of species in danger\",\"NativeReferenceName\":\"% of species in danger\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species in danger\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"36L\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Total % of species in danger'\"}}},\"switchAxisPosition\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"innerPadding\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"preferredCategoryWidth\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#de6a73'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species'\"}}}}}]}},{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Measures table.% of species in danger\"}}],\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'18% of vertebrate animals are in danger, particularly amphibians'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Species compared to % of threated species'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter6ec5b4d119de75a89c75\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Species Analysis Type\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Species Sampling Method\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Number of species evaluated'\"}}],[{\"Literal\":{\"Value\":\"'Number of threatened species'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 381.46,
+          "width": 485.76,
+          "x": 160.93,
+          "y": 83.44,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"ac27305e12b05d3c0902\",\"layouts\":[{\"id\":0,\"position\":{\"x\":856.688741721854,\"y\":351.15894039735093,\"z\":23000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 856.69,
+          "y": 351.16,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"ad07838fdb104910e984\",\"layouts\":[{\"id\":0,\"position\":{\"x\":250,\"y\":1150,\"z\":7000,\"width\":833.3333333333334,\"height\":50,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data source - International Union for Conservation of Nature Red List Threatened Species\",\"textStyle\":{\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"14pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 833.33,
+          "x": 250.00,
+          "y": 1150.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"b209a5fd8780bb967a31\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":35,\"z\":8000,\"width\":1200,\"height\":150,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"18% of vertebrate animals are in danger,            particularly amphibians\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Lucida Sans Unicode\",\"fontSize\":\"32pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 1200.00,
+          "x": 0.00,
+          "y": 35.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"ba31453ec840c07e9609\",\"layouts\":[{\"id\":0,\"position\":{\"x\":539.8013245033111,\"y\":351.15894039735093,\"z\":18000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 539.80,
+          "y": 351.16,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"d73bf05ec967358a42ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":666.5562913907282,\"y\":351.15894039735093,\"z\":20000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 666.56,
+          "y": 351.16,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"d9a734f2067dbe490a54\",\"layouts\":[{\"id\":0,\"position\":{\"x\":81.66666666666667,\"y\":883.3333333333334,\"z\":3000,\"width\":75,\"height\":63.333333333333336,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"dove_-_Copy31484075842000303.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 63.33,
+          "width": 75.00,
+          "x": 81.67,
+          "y": 883.33,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"e2f38c1c0aeed1b12cc6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":349.6688741721853,\"y\":351.15894039735093,\"z\":15000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 349.67,
+          "y": 351.16,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"f2a34efd90109162a045\",\"layouts\":[{\"id\":0,\"position\":{\"x\":222.91390728476816,\"y\":351.15894039735093,\"z\":13000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 222.91,
+          "y": 351.16,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"f68f77a9456ce5a72a8e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":159.53642384105956,\"y\":351.15894039735093,\"z\":12000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 159.54,
+          "y": 351.16,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"f988c89166e347904218\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":351.6666666666667,\"z\":1000,\"width\":1200,\"height\":798.3333333333334,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Type of vertebrate.Type of Vertebrate\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures table.% of species in danger\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Type of vertebrate\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Type of Vertebrate\"},\"Name\":\"Type of vertebrate.Type of Vertebrate\",\"NativeReferenceName\":\"Type of Vertebrate\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species in danger\"},\"Name\":\"Measures table.% of species in danger\",\"NativeReferenceName\":\"% of species in danger\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species in danger\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'% of species in danger'\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}},\"titleFontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"34L\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#de6a73'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species'\"}}}}}]}},{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'18% of vertebrate animals are in danger, particularly amphibians'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Species compared to % of threated species'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter6ec5b4d119de75a89c75\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Species Analysis Type\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Species Sampling Method\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Number of species evaluated'\"}}],[{\"Literal\":{\"Value\":\"'Number of threatened species'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 798.33,
+          "width": 1200.00,
+          "x": 0.00,
+          "y": 351.67,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fe401e136c41c83b5cd0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32.78145695364238,\"y\":351.15894039735093,\"z\":10000,\"width\":47.682119205298015,\"height\":44.70198675496689,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E2138'\"}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 44.70,
+          "width": 47.68,
+          "x": 32.78,
+          "y": 351.16,
+          "z": 10000.00
+        }
+      ],
+      "width": 1200.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Amphibian threat factors - Linkdin",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1200.00,
+      "name": "ReportSection6e0ee78d45ba16932a03",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"9ef8fde284d079098228\",\"layouts\":[{\"id\":0,\"position\":{\"x\":246,\"y\":1148,\"z\":1000,\"width\":754,\"height\":52,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Data source - International Union for Conservation of Nature Red List Threatened Species\",\"textStyle\":{\"fontSize\":\"14pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 52.00,
+          "width": 754.00,
+          "x": 246.00,
+          "y": 1148.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e66c6b6bd7460deeeaec\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30,\"y\":0,\"z\":0,\"width\":1170,\"height\":1163.3333333333335,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Threat type.Threat\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measures table.Total threat factors\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Threat type\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Threat\"},\"Name\":\"Threat type.Threat\",\"NativeReferenceName\":\"Threat\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total threat factors\"},\"Name\":\"Measures table.Total threat factors\",\"NativeReferenceName\":\"Total threat factors\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total threat factors\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Number of vertebrate species'\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"34L\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#de6a73'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species by 2022'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of species evaluated'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Species Analysis Type\"}},\"Property\":\"Species Sampling Method\"}},\"Right\":{\"Literal\":{\"Value\":\"'Number of threatened species'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures table\"}},\"Property\":\"Total threat factors\"}},\"Right\":{\"Literal\":{\"Value\":\"1200D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measures table\"}},\"Property\":\"Total threat factors\"}},\"Right\":{\"Literal\":{\"Value\":\"10000D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#fd625e'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Deforestation stands as the main cause of amphibians loss'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"27D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Factors contributing to amphibian loss by number of vertebrate species '\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Lucida Sans Unicode'''\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter41c4ef71725c67d032dc\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Threat type\"}},\"Property\":\"Threat\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Threat type\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Threat\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Bd (future)'\"}}],[{\"Literal\":{\"Value\":\"'Bd (ongoing)'\"}}],[{\"Literal\":{\"Value\":\"'Bsal (future)'\"}}],[{\"Literal\":{\"Value\":\"'Bsal (ongoing)'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 1163.33,
+          "width": 1170.00,
+          "x": 30.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1200.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Substack",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1048.00,
+      "name": "ReportSection95c3751c2a22cd2d3174",
+      "ordinal": 4,
+      "visualContainers": [],
+      "width": 1456.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Medium",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionad91e65ca9d601046d49",
+      "ordinal": 7,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Reddit",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionbead6e4c6e54903ba1d6",
+      "ordinal": 9,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Twitter",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1102.00,
+      "name": "ReportSectiondb5391b5e9c0174390a7",
+      "ordinal": 6,
+      "visualContainers": [],
+      "width": 735.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"297L\"}}}}}]},\"visibility\":1}",
+      "displayName": "% of species analyised - insta",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1350.00,
+      "name": "ReportSectionfb1767a30de41060106c",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"21cf780680cd590a0700\",\"layouts\":[{\"id\":0,\"position\":{\"x\":25.714285714285715,\"y\":167.14285714285717,\"z\":0,\"width\":541.4285714285714,\"height\":312.8571428571429,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Type of vertebrate.Type of Vertebrate\"},{\"queryRef\":\"Measures table.% of species analyised\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measures table\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Type of vertebrate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Type of Vertebrate\"},\"Name\":\"Type of vertebrate.Type of Vertebrate\",\"NativeReferenceName\":\"Type of Vertebrate\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species analyised\"},\"Name\":\"Measures table.% of species analyised\",\"NativeReferenceName\":\"% of species analyised\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species analyised\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 312.86,
+          "width": 541.43,
+          "x": 25.71,
+          "y": 167.14,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"3412d0e676a0e598120a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":568.5714285714286,\"z\":1000,\"width\":541.4285714285714,\"height\":312.8571428571429,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Type of vertebrate.Type of Vertebrate\"},{\"queryRef\":\"Measures table.% of species in danger\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Type of vertebrate\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Type of Vertebrate\"},\"Name\":\"Type of vertebrate.Type of Vertebrate\",\"NativeReferenceName\":\"Type of Vertebrate\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"% of species in danger\"},\"Name\":\"Measures table.% of species in danger\",\"NativeReferenceName\":\"% of species in danger\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 312.86,
+          "width": 541.43,
+          "x": 0.00,
+          "y": 568.57,
+          "z": 1000.00
+        }
+      ],
+      "width": 1080.00
+    }
+  ],
+  "theme": "UKPN5833030258006715.json"
+}

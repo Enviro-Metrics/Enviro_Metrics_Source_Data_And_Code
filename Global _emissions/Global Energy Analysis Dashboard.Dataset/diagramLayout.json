@@ -1,0 +1,98 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 76.631987413046318,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 652.9753983505725,
+            "y": 319.95927608217215
+          },
+          "nodeIndex": "Calendar",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 895.12861289448574,
+            "y": 120.38091984373324
+          },
+          "nodeIndex": "Country",
+          "nodeLineageTag": "cb05ef27-5a17-42dc-8f09-c298b1b910ab",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1288.1075125989496,
+            "y": 134.18853349427764
+          },
+          "nodeIndex": "Energy type",
+          "nodeLineageTag": "94461231-57da-4796-a5b2-062b4968f90e",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1987.881433525969,
+            "y": 383.35390110562145
+          },
+          "nodeIndex": "Measures Table",
+          "nodeLineageTag": "f0391da9-0422-4cdf-aea2-86a2bb507471",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1112.9941944183349,
+            "y": 569.11180611922612
+          },
+          "nodeIndex": "Energy consumption",
+          "size": {
+            "height": 436.72663223919585,
+            "width": 311.51332309813938
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1694.7528206314832,
+            "y": 386.919219179211
+          },
+          "nodeIndex": "Source data",
+          "nodeLineageTag": "f934c9e4-5fd9-4326-b2f4-6cafd868401d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 70.466657361944783,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

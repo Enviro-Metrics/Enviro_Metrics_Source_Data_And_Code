@@ -1,0 +1,99 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 121.5
+          },
+          "nodeIndex": "Species Analysis Type",
+          "nodeLineageTag": "79089350-ac8e-4d11-801e-354555af5642",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 121.5
+          },
+          "nodeIndex": "Type of vertebrate",
+          "nodeLineageTag": "49490b84-0fd2-49a3-ba9b-1307bb450219",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 125,
+            "y": 420.5
+          },
+          "nodeIndex": "Species fact table",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 747,
+            "y": 0
+          },
+          "nodeIndex": "Measures table",
+          "nodeLineageTag": "b07dcd58-9f22-4a02-9dd8-1f532ba50905",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 867,
+            "y": 417
+          },
+          "nodeIndex": "Amphibian threat factors",
+          "nodeLineageTag": "054b25f6-3f77-4f35-b841-110f55c4c511",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 702,
+            "y": 144
+          },
+          "nodeIndex": "Threat type",
+          "nodeLineageTag": "c4f0fbd8-4da6-4e51-8a08-3e29e8a5138d",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

@@ -1,0 +1,3118 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.121.644.0 (23.09)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Energy consumption\",\"Measures Table\",\"Source data\",\"Energy type\",\"Calendar\",\"Country\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-GB",
+    "cultures": [
+      {
+        "name": "en-GB",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "fastCombine": true,
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "queryGroups": [
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ],
+        "folder": "Fact table"
+      },
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "1"
+          }
+        ],
+        "folder": "Dimension table"
+      },
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "2"
+          }
+        ],
+        "folder": "Other"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "c47f8808-3526-47cd-a795-1b39599b5390",
+        "fromColumn": "Country ID",
+        "fromTable": "Energy consumption",
+        "toColumn": "Country ID",
+        "toTable": "Country"
+      },
+      {
+        "name": "2d25d5cd-6b6d-48ef-a6e6-d71ccb6d398a",
+        "fromColumn": "Energy type",
+        "fromTable": "Energy consumption",
+        "toColumn": "Energy type",
+        "toTable": "Energy type"
+      },
+      {
+        "name": "b56a1d99-48aa-4609-bdd5-9c35ec361a94",
+        "fromColumn": "Date",
+        "fromTable": "Energy consumption",
+        "toColumn": "Date",
+        "toTable": "Calendar"
+      }
+    ],
+    "sourceQueryCulture": "en-GB",
+    "tables": [
+      {
+        "name": "Country",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "574412f7-57e7-456c-8c6e-3588a281d936",
+            "sourceColumn": "country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eee303d2-5032-400a-8262-b7808da72430",
+            "sourceColumn": "Country ID",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "cb05ef27-5a17-42dc-8f09-c298b1b910ab",
+        "partitions": [
+          {
+            "name": "Country",
+            "mode": "import",
+            "queryGroup": "Dimension table",
+            "source": {
+              "expression": [
+                "let",
+                "  Source = Csv.Document(File.Contents(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Global _emissions\\our world in data.csv\"),[Delimiter=\",\", Columns=129, QuoteStyle=QuoteStyle.None]),",
+                "  #\"Promoted headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),",
+                "  #\"Changed column type\" = Table.TransformColumnTypes(#\"Promoted headers\", {{\"country\", type text}, {\"year\", Int64.Type}, {\"iso_code\", type text}, {\"population\", Int64.Type}, {\"gdp\", Int64.Type}, {\"biofuel_cons_change_pct\", type text}, {\"biofuel_cons_change_twh\", type text}, {\"biofuel_cons_per_capita\", type text}, {\"biofuel_consumption\", type text}, {\"biofuel_elec_per_capita\", Int64.Type}, {\"biofuel_electricity\", Int64.Type}, {\"biofuel_share_elec\", Int64.Type}, {\"biofuel_share_energy\", type text}, {\"carbon_intensity_elec\", type number}, {\"coal_cons_change_pct\", type number}, {\"coal_cons_change_twh\", type number}, {\"coal_cons_per_capita\", type number}, {\"coal_consumption\", type number}, {\"coal_elec_per_capita\", Int64.Type}, {\"coal_electricity\", Int64.Type}, {\"coal_prod_change_pct\", type number}, {\"coal_prod_change_twh\", type number}, {\"coal_prod_per_capita\", type number}, {\"coal_production\", type number}, {\"coal_share_elec\", Int64.Type}, {\"coal_share_energy\", type number}, {\"electricity_demand\", type number}, {\"electricity_generation\", type number}, {\"electricity_share_energy\", type text}, {\"energy_cons_change_pct\", type number}, {\"energy_cons_change_twh\", type number}, {\"energy_per_capita\", type number}, {\"energy_per_gdp\", type number}, {\"fossil_cons_change_pct\", type number}, {\"fossil_cons_change_twh\", type number}, {\"fossil_elec_per_capita\", type number}, {\"fossil_electricity\", type number}, {\"fossil_energy_per_capita\", type number}, {\"fossil_fuel_consumption\", type number}, {\"fossil_share_elec\", type number}, {\"fossil_share_energy\", type number}, {\"gas_cons_change_pct\", type number}, {\"gas_cons_change_twh\", type number}, {\"gas_consumption\", type number}, {\"gas_elec_per_capita\", Int64.Type}, {\"gas_electricity\", Int64.Type}, {\"gas_energy_per_capita\", type number}, {\"gas_prod_change_pct\", type number}, {\"gas_prod_change_twh\", type number}, {\"gas_prod_per_capita\", type number}, {\"gas_production\", type number}, {\"gas_share_elec\", Int64.Type}, {\"gas_share_energy\", type number}, {\"greenhouse_gas_emissions\", type number}, {\"hydro_cons_change_pct\", type number}, {\"hydro_cons_change_twh\", type number}, {\"hydro_consumption\", type number}, {\"hydro_elec_per_capita\", type number}, {\"hydro_electricity\", type number}, {\"hydro_energy_per_capita\", type number}, {\"hydro_share_elec\", type number}, {\"hydro_share_energy\", type number}, {\"low_carbon_cons_change_pct\", type number}, {\"low_carbon_cons_change_twh\", type number}, {\"low_carbon_consumption\", type number}, {\"low_carbon_elec_per_capita\", type number}, {\"low_carbon_electricity\", type number}, {\"low_carbon_energy_per_capita\", type number}, {\"low_carbon_share_elec\", type number}, {\"low_carbon_share_energy\", type number}, {\"net_elec_imports\", type number}, {\"net_elec_imports_share_demand\", type number}, {\"nuclear_cons_change_pct\", type text}, {\"nuclear_cons_change_twh\", Int64.Type}, {\"nuclear_consumption\", Int64.Type}, {\"nuclear_elec_per_capita\", Int64.Type}, {\"nuclear_electricity\", Int64.Type}, {\"nuclear_energy_per_capita\", Int64.Type}, {\"nuclear_share_elec\", Int64.Type}, {\"nuclear_share_energy\", Int64.Type}, {\"oil_cons_change_pct\", type number}, {\"oil_cons_change_twh\", type number}, {\"oil_consumption\", type number}, {\"oil_elec_per_capita\", type number}, {\"oil_electricity\", type number}, {\"oil_energy_per_capita\", type number}, {\"oil_prod_change_pct\", type number}, {\"oil_prod_change_twh\", type number}, {\"oil_prod_per_capita\", type number}, {\"oil_production\", type number}, {\"oil_share_elec\", type number}, {\"oil_share_energy\", type number}, {\"other_renewable_consumption\", type number}, {\"other_renewable_electricity\", type number}, {\"other_renewable_exc_biofuel_electricity\", Int64.Type}, {\"other_renewables_cons_change_pct\", type number}, {\"other_renewables_cons_change_twh\", type number}, {\"other_renewables_elec_per_capita\", type number}, {\"other_renewables_elec_per_capita_exc_biofuel\", Int64.Type}, {\"other_renewables_energy_per_capita\", type number}, {\"other_renewables_share_elec\", Int64.Type}, {\"other_renewables_share_elec_exc_biofuel\", Int64.Type}, {\"other_renewables_share_energy\", type number}, {\"per_capita_electricity\", type number}, {\"primary_energy_consumption\", type number}, {\"renewables_cons_change_pct\", type number}, {\"renewables_cons_change_twh\", type number}, {\"renewables_consumption\", type number}, {\"renewables_elec_per_capita\", type number}, {\"renewables_electricity\", type number}, {\"renewables_energy_per_capita\", type number}, {\"renewables_share_elec\", type number}, {\"renewables_share_energy\", type number}, {\"solar_cons_change_pct\", type text}, {\"solar_cons_change_twh\", Int64.Type}, {\"solar_consumption\", Int64.Type}, {\"solar_elec_per_capita\", type number}, {\"solar_electricity\", type number}, {\"solar_energy_per_capita\", Int64.Type}, {\"solar_share_elec\", type number}, {\"solar_share_energy\", Int64.Type}, {\"wind_cons_change_pct\", type text}, {\"wind_cons_change_twh\", Int64.Type}, {\"wind_consumption\", Int64.Type}, {\"wind_elec_per_capita\", Int64.Type}, {\"wind_electricity\", Int64.Type}, {\"wind_energy_per_capita\", Int64.Type}, {\"wind_share_elec\", Int64.Type}, {\"wind_share_energy\", Int64.Type}}),",
+                "  #\"Removed other columns\" = Table.SelectColumns(#\"Changed column type\", {\"country\"}),",
+                "  #\"Removed duplicates\" = Table.Distinct(#\"Removed other columns\", {\"country\"}),",
+                "  #\"Added index\" = Table.AddIndexColumn(#\"Removed duplicates\", \"Index\", 1, 1, Int64.Type),",
+                "  #\"Renamed columns\" = Table.RenameColumns(#\"Added index\", {{\"Index\", \"Country ID\"}})",
+                "in",
+                "    #\"Renamed columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Energy consumption",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Energy consumption (terrawatts-hours)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "1fc1791b-6844-4225-9326-e52748e70b17",
+            "sourceColumn": "Energy consumption (terrawatts-hours)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Country ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7a2104a8-f94a-4ca9-ace2-aa05df63a0a5",
+            "sourceColumn": "Country ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "694420ec-0f1d-4889-9928-c997e16b25d7",
+            "sourceColumn": "year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Energy type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d3c4b351-8d30-460e-ab93-bf7dfd4f190e",
+            "sourceColumn": "Energy type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "9a5a7b7a-7cc0-4c8a-b0ad-dee93046f6d4",
+            "sourceColumn": "Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Emissions (tonnes CO2e)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    'Energy consumption'[Energy Type],",
+              "    \"Coal\", 'Energy consumption'[Energy consumption (terrawatts-hours)] * 900,",
+              "    \"Natural Gas\", 'Energy consumption'[Energy consumption (terrawatts-hours)] * 500,",
+              "    \"Hydrogen\", 'Energy consumption'[Energy consumption (terrawatts-hours)] * 0,",
+              "    \"Nuclear\", 'Energy consumption'[Energy consumption (terrawatts-hours)] * 12,",
+              "    \"Oil\", 'Energy consumption'[Energy consumption (terrawatts-hours)] * 800,",
+              "    \"Wind\", 'Energy consumption'[Energy consumption (terrawatts-hours)] * 0,",
+              "    \"Solar\", 'Energy consumption'[Energy consumption (terrawatts-hours)] * 0,",
+              "    \"Biofuel\", 'Energy consumption'[Energy consumption (terrawatts-hours)] * 300",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "406300a4-bcbf-4452-a75e-ce78eb223e76",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "Energy type ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "03b598aa-ba34-4f45-8307-d41020ffe651",
+            "sourceColumn": "Energy type ID",
+            "summarizeBy": "count"
+          }
+        ],
+        "lineageTag": "21fb667f-3ccb-41fa-8b6a-9e685ec452ca",
+        "partitions": [
+          {
+            "name": "Energy consumption",
+            "mode": "import",
+            "queryGroup": "Fact table",
+            "source": {
+              "expression": [
+                "let",
+                "  Source = Csv.Document(File.Contents(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Global _emissions\\our world in data.csv\"),[Delimiter=\",\", Columns=129, QuoteStyle=QuoteStyle.None]),",
+                "  #\"Promoted headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),",
+                "  #\"Changed column type\" = Table.TransformColumnTypes(#\"Promoted headers\", {{\"country\", type text}, {\"year\", Int64.Type}, {\"iso_code\", type text}, {\"population\", Int64.Type}, {\"gdp\", Int64.Type}, {\"biofuel_cons_change_pct\", type text}, {\"biofuel_cons_change_twh\", type text}, {\"biofuel_cons_per_capita\", type text}, {\"biofuel_consumption\", type text}, {\"biofuel_elec_per_capita\", Int64.Type}, {\"biofuel_electricity\", Int64.Type}, {\"biofuel_share_elec\", Int64.Type}, {\"biofuel_share_energy\", type text}, {\"carbon_intensity_elec\", type number}, {\"coal_cons_change_pct\", type number}, {\"coal_cons_change_twh\", type number}, {\"coal_cons_per_capita\", type number}, {\"coal_consumption\", type number}, {\"coal_elec_per_capita\", Int64.Type}, {\"coal_electricity\", Int64.Type}, {\"coal_prod_change_pct\", type number}, {\"coal_prod_change_twh\", type number}, {\"coal_prod_per_capita\", type number}, {\"coal_production\", type number}, {\"coal_share_elec\", Int64.Type}, {\"coal_share_energy\", type number}, {\"electricity_demand\", type number}, {\"electricity_generation\", type number}, {\"electricity_share_energy\", type text}, {\"energy_cons_change_pct\", type number}, {\"energy_cons_change_twh\", type number}, {\"energy_per_capita\", type number}, {\"energy_per_gdp\", type number}, {\"fossil_cons_change_pct\", type number}, {\"fossil_cons_change_twh\", type number}, {\"fossil_elec_per_capita\", type number}, {\"fossil_electricity\", type number}, {\"fossil_energy_per_capita\", type number}, {\"fossil_fuel_consumption\", type number}, {\"fossil_share_elec\", type number}, {\"fossil_share_energy\", type number}, {\"gas_cons_change_pct\", type number}, {\"gas_cons_change_twh\", type number}, {\"gas_consumption\", type number}, {\"gas_elec_per_capita\", Int64.Type}, {\"gas_electricity\", Int64.Type}, {\"gas_energy_per_capita\", type number}, {\"gas_prod_change_pct\", type number}, {\"gas_prod_change_twh\", type number}, {\"gas_prod_per_capita\", type number}, {\"gas_production\", type number}, {\"gas_share_elec\", Int64.Type}, {\"gas_share_energy\", type number}, {\"greenhouse_gas_emissions\", type number}, {\"hydro_cons_change_pct\", type number}, {\"hydro_cons_change_twh\", type number}, {\"hydro_consumption\", type number}, {\"hydro_elec_per_capita\", type number}, {\"hydro_electricity\", type number}, {\"hydro_energy_per_capita\", type number}, {\"hydro_share_elec\", type number}, {\"hydro_share_energy\", type number}, {\"low_carbon_cons_change_pct\", type number}, {\"low_carbon_cons_change_twh\", type number}, {\"low_carbon_consumption\", type number}, {\"low_carbon_elec_per_capita\", type number}, {\"low_carbon_electricity\", type number}, {\"low_carbon_energy_per_capita\", type number}, {\"low_carbon_share_elec\", type number}, {\"low_carbon_share_energy\", type number}, {\"net_elec_imports\", type number}, {\"net_elec_imports_share_demand\", type number}, {\"nuclear_cons_change_pct\", type text}, {\"nuclear_cons_change_twh\", Int64.Type}, {\"nuclear_consumption\", Int64.Type}, {\"nuclear_elec_per_capita\", Int64.Type}, {\"nuclear_electricity\", Int64.Type}, {\"nuclear_energy_per_capita\", Int64.Type}, {\"nuclear_share_elec\", Int64.Type}, {\"nuclear_share_energy\", Int64.Type}, {\"oil_cons_change_pct\", type number}, {\"oil_cons_change_twh\", type number}, {\"oil_consumption\", type number}, {\"oil_elec_per_capita\", type number}, {\"oil_electricity\", type number}, {\"oil_energy_per_capita\", type number}, {\"oil_prod_change_pct\", type number}, {\"oil_prod_change_twh\", type number}, {\"oil_prod_per_capita\", type number}, {\"oil_production\", type number}, {\"oil_share_elec\", type number}, {\"oil_share_energy\", type number}, {\"other_renewable_consumption\", type number}, {\"other_renewable_electricity\", type number}, {\"other_renewable_exc_biofuel_electricity\", Int64.Type}, {\"other_renewables_cons_change_pct\", type number}, {\"other_renewables_cons_change_twh\", type number}, {\"other_renewables_elec_per_capita\", type number}, {\"other_renewables_elec_per_capita_exc_biofuel\", Int64.Type}, {\"other_renewables_energy_per_capita\", type number}, {\"other_renewables_share_elec\", Int64.Type}, {\"other_renewables_share_elec_exc_biofuel\", Int64.Type}, {\"other_renewables_share_energy\", type number}, {\"per_capita_electricity\", type number}, {\"primary_energy_consumption\", type number}, {\"renewables_cons_change_pct\", type number}, {\"renewables_cons_change_twh\", type number}, {\"renewables_consumption\", type number}, {\"renewables_elec_per_capita\", type number}, {\"renewables_electricity\", type number}, {\"renewables_energy_per_capita\", type number}, {\"renewables_share_elec\", type number}, {\"renewables_share_energy\", type number}, {\"solar_cons_change_pct\", type text}, {\"solar_cons_change_twh\", Int64.Type}, {\"solar_consumption\", Int64.Type}, {\"solar_elec_per_capita\", type number}, {\"solar_electricity\", type number}, {\"solar_energy_per_capita\", Int64.Type}, {\"solar_share_elec\", type number}, {\"solar_share_energy\", Int64.Type}, {\"wind_cons_change_pct\", type text}, {\"wind_cons_change_twh\", Int64.Type}, {\"wind_consumption\", Int64.Type}, {\"wind_elec_per_capita\", Int64.Type}, {\"wind_electricity\", Int64.Type}, {\"wind_energy_per_capita\", Int64.Type}, {\"wind_share_elec\", Int64.Type}, {\"wind_share_energy\", Int64.Type}}),",
+                "  #\"Choose columns\" = Table.SelectColumns(#\"Changed column type\", {\"country\", \"year\", \"biofuel_consumption\", \"coal_consumption\", \"gas_consumption\", \"hydro_consumption\", \"nuclear_consumption\", \"oil_consumption\", \"other_renewable_consumption\", \"solar_consumption\", \"wind_consumption\"}),",
+                "  #\"Replaced value\" = Table.ReplaceValue(#\"Choose columns\", \"\", null, Replacer.ReplaceValue, {\"biofuel_consumption\"}),",
+                "  #\"Unpivoted other columns\" = Table.UnpivotOtherColumns(#\"Replaced value\", {\"year\", \"country\"}, \"Attribute\", \"Value\"),",
+                "  #\"Renamed columns\" = Table.RenameColumns(#\"Unpivoted other columns\", {{\"Attribute\", \"Energy type\"}, {\"Value\", \"Energy consumption\"}}),",
+                "  #\"Transform columns\" = Table.TransformColumnTypes(#\"Renamed columns\", {{\"Energy consumption\", type text}}),",
+                "  #\"Replace errors\" = Table.ReplaceErrorValues(#\"Transform columns\", {{\"Energy consumption\", null}}),",
+                "  #\"Inserted conditional column\" = Table.AddColumn(#\"Replace errors\", \"Energy Type FK\", each if Text.StartsWith([Energy type], \"coal\") then 1 else if Text.StartsWith([Energy type], \"gas\") then 2 else if Text.StartsWith([Energy type], \"hydro\") then 3 else if Text.StartsWith([Energy type], \"nuclear\") then 4 else if Text.StartsWith([Energy type], \"oil\") then 5 else if Text.StartsWith([Energy type], \"wind\") then 6 else if Text.StartsWith([Energy type], \"other\") then 7 else if Text.StartsWith([Energy type], \"solar\") then 8 else if Text.StartsWith([Energy type], \"biofuel\") then 9 else \"n/a\"),",
+                "  #\"Transform columns 1\" = Table.TransformColumnTypes(#\"Inserted conditional column\", {{\"Energy Type FK\", type text}}),",
+                "  #\"Filtered rows\" = Table.SelectRows(#\"Transform columns 1\", each ([country] <> \"Africa\" and [country] <> \"Africa (BP)\" and [country] <> \"Asia\" and [country] <> \"Asia Pacific (BP)\" and [country] <> \"Central America (BP)\" and [country] <> \"CIS (BP)\" and [country] <> \"Eastern Africa (BP)\" and [country] <> \"Europe\" and [country] <> \"Europe (BP)\" and [country] <> \"European Union (27)\" and [country] <> \"High-income countries\" and [country] <> \"Lower-middle-income countries\" and [country] <> \"Middle Africa (BP)\" and [country] <> \"Middle East (BP)\" and [country] <> \"Non-OECD (BP)\" and [country] <> \"North America\" and [country] <> \"North America (BP)\" and [country] <> \"Oceania\" and [country] <> \"OECD (BP)\" and [country] <> \"South America\" and [country] <> \"South and Central America (BP)\" and [country] <> \"Upper-middle-income countries\" and [country] <> \"USSR\" and [country] <> \"Western Africa (BP)\" and [country] <> \"World\")),",
+                "  #\"Changed column type 1\" = Table.TransformColumnTypes(#\"Filtered rows\", {{\"Energy consumption\", type number}}),",
+                "  #\"Removed columns\" = Table.RemoveColumns(#\"Changed column type 1\", {\"Energy Type FK\"}),",
+                "  #\"Merged queries\" = Table.NestedJoin(#\"Removed columns\", {\"country\"}, Country, {\"country\"}, \"Country (2)\", JoinKind.LeftOuter),",
+                "  #\"Expanded Country (2)\" = Table.ExpandTableColumn(#\"Merged queries\", \"Country (2)\", {\"Country ID\"}, {\"Country ID\"}),",
+                "  #\"Removed columns 1\" = Table.RemoveColumns(#\"Expanded Country (2)\", {\"country\"}),",
+                "  #\"Replaced value 1\" = Table.ReplaceValue(#\"Removed columns 1\", \"coal_consumption\", \"Coal\", Replacer.ReplaceText, {\"Energy type\"}),",
+                "  #\"Replaced value 2\" = Table.ReplaceValue(#\"Replaced value 1\", \"gas_consumption\", \"Natural gas\", Replacer.ReplaceText, {\"Energy type\"}),",
+                "  #\"Replaced value 3\" = Table.ReplaceValue(#\"Replaced value 2\", \"hydro_consumption\", \"Hydrogen\", Replacer.ReplaceText, {\"Energy type\"}),",
+                "  #\"Replaced value 4\" = Table.ReplaceValue(#\"Replaced value 3\", \"nuclear_consumption\", \"Nuclear\", Replacer.ReplaceText, {\"Energy type\"}),",
+                "  #\"Replaced value 5\" = Table.ReplaceValue(#\"Replaced value 4\", \"oil_consumption\", \"Oil\", Replacer.ReplaceText, {\"Energy type\"}),",
+                "  #\"Replaced value 6\" = Table.ReplaceValue(#\"Replaced value 5\", \"wind_consumption\", \"Wind\", Replacer.ReplaceText, {\"Energy type\"}),",
+                "  #\"Replaced value 7\" = Table.ReplaceValue(#\"Replaced value 6\", \"solar_consumption\", \"Solar\", Replacer.ReplaceText, {\"Energy type\"}),",
+                "  #\"Replaced value 8\" = Table.ReplaceValue(#\"Replaced value 7\", \"other_renewable_consumption\", \"Other Renewable Consumption\", Replacer.ReplaceText, {\"Energy type\"}),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Replaced value 8\",\"Other Renewable Consumption\",\"Other Renewables\",Replacer.ReplaceText,{\"Energy type\"}),",
+                "    #\"Replaced Value3\" = Table.ReplaceValue(#\"Replaced Value2\",\"biofuel_consumption\",\"Biofuel\",Replacer.ReplaceText,{\"Energy type\"}),",
+                "    #\"Merged Queries\" = Table.NestedJoin(#\"Replaced Value3\", {\"Energy type\"}, #\"Energy type\", {\"Energy type\"}, \"Energy type.1\", JoinKind.LeftOuter),",
+                "    #\"Expanded Energy type.1\" = Table.ExpandTableColumn(#\"Merged Queries\", \"Energy type.1\", {\"Energy type ID\"}, {\"Energy type.1.Energy type ID\"}),",
+                "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Expanded Energy type.1\",{{\"Energy type.1.Energy type ID\", \"Energy type ID\"}}),",
+                "  #\"Added Custom\" = Table.AddColumn(#\"Renamed Columns2\", \"Year.1\", each #date([year], 1, 1)),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Custom\",{{\"Year.1\", \"Date\"}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"Date\", type date}}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Changed Type\",{{\"Energy consumption\", \"Energy consumption (terrawatts-hours)\"}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Renamed Columns1\",\"biofuel_consumption\",\"Biofuel\",Replacer.ReplaceText,{\"Energy type\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Other Renewable Consumption\",\"Other Renewables\",Replacer.ReplaceText,{\"Energy type\"}),",
+                "    #\"Trimmed Text\" = Table.TransformColumns(#\"Replaced Value1\",{{\"Energy type\", Text.Trim, type text}})",
+                "in",
+                "    #\"Trimmed Text\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Measures Table",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "f0391da9-0422-4cdf-aea2-86a2bb507471",
+        "measures": [
+          {
+            "name": "CAGR - Fossil Fuel Energy consumption",
+            "expression": [
+              "",
+              "VAR FirstYear = CALCULATE(MIN('Calendar'[Year]), ALL('Calendar'))",
+              "",
+              "VAR FirstYearValue = ",
+              "    CALCULATE(",
+              "        [Energy consumption],",
+              "        FILTER(",
+              "            ALL('Calendar'),",
+              "            'Calendar'[Year] = FirstYear",
+              "        ),",
+              "        'Energy consumption'[Energy type id] IN {1, 2, 5}",
+              "    )",
+              "",
+              "VAR CurrentYear = MAX('Calendar'[Year])  -- This line gets the current year context from the table.",
+              "",
+              "VAR CurrentYearValue = ",
+              "    CALCULATE(",
+              "        [Energy consumption],",
+              "        FILTER(",
+              "            ALL('Calendar'),",
+              "            'Calendar'[Year] = CurrentYear  -- Use the current year for the calculation.",
+              "        ),",
+              "        'Energy consumption'[Energy type id] IN {1, 2, 5}",
+              "    )",
+              "",
+              "VAR YearDifference = CurrentYear - FirstYear",
+              "",
+              "RETURN",
+              "",
+              "IF (",
+              "    NOT(ISBLANK(CurrentYearValue)) && NOT(ISBLANK(FirstYearValue)) && YearDifference > 0,",
+              "    (CurrentYearValue / FirstYearValue) ^ (1 / YearDifference) - 1,",
+              "    BLANK()",
+              ")",
+              ""
+            ],
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "fd79dc32-8883-4f26-9ca9-01e1006fca60"
+          },
+          {
+            "name": "FossilFuelConsumption",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "    FILTER(",
+              "        'Energy consumption',",
+              "        'Energy consumption'[Energy type ID]= 1 ||",
+              "        'Energy consumption'[Energy type ID]= 2 ||",
+              "        'Energy consumption'[Energy type ID] = 5",
+              "    )",
+              ")",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "4a8abf91-dfdc-4b42-97bf-06a8c5987d09"
+          },
+          {
+            "name": "CAGR - Renewable Energy consumption",
+            "expression": [
+              "",
+              "VAR FirstYear = CALCULATE(MIN('Calendar'[Year]), ALL('Calendar'))",
+              "",
+              "VAR FirstYearValue = ",
+              "    CALCULATE(",
+              "        [Energy consumption],",
+              "        FILTER(",
+              "            ALL('Calendar'),",
+              "            'Calendar'[Year] = FirstYear",
+              "        ),",
+              "        'Energy consumption'[Energy type id] IN {3, 6,7,8,9}",
+              "    )",
+              "",
+              "VAR CurrentYear = MAX('Calendar'[Year])  -- This line gets the current year context from the table.",
+              "",
+              "VAR CurrentYearValue = ",
+              "    CALCULATE(",
+              "        [Energy consumption],",
+              "        FILTER(",
+              "            ALL('Calendar'),",
+              "            'Calendar'[Year] = CurrentYear  -- Use the current year for the calculation.",
+              "        ),",
+              "        'Energy consumption'[Energy type id] IN {3, 6,7,8,9}",
+              "    )",
+              "",
+              "VAR YearDifference = CurrentYear - FirstYear",
+              "",
+              "RETURN",
+              "",
+              "IF (",
+              "    NOT(ISBLANK(CurrentYearValue)) && NOT(ISBLANK(FirstYearValue)) && YearDifference > 0,",
+              "    (CurrentYearValue / FirstYearValue) ^ (1 / YearDifference) - 1,",
+              "    BLANK()",
+              ")",
+              ""
+            ],
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "50f3ef40-7d99-4706-9f85-55701c2ff740"
+          },
+          {
+            "name": "RenewableEnergyConsumption",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "    FILTER(",
+              "        'Energy consumption',",
+              "        'Energy consumption'[Energy type ID]= 3 ||",
+              "        'Energy consumption'[Energy type ID]= 6 ||",
+              "        'Energy consumption'[Energy type ID]= 7 ||",
+              "        'Energy consumption'[Energy type ID]= 8 ||",
+              "        'Energy consumption'[Energy type ID] = 9",
+              "    )",
+              ")",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "b25302de-af9f-4a80-b58b-3d2f98238994"
+          },
+          {
+            "name": "Energy consumption",
+            "expression": [
+              "",
+              "SUM('Energy consumption'[Energy consumption (terrawatts-hours)])"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "58621a3b-3114-4b16-99d9-83a402be23a0"
+          },
+          {
+            "name": "Total emissions",
+            "expression": "SUM('Energy consumption'[Emissions (tonnes CO2e)])",
+            "formatString": "#,0",
+            "lineageTag": "f1c8677f-92e2-4ef6-bef1-7dc952473a6f"
+          },
+          {
+            "name": "Last year of emissions",
+            "expression": "YEAR(TODAY()-1)",
+            "formatString": "0",
+            "lineageTag": "67ec881e-8abb-49e9-ad3a-3fb89aedf2b9"
+          },
+          {
+            "name": "Last year - Emissions",
+            "expression": [
+              "",
+              "VAR Result = ",
+              "    LASTNONBLANK(",
+              "        ALL('Calendar'[Year]),",
+              "        CALCULATE(SUM('Energy consumption'[Emissions (tonnes CO2e)]))",
+              "    )",
+              "RETURN ",
+              "IF(ISBLANK(Result), BLANK(), Result)",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "c920f2fd-af07-463d-9d95-214df87769a3"
+          },
+          {
+            "name": "CAGR - Emissions",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR FirstYear = CALCULATE(MIN('Calendar'[Year]), ALL('Calendar'))",
+              "VAR FirstYearValue = ",
+              "    CALCULATE(",
+              "        [Total emissions],",
+              "        FILTER(",
+              "            ALL('Calendar'),",
+              "            'Calendar'[Year] = FirstYear",
+              "        )",
+              "    )",
+              "VAR CurrentYearValue = [Total emissions] ",
+              "VAR YearDifference = MAX('Calendar'[Year]) - FirstYear",
+              "",
+              "RETURN",
+              "",
+              "IF (",
+              "    NOT(ISBLANK(CurrentYearValue)) && NOT(ISBLANK(FirstYearValue)) && YearDifference > 0,",
+              "    (CurrentYearValue / FirstYearValue) ^ (1 / YearDifference) - 1,",
+              "    BLANK()",
+              ")",
+              "",
+              ""
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "isHidden": true,
+            "lineageTag": "7cb285d0-f297-41d3-8767-42cb662e2e3f"
+          },
+          {
+            "name": "CAGR - Energy consumption",
+            "expression": [
+              "",
+              "VAR FirstYear = CALCULATE(MIN('Calendar'[Year]), ALL('Calendar'))",
+              "VAR FirstYearValue = ",
+              "    CALCULATE(",
+              "        [Energy consumption],",
+              "        FILTER(",
+              "            ALL('Calendar'),",
+              "            'Calendar'[Year] = FirstYear",
+              "        )",
+              "    )",
+              "VAR CurrentYearValue = [Energy consumption] ",
+              "VAR YearDifference = MAX('Calendar'[Year]) - FirstYear",
+              "",
+              "RETURN",
+              "",
+              "IF (",
+              "    NOT(ISBLANK(CurrentYearValue)) && NOT(ISBLANK(FirstYearValue)) && YearDifference > 0,",
+              "    (CurrentYearValue / FirstYearValue) ^ (1 / YearDifference) - 1,",
+              "    BLANK()",
+              ")",
+              "",
+              ""
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "14a316e0-3b88-424d-b466-19e2d216a21b"
+          },
+          {
+            "name": "CoalFuelConsumption",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "    FILTER(",
+              "        'Energy consumption',",
+              "        'Energy consumption'[Energy type ID]= 1 ",
+              "    )",
+              ")",
+              ""
+            ],
+            "lineageTag": "30971a65-5e79-49f5-ab97-46d3516075fd"
+          },
+          {
+            "name": "NaturalGasFuelConsumption",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "    FILTER(",
+              "        'Energy consumption',",
+              "        ",
+              "        'Energy consumption'[Energy type ID]= 2",
+              "    )",
+              ")",
+              ""
+            ],
+            "lineageTag": "3902fbf5-da13-41c9-8790-61df05711376"
+          },
+          {
+            "name": "OilFuelConsumption",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "    FILTER(",
+              "        'Energy consumption',",
+              "       ",
+              "        'Energy consumption'[Energy type ID] = 5",
+              "    )",
+              ")",
+              ""
+            ],
+            "lineageTag": "010d4f15-801b-4cb7-80b3-d45a6ca30059"
+          },
+          {
+            "name": "RenewableEnergyConsumption2021",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "    FILTER(",
+              "        'Energy consumption',",
+              "        ('Energy consumption'[Energy type ID]= 3 ||",
+              "         'Energy consumption'[Energy type ID]= 6 ||",
+              "         'Energy consumption'[Energy type ID]= 7 ||",
+              "         'Energy consumption'[Energy type ID]= 8 ||",
+              "         'Energy consumption'[Energy type ID] = 9) &&",
+              "        'Energy consumption'[Year] = 2021",
+              "    )",
+              ")",
+              ""
+            ],
+            "lineageTag": "37e67519-9dd2-4121-a00b-1d367ebb1547"
+          },
+          {
+            "name": "FossilFuelConsumption2021",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "    FILTER(",
+              "        'Energy consumption',",
+              "        ('Energy consumption'[Energy type ID]= 1 ||",
+              "         'Energy consumption'[Energy type ID]= 2 ||",
+              "         'Energy consumption'[Energy type ID] = 5) &&",
+              "        'Energy consumption'[Year] = 2021",
+              "    )",
+              ")",
+              ""
+            ],
+            "lineageTag": "1961c6f1-e1d7-4f06-8e82-13e0324fc49f"
+          },
+          {
+            "name": "FossilFuel_Renewable_Energy_Ratio",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "[FossilFuelConsumption2021]/ [RenewableEnergyConsumption2021]",
+            "lineageTag": "15939fec-0c51-483e-9c6f-19e203f2a28f"
+          },
+          {
+            "name": "Growth rate %",
+            "expression": [
+              "",
+              "VAR CurrentYear = MAX('Energy consumption'[year])",
+              "",
+              "VAR CurrentYearConsumption = ",
+              "    CALCULATE(",
+              "        SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "        'Energy consumption'[year] = CurrentYear",
+              "    )",
+              "",
+              "",
+              "VAR EarliestYear = MIN('Energy consumption'[year])",
+              "",
+              "",
+              "VAR EarliestYearConsumption = ",
+              "   CALCULATE(",
+              "        SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "        'Energy consumption'[year] = EarliestYear",
+              "    )",
+              "RETURN",
+              "    IF(",
+              "        ISBLANK(CurrentYearConsumption) ||",
+              "        ISBLANK(EarliestYearConsumption) || ",
+              "        EarliestYearConsumption = 0,",
+              "        BLANK(),",
+              "        (CurrentYearConsumption - EarliestYearConsumption) / EarliestYearConsumption",
+              "    )",
+              ""
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "2071d285-ac9b-4cc0-a2d5-ec8c29e8a571"
+          },
+          {
+            "name": "Growth rate % (Renewable)",
+            "expression": [
+              "",
+              "VAR CurrentYear = MAX('Energy consumption'[year])",
+              "",
+              "VAR CurrentYearConsumption = ",
+              "    CALCULATE(",
+              "        SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "        'Energy consumption'[year] = CurrentYear,",
+              "        'Energy consumption'[Energy type ID] IN {3, 6, 7, 8, 9}",
+              "    )",
+              "",
+              "VAR EarliestYear = MIN('Energy consumption'[year])",
+              "",
+              "VAR EarliestYearConsumption = ",
+              "   CALCULATE(",
+              "        SUM('Energy consumption'[Energy consumption (terrawatts-hours)]),",
+              "        'Energy consumption'[year] = EarliestYear,",
+              "        'Energy consumption'[Energy type ID] IN {3, 6, 7, 8, 9}",
+              "    )",
+              "",
+              "VAR GrowthRate = ",
+              "    IF(",
+              "        ISBLANK(CurrentYearConsumption) ||",
+              "        ISBLANK(EarliestYearConsumption) || ",
+              "        EarliestYearConsumption = 0,",
+              "        BLANK(),",
+              "        (CurrentYearConsumption - EarliestYearConsumption) / EarliestYearConsumption",
+              "    )",
+              "",
+              "RETURN",
+              "",
+              "GrowthRate",
+              "",
+              ""
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "18306d5a-a849-4c7b-b378-05082eb6ce2f"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measures Table",
+            "mode": "import",
+            "queryGroup": "Other",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
+                "in",
+                "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Energy type",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Energy type ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "792b9cbd-a3b6-4309-9c12-8dd9c9ec2b37",
+            "sourceColumn": "Energy type ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Energy type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1e91d2ef-0d9b-492e-9e31-1ed41e7010bb",
+            "sourceColumn": "Energy type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Energy Category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "92d37beb-b881-4912-89d7-b5a64eff790b",
+            "sourceColumn": "Energy Category",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "94461231-57da-4796-a5b2-062b4968f90e",
+        "partitions": [
+          {
+            "name": "Energy type",
+            "mode": "import",
+            "queryGroup": "Dimension table",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"fY67CsJAEEV/Zdk6hfFtazBYKWhhsaRYzRgXxh3ZB5K/dxILFbJW8ziHy1VK5jKTBWnkUZL3BkUZAcXGgmtaWWVKjhntdIhOo2i0T4sTRtu2dtSA5fUAFp76jPDtTLuweEHQrtvIQv+e8bE3f0rMGZ2MrVO5iy4g3MCJDy7I+nh/BEPJOksGR8K+zKCwYrA2dOU6KSUf/RB4kyG5egE=\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"Energy type ID\" = _t, #\"Energy type\" = _t, #\"Energy Category\" = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Energy type ID\", Int64.Type}, {\"Energy type\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type\",\"Other Renewable Consumption\",\"Other Renewables\",Replacer.ReplaceText,{\"Energy type\"}),",
+                "    #\"Trimmed Text\" = Table.TransformColumns(#\"Replaced Value\",{{\"Energy type\", Text.Trim, type text}})",
+                "in",
+                "    #\"Trimmed Text\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendar",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "4d571a7e-9f37-45f8-a3d9-379aafd2a1e4",
+            "sourceColumn": "Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "66e65593-a5ea-4fae-8d9e-a4d3c79e504e",
+            "sourceColumn": "year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "036edeb1-ab8d-42bd-b248-e7824b412d13",
+            "sourceColumn": "Quarter",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ad50b7b3-d844-41ba-9f30-bf55ae2a5b28",
+            "sourceColumn": "Month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "aad968eb-5cfa-40ab-8cd4-12038dedd631",
+            "sourceColumn": "Day",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DayOfWeekNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "226edacc-e1bf-4530-838d-15ee32e51663",
+            "sourceColumn": "DayOfWeekNumber",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DayOfWeek",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d3d51b95-6b76-4324-af69-e0f2f9a395e5",
+            "sourceColumn": "DayOfWeek",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "09692479-7a81-4682-b607-4cee45a9946a",
+            "sourceColumn": "MonthName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "0a87c898-6268-40c6-adb5-a666be5404ee",
+        "partitions": [
+          {
+            "name": "Calendar",
+            "mode": "import",
+            "queryGroup": "Dimension table",
+            "source": {
+              "expression": [
+                "let",
+                "    StartDate = #date(1965, 1, 1),",
+                "    EndDate = #date(2022, 12, 31),",
+                "    NumberOfDates = Duration.Days(EndDate - StartDate) + 1,",
+                "    Dates = List.Dates(StartDate, NumberOfDates, #duration(1,0,0,0)),",
+                "    ToTable = Table.FromList(Dates, Splitter.SplitByNothing()),",
+                "    RenameDateColumn = Table.RenameColumns(ToTable,{{\"Column1\", \"Date\"}}),",
+                "    InsertYear = Table.AddColumn(RenameDateColumn, \"Year\", each Date.Year([Date])),",
+                "    InsertQuarter = Table.AddColumn(InsertYear, \"Quarter\", each \"Q\" & Number.ToText(Date.QuarterOfYear([Date]))),",
+                "    InsertMonth = Table.AddColumn(InsertQuarter, \"Month\", each Date.Month([Date])),",
+                "    InsertDay = Table.AddColumn(InsertMonth, \"Day\", each Date.Day([Date])),",
+                "    InsertDayOfWeekNumber = Table.AddColumn(InsertDay, \"DayOfWeekNumber\", each Date.DayOfWeek([Date])+1),",
+                "    InsertDayOfWeek = Table.AddColumn(InsertDayOfWeekNumber, \"DayOfWeek\", each Date.ToText([Date], \"dddd\")),",
+                "    InsertMonthName = Table.AddColumn(InsertDayOfWeek, \"MonthName\", each Date.ToText([Date], \"MMMM\")),",
+                "  #\"Transform columns\" = Table.TransformColumnTypes(InsertMonthName, {{\"Date\", type text}, {\"Year\", type text}, {\"Quarter\", type text}, {\"Month\", type text}, {\"Day\", type text}, {\"DayOfWeekNumber\", type text}, {\"DayOfWeek\", type text}, {\"MonthName\", type text}}),",
+                "  #\"Replace errors\" = Table.ReplaceErrorValues(#\"Transform columns\", {{\"Date\", null}, {\"Year\", null}, {\"Quarter\", null}, {\"Month\", null}, {\"Day\", null}, {\"DayOfWeekNumber\", null}, {\"DayOfWeek\", null}, {\"MonthName\", null}}),",
+                "  #\"Changed column type\" = Table.TransformColumnTypes(#\"Replace errors\",{{\"Date\", type date}, {\"Year\", Int64.Type}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed column type\",{{\"Year\", \"year\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Source data",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4b121082-c3e6-4839-b9ec-a584c277e098",
+            "sourceColumn": "country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6bc836cf-a19a-44f7-8a6e-ace88ffb9a25",
+            "sourceColumn": "year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "iso_code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "752c29c6-701f-4619-aa5b-4d78ccea76ab",
+            "sourceColumn": "iso_code",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "population",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e1d41e12-e32c-4ea9-ac58-cd9f44a9d7ad",
+            "sourceColumn": "population",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gdp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eb7cfcd5-8786-415c-9bb4-1a4d7674d8db",
+            "sourceColumn": "gdp",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "biofuel_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "586ea1df-235f-4001-b590-7f445d29167b",
+            "sourceColumn": "biofuel_cons_change_pct",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "biofuel_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fc0a1af4-b8d2-4757-8b95-087fd68bf2b2",
+            "sourceColumn": "biofuel_cons_change_twh",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "biofuel_cons_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4cb729d7-90ee-47b1-860b-194cb296a5d9",
+            "sourceColumn": "biofuel_cons_per_capita",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "biofuel_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e7554d23-183d-4c82-bee3-8582f83525ef",
+            "sourceColumn": "biofuel_consumption",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "biofuel_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "12445a5d-d467-4c18-acc6-e8f87cdd2e12",
+            "sourceColumn": "biofuel_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "biofuel_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "feef9d7e-3da9-407e-a487-a646777d3293",
+            "sourceColumn": "biofuel_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "biofuel_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "13048afe-1bee-4e3c-add5-d3aeb22e2d7b",
+            "sourceColumn": "biofuel_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "biofuel_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "456f00ec-b4c5-4d33-b71c-dd84cc281842",
+            "sourceColumn": "biofuel_share_energy",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "carbon_intensity_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3d61c4ef-829f-4490-8a74-9a663c28a3f1",
+            "sourceColumn": "carbon_intensity_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f787adc4-080e-4786-881b-65e1a2906d83",
+            "sourceColumn": "coal_cons_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7f2bb609-fd75-40fd-b27b-b52803146cc7",
+            "sourceColumn": "coal_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_cons_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "139bfb77-178f-44d7-b31a-2ee6a7ac1960",
+            "sourceColumn": "coal_cons_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "49d26056-d035-4bbf-862f-4a76fbaf05cc",
+            "sourceColumn": "coal_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bf9b9659-3232-47e2-9edf-f76bf8282f81",
+            "sourceColumn": "coal_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bc6c959d-7229-4830-aef6-13e78d410b17",
+            "sourceColumn": "coal_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_prod_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "8ccc536a-5489-4978-bd4a-78385735a49d",
+            "sourceColumn": "coal_prod_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_prod_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "95dc8367-8879-4642-9700-b9077a916e78",
+            "sourceColumn": "coal_prod_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_prod_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "29ce1f18-1e60-4b3b-84d6-f63f4b3f0172",
+            "sourceColumn": "coal_prod_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_production",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "27a6c50b-0dfc-40b7-a97a-4192f1121661",
+            "sourceColumn": "coal_production",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ce944478-0063-4d7c-b2c1-bdb9c4f1ebd0",
+            "sourceColumn": "coal_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "coal_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "aeef4de6-fa73-4a21-bf42-cd986f219d89",
+            "sourceColumn": "coal_share_energy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "electricity_demand",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3d7397c1-67b8-46a4-9431-45e2630a5580",
+            "sourceColumn": "electricity_demand",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "electricity_generation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d45f1138-97a1-4ef9-af84-a42eded729a2",
+            "sourceColumn": "electricity_generation",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "electricity_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "85f83f0a-c943-4128-b85e-52185c8aa659",
+            "sourceColumn": "electricity_share_energy",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "energy_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0e4e4085-ff46-4058-9f5d-b6a1ac250b24",
+            "sourceColumn": "energy_cons_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "energy_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "e1dfb427-1f5a-4747-b300-1ab9c2428fba",
+            "sourceColumn": "energy_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0a9aded6-8711-456b-a816-e12335473b25",
+            "sourceColumn": "energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "energy_per_gdp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "e0068c67-dd9b-41b5-8ad8-8f1eeeb1bd47",
+            "sourceColumn": "energy_per_gdp",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fossil_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "2f561130-f75e-4f35-87e4-66f51f3eab74",
+            "sourceColumn": "fossil_cons_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fossil_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c6b19fad-d099-46e6-bc17-01de86e7c3f5",
+            "sourceColumn": "fossil_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fossil_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f4544a49-5cb7-4619-a597-08fb7be0ab23",
+            "sourceColumn": "fossil_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fossil_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "15de4a6b-e30d-494a-8f1e-7247566ef617",
+            "sourceColumn": "fossil_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fossil_energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "726ed30d-c102-4b44-94cc-d1933b28a5fc",
+            "sourceColumn": "fossil_energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fossil_fuel_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "fb2d29b2-cc72-49d5-90fb-aebcd7f0f335",
+            "sourceColumn": "fossil_fuel_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fossil_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "dd066f5c-43c1-43d5-ad91-e043e0408d2f",
+            "sourceColumn": "fossil_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fossil_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ee3cbb37-9ce0-4379-a141-146f53cb1ba9",
+            "sourceColumn": "fossil_share_energy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "882f6cf1-1155-4a47-959a-274cee0c93e1",
+            "sourceColumn": "gas_cons_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "137cba7c-9d6d-4680-afcd-4cd70301fda7",
+            "sourceColumn": "gas_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "6344a9b7-a9df-4e95-bbf1-2ae284b82293",
+            "sourceColumn": "gas_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6553e1ef-3cad-464e-bf07-a024605af81e",
+            "sourceColumn": "gas_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e31b7c47-d2ba-49bc-b781-ed0bb9311ab2",
+            "sourceColumn": "gas_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "dd05dabd-84de-45da-9484-bb1e9759734e",
+            "sourceColumn": "gas_energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_prod_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c934c878-b7f8-4a45-9659-1d5924cdc4d6",
+            "sourceColumn": "gas_prod_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_prod_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "03eb9979-7227-4a5f-bfa5-a4953a433e44",
+            "sourceColumn": "gas_prod_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_prod_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ce20c480-9020-4152-89f1-4d0a7388e62f",
+            "sourceColumn": "gas_prod_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_production",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "74a965f8-b7d6-4aec-af49-7bac2cf8d8bd",
+            "sourceColumn": "gas_production",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ed3eae4f-f95e-4dd2-9a8b-124743dc598e",
+            "sourceColumn": "gas_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "gas_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "82a54c23-c417-487a-b1c4-9a58cf830be6",
+            "sourceColumn": "gas_share_energy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "greenhouse_gas_emissions",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7b97eb51-4b36-4a25-b091-49b68862617d",
+            "sourceColumn": "greenhouse_gas_emissions",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hydro_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7150b734-616a-454d-83ff-d762ec95df34",
+            "sourceColumn": "hydro_cons_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hydro_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f012ae71-7566-4a87-9c8f-d4733007dc77",
+            "sourceColumn": "hydro_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hydro_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f5c40f20-6405-49df-918d-830f152438b6",
+            "sourceColumn": "hydro_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hydro_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1ab7f99c-ddf7-49d5-a353-5f237cd9e2a9",
+            "sourceColumn": "hydro_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hydro_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3da2ecaf-8e11-439e-92ba-ae269711d0bc",
+            "sourceColumn": "hydro_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hydro_energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "10bb682f-1ac1-4473-b444-d35a991f71ae",
+            "sourceColumn": "hydro_energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hydro_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "4ab65f8b-297c-4401-a521-c2b95cd57647",
+            "sourceColumn": "hydro_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hydro_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "348eeac1-61ba-4400-a26c-ea4dc13c8a44",
+            "sourceColumn": "hydro_share_energy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_carbon_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1f070b18-9355-4f64-84d0-dff66e9cf10f",
+            "sourceColumn": "low_carbon_cons_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_carbon_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3750032d-9ab1-4b1d-9772-9803e08dc515",
+            "sourceColumn": "low_carbon_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_carbon_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "efacc38a-6877-4c97-9597-e68204ca9908",
+            "sourceColumn": "low_carbon_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_carbon_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "a4763840-3185-4f7f-bc03-abac6644b53e",
+            "sourceColumn": "low_carbon_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_carbon_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "b8d716ae-8a26-4164-92b6-5c857838c128",
+            "sourceColumn": "low_carbon_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_carbon_energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "07319403-32d7-498b-a5c1-3be010f0d99e",
+            "sourceColumn": "low_carbon_energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_carbon_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7b8868dc-edd5-4195-bf59-acb8b94b2772",
+            "sourceColumn": "low_carbon_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_carbon_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0d18ac5b-a75d-4d6a-a071-087c3c918cd7",
+            "sourceColumn": "low_carbon_share_energy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "net_elec_imports",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "247c26ad-2f3b-4fc8-81e2-e188f0cb518c",
+            "sourceColumn": "net_elec_imports",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "net_elec_imports_share_demand",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0f0e013c-7a8a-4e2a-bde9-ca5661f9dea3",
+            "sourceColumn": "net_elec_imports_share_demand",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nuclear_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "68cc697d-2074-4416-a9e9-50c74bb7e8b0",
+            "sourceColumn": "nuclear_cons_change_pct",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nuclear_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b04f4862-f85c-41c7-a8da-65813dbe214b",
+            "sourceColumn": "nuclear_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nuclear_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a37deeef-dbdb-40cd-b734-ad4db9a8f9b7",
+            "sourceColumn": "nuclear_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nuclear_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d43ff5d8-9cd4-4cd2-87a7-a792bde5b902",
+            "sourceColumn": "nuclear_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nuclear_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "395578ed-a451-4452-af14-ee89c740d196",
+            "sourceColumn": "nuclear_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nuclear_energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "10a58878-c362-4ee1-b8ed-6fc4f254049d",
+            "sourceColumn": "nuclear_energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nuclear_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "98d2871a-d4f5-49ac-bd3c-b397e1a2ba05",
+            "sourceColumn": "nuclear_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nuclear_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "09326141-f5b0-4aeb-bb20-3082069d4466",
+            "sourceColumn": "nuclear_share_energy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1b66df52-a29c-43e2-911f-37c4fe1afe6a",
+            "sourceColumn": "oil_cons_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "5c264583-bb5b-41c0-81ae-366008f99572",
+            "sourceColumn": "oil_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "fb89e3c6-4c96-4995-a306-e8779450c391",
+            "sourceColumn": "oil_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "dfd1dac3-c802-484d-bb96-39f7f3687447",
+            "sourceColumn": "oil_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7e560ff6-2b7a-4238-8efd-1c9223d8d288",
+            "sourceColumn": "oil_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3e4a05a0-f4f8-44e6-8e6f-be6140d68b6f",
+            "sourceColumn": "oil_energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_prod_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "33fee05b-ecb6-44fc-88ed-e4cdf5feb655",
+            "sourceColumn": "oil_prod_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_prod_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0aac2044-6a44-4f86-9cf0-11fdf9251364",
+            "sourceColumn": "oil_prod_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_prod_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "b876c4cf-137c-4743-8271-82b20501a028",
+            "sourceColumn": "oil_prod_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_production",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "50989cfa-120f-4dae-887c-f715ce4c9160",
+            "sourceColumn": "oil_production",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c7823952-ce0c-4026-a007-4c1420abb627",
+            "sourceColumn": "oil_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "oil_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "6c8b7b36-72e2-4d0f-ac2e-3b7492efd30c",
+            "sourceColumn": "oil_share_energy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewable_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c8d12292-59f4-4d8d-a396-a8b2345225aa",
+            "sourceColumn": "other_renewable_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewable_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ea8774af-ccb6-4d94-8eca-175daf217577",
+            "sourceColumn": "other_renewable_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewable_exc_biofuel_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "df85710a-9711-4ce7-8383-6069f8af37e0",
+            "sourceColumn": "other_renewable_exc_biofuel_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewables_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d5b3231f-96f9-4585-affb-a854d451b833",
+            "sourceColumn": "other_renewables_cons_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewables_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3c9ddebf-c2e3-4154-a7e8-6702241a1a4f",
+            "sourceColumn": "other_renewables_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewables_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "bd30442f-4dbb-46bb-a742-264eadc32b76",
+            "sourceColumn": "other_renewables_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewables_elec_per_capita_exc_biofuel",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b2ac3145-3b1f-4302-85ef-2b2be0818590",
+            "sourceColumn": "other_renewables_elec_per_capita_exc_biofuel",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewables_energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "515e671d-1efa-4078-9c35-237eeba02bc1",
+            "sourceColumn": "other_renewables_energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewables_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f88d448f-1329-4eb5-987b-71d04e266f9b",
+            "sourceColumn": "other_renewables_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewables_share_elec_exc_biofuel",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eb19af4e-1261-4d70-91ee-f36e1c8ccde6",
+            "sourceColumn": "other_renewables_share_elec_exc_biofuel",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "other_renewables_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "33040c82-8a0a-4fd5-84b3-998ddc62a27c",
+            "sourceColumn": "other_renewables_share_energy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "per_capita_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ce77c936-d784-445e-9ffc-5b730f971022",
+            "sourceColumn": "per_capita_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "primary_energy_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "890665ad-669e-48e9-9046-2ed20a28dcf6",
+            "sourceColumn": "primary_energy_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "renewables_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "dbeeb3fe-75d6-449c-a6c2-cc1295522e27",
+            "sourceColumn": "renewables_cons_change_pct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "renewables_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "065e7237-1a95-4503-8b27-37452badb97c",
+            "sourceColumn": "renewables_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "renewables_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "49cf7133-193c-46b2-8ca6-0441042bcba9",
+            "sourceColumn": "renewables_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "renewables_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "98f86d2a-1b27-4a91-b9b0-037681b68188",
+            "sourceColumn": "renewables_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "renewables_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "8642f692-88ac-4d9f-9d5b-3f5adff3bb3d",
+            "sourceColumn": "renewables_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "renewables_energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0c86d87e-0f35-40c4-8750-9e0077b9398f",
+            "sourceColumn": "renewables_energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "renewables_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "a130ad98-d853-454b-90a0-2ecd1814136b",
+            "sourceColumn": "renewables_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "renewables_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c73c4c4b-8390-4b32-8690-ebeccead4aad",
+            "sourceColumn": "renewables_share_energy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "solar_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e36badb4-8882-4e8f-828e-99b07e2104ba",
+            "sourceColumn": "solar_cons_change_pct",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "solar_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d2e1207d-c5e3-448c-9a88-76156bb44f4c",
+            "sourceColumn": "solar_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "solar_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e14f832e-d32a-4d11-beea-44d0c702a851",
+            "sourceColumn": "solar_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "solar_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "e3442f59-dba7-4629-9a5a-7c30636db436",
+            "sourceColumn": "solar_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "solar_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "363281e3-7480-4401-b6dc-35643f038700",
+            "sourceColumn": "solar_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "solar_energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "86be1452-f3c2-4716-8aaa-b7f03c6cc3ad",
+            "sourceColumn": "solar_energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "solar_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "fd67b750-9c91-4a1c-8246-4e62bd7253b7",
+            "sourceColumn": "solar_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "solar_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "19522652-4c3a-45f2-874e-00dc6a7e9fab",
+            "sourceColumn": "solar_share_energy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "wind_cons_change_pct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e8e3b352-a2a8-4adc-9826-0867d157da40",
+            "sourceColumn": "wind_cons_change_pct",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "wind_cons_change_twh",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c9f0672b-562f-4dc0-90c1-2fdcd632d119",
+            "sourceColumn": "wind_cons_change_twh",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "wind_consumption",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1a181eb1-d3a9-48b6-a7b9-6e7d6877bb9c",
+            "sourceColumn": "wind_consumption",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "wind_elec_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "52e0f76b-4168-4ada-b1c2-8113236b9176",
+            "sourceColumn": "wind_elec_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "wind_electricity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f576412d-2494-4ecc-a73f-32b0efeaad16",
+            "sourceColumn": "wind_electricity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "wind_energy_per_capita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f2186d0b-294c-4b82-916b-012397e69b36",
+            "sourceColumn": "wind_energy_per_capita",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "wind_share_elec",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d3d0a0af-e027-4338-8a6a-f791331aab30",
+            "sourceColumn": "wind_share_elec",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "wind_share_energy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7ef8906e-99c6-4f81-9beb-5eb5b47d77e6",
+            "sourceColumn": "wind_share_energy",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "f934c9e4-5fd9-4326-b2f4-6cafd868401d",
+        "partitions": [
+          {
+            "name": "Source data",
+            "mode": "import",
+            "queryGroup": "Other",
+            "source": {
+              "expression": [
+                "let",
+                "  Source = Csv.Document(File.Contents(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Global _emissions\\our world in data.csv\"),[Delimiter=\",\", Columns=129, QuoteStyle=QuoteStyle.None]),",
+                "  #\"Promoted headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),",
+                "  #\"Changed column type\" = Table.TransformColumnTypes(#\"Promoted headers\", {{\"country\", type text}, {\"year\", Int64.Type}, {\"iso_code\", type text}, {\"population\", Int64.Type}, {\"gdp\", Int64.Type}, {\"biofuel_cons_change_pct\", type text}, {\"biofuel_cons_change_twh\", type text}, {\"biofuel_cons_per_capita\", type text}, {\"biofuel_consumption\", type text}, {\"biofuel_elec_per_capita\", Int64.Type}, {\"biofuel_electricity\", Int64.Type}, {\"biofuel_share_elec\", Int64.Type}, {\"biofuel_share_energy\", type text}, {\"carbon_intensity_elec\", type number}, {\"coal_cons_change_pct\", type number}, {\"coal_cons_change_twh\", type number}, {\"coal_cons_per_capita\", type number}, {\"coal_consumption\", type number}, {\"coal_elec_per_capita\", Int64.Type}, {\"coal_electricity\", Int64.Type}, {\"coal_prod_change_pct\", type number}, {\"coal_prod_change_twh\", type number}, {\"coal_prod_per_capita\", type number}, {\"coal_production\", type number}, {\"coal_share_elec\", Int64.Type}, {\"coal_share_energy\", type number}, {\"electricity_demand\", type number}, {\"electricity_generation\", type number}, {\"electricity_share_energy\", type text}, {\"energy_cons_change_pct\", type number}, {\"energy_cons_change_twh\", type number}, {\"energy_per_capita\", type number}, {\"energy_per_gdp\", type number}, {\"fossil_cons_change_pct\", type number}, {\"fossil_cons_change_twh\", type number}, {\"fossil_elec_per_capita\", type number}, {\"fossil_electricity\", type number}, {\"fossil_energy_per_capita\", type number}, {\"fossil_fuel_consumption\", type number}, {\"fossil_share_elec\", type number}, {\"fossil_share_energy\", type number}, {\"gas_cons_change_pct\", type number}, {\"gas_cons_change_twh\", type number}, {\"gas_consumption\", type number}, {\"gas_elec_per_capita\", Int64.Type}, {\"gas_electricity\", Int64.Type}, {\"gas_energy_per_capita\", type number}, {\"gas_prod_change_pct\", type number}, {\"gas_prod_change_twh\", type number}, {\"gas_prod_per_capita\", type number}, {\"gas_production\", type number}, {\"gas_share_elec\", Int64.Type}, {\"gas_share_energy\", type number}, {\"greenhouse_gas_emissions\", type number}, {\"hydro_cons_change_pct\", type number}, {\"hydro_cons_change_twh\", type number}, {\"hydro_consumption\", type number}, {\"hydro_elec_per_capita\", type number}, {\"hydro_electricity\", type number}, {\"hydro_energy_per_capita\", type number}, {\"hydro_share_elec\", type number}, {\"hydro_share_energy\", type number}, {\"low_carbon_cons_change_pct\", type number}, {\"low_carbon_cons_change_twh\", type number}, {\"low_carbon_consumption\", type number}, {\"low_carbon_elec_per_capita\", type number}, {\"low_carbon_electricity\", type number}, {\"low_carbon_energy_per_capita\", type number}, {\"low_carbon_share_elec\", type number}, {\"low_carbon_share_energy\", type number}, {\"net_elec_imports\", type number}, {\"net_elec_imports_share_demand\", type number}, {\"nuclear_cons_change_pct\", type text}, {\"nuclear_cons_change_twh\", Int64.Type}, {\"nuclear_consumption\", Int64.Type}, {\"nuclear_elec_per_capita\", Int64.Type}, {\"nuclear_electricity\", Int64.Type}, {\"nuclear_energy_per_capita\", Int64.Type}, {\"nuclear_share_elec\", Int64.Type}, {\"nuclear_share_energy\", Int64.Type}, {\"oil_cons_change_pct\", type number}, {\"oil_cons_change_twh\", type number}, {\"oil_consumption\", type number}, {\"oil_elec_per_capita\", type number}, {\"oil_electricity\", type number}, {\"oil_energy_per_capita\", type number}, {\"oil_prod_change_pct\", type number}, {\"oil_prod_change_twh\", type number}, {\"oil_prod_per_capita\", type number}, {\"oil_production\", type number}, {\"oil_share_elec\", type number}, {\"oil_share_energy\", type number}, {\"other_renewable_consumption\", type number}, {\"other_renewable_electricity\", type number}, {\"other_renewable_exc_biofuel_electricity\", Int64.Type}, {\"other_renewables_cons_change_pct\", type number}, {\"other_renewables_cons_change_twh\", type number}, {\"other_renewables_elec_per_capita\", type number}, {\"other_renewables_elec_per_capita_exc_biofuel\", Int64.Type}, {\"other_renewables_energy_per_capita\", type number}, {\"other_renewables_share_elec\", Int64.Type}, {\"other_renewables_share_elec_exc_biofuel\", Int64.Type}, {\"other_renewables_share_energy\", type number}, {\"per_capita_electricity\", type number}, {\"primary_energy_consumption\", type number}, {\"renewables_cons_change_pct\", type number}, {\"renewables_cons_change_twh\", type number}, {\"renewables_consumption\", type number}, {\"renewables_elec_per_capita\", type number}, {\"renewables_electricity\", type number}, {\"renewables_energy_per_capita\", type number}, {\"renewables_share_elec\", type number}, {\"renewables_share_energy\", type number}, {\"solar_cons_change_pct\", type text}, {\"solar_cons_change_twh\", Int64.Type}, {\"solar_consumption\", Int64.Type}, {\"solar_elec_per_capita\", type number}, {\"solar_electricity\", type number}, {\"solar_energy_per_capita\", Int64.Type}, {\"solar_share_elec\", type number}, {\"solar_share_energy\", Int64.Type}, {\"wind_cons_change_pct\", type text}, {\"wind_cons_change_twh\", Int64.Type}, {\"wind_consumption\", Int64.Type}, {\"wind_elec_per_capita\", Int64.Type}, {\"wind_electricity\", Int64.Type}, {\"wind_energy_per_capita\", Int64.Type}, {\"wind_share_elec\", Int64.Type}, {\"wind_share_energy\", Int64.Type}})",
+                "in",
+                "  #\"Changed column type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,696 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.121.644.0 (23.09)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Species fact table\",\"Type of vertebrate\",\"Species Analysis Type\",\"Measures table\",\"Amphibian threat factors\",\"Threat type\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-GB",
+    "cultures": [
+      {
+        "name": "en-GB",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "d06a0e6a-da6f-4f3d-bcb7-469f83080e4b",
+        "fromColumn": "Species Sampling Method",
+        "fromTable": "Species fact table",
+        "toColumn": "Species Sampling Method",
+        "toTable": "Species Analysis Type"
+      },
+      {
+        "name": "ba0b4263-bc1c-4dc0-929d-fc654d0f1398",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Threat",
+        "fromTable": "Threat type",
+        "toColumn": "Threat",
+        "toTable": "Amphibian threat factors"
+      },
+      {
+        "name": "deaf31d9-43d4-4d46-83f1-9eacd3eb082a",
+        "fromColumn": "Type of Vertebrate",
+        "fromTable": "Species fact table",
+        "toColumn": "Type of Vertebrate",
+        "toTable": "Type of vertebrate"
+      }
+    ],
+    "sourceQueryCulture": "en-GB",
+    "tables": [
+      {
+        "name": "DateTableTemplate_056183a0-5ca3-4d74-9662-dfbfb832f2e5",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "77e9f713-0bd9-44f8-90fb-03c442575d88",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "663f6672-3ba8-45c0-bdc3-ac37f80f826a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "1dcdb458-35b5-4eef-9e37-dbdf520433b5",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "d36df595-8214-476b-bb87-398afb17b110",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "83607236-c6a6-4e47-9e9e-70c32dc5cb8b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "ba9260d8-4004-42b7-890a-ee2ceda4e208",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "4592f297-57ff-4dd6-a6c0-a9c9ad725a90",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "dace1fb8-bb97-4dc6-90b4-85287ab894c1",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "020ee91f-8368-4e01-98fa-45c3691568bb",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "0dcbd2e3-bcea-475d-9112-f386f47d4187",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "09047e40-8b8f-46ed-b067-db277c90495b",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "e683064a-89d8-419b-90d7-d51e7f0d12d2"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "e3f49758-c0b0-44e8-ad79-56fab142dc66",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_056183a0-5ca3-4d74-9662-dfbfb832f2e5",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Species fact table",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "197ced40-45bc-4825-b6c0-28f71089eb57",
+            "sourceColumn": "Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Type of Vertebrate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "00b1612d-553c-4de6-8c8c-ef8d216f0118",
+            "sourceColumn": "Type of Vertebrate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Species Sampling Method",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6bcb7965-4498-40a5-bba2-a50f4258e953",
+            "sourceColumn": "Species Sampling Method",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "#,0",
+            "lineageTag": "034f5e53-a60f-486b-838c-f6988192df6c",
+            "sourceColumn": "Value",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "41ec1581-5201-458e-8e98-57c12f7f97a6",
+        "partitions": [
+          {
+            "name": "Species fact table",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Species_extinction\\Threatened vertebrates.xlsx\"), null, true),",
+                "    #\"Threatened vertebrates_Sheet\" = Source{[Item=\"Threatened vertebrates\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Threatened vertebrates_Sheet\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Category\", type text}, {\"Subcategory\", type text}, {\"Description\", type text}, {\"Value\", Int64.Type}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"Subcategory\", \"Type of Vertebrate\"}, {\"Description\", \"Species Sampling Method\"}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Renamed Columns\",\"Number of threatened species by 2022\",\"Number of threatened species\",Replacer.ReplaceText,{\"Species Sampling Method\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Number of species evaluated by 2022\",\"Number of species evaluated\",Replacer.ReplaceText,{\"Species Sampling Method\"})",
+                "in",
+                "    #\"Replaced Value1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Type of vertebrate",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Type of Vertebrate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d34d7473-5e32-4f1c-a3a8-9b64ad958f58",
+            "sourceColumn": "Type of Vertebrate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sort Order",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    'Type of vertebrate'[Type of Vertebrate], ",
+              "    \"Amphibians\", 1,",
+              "    \"Mammals\", 2,",
+              "    \"Reptiles\", 3,",
+              "    \"Fishes\", 4,",
+              "    \"Birds\", 5,",
+              "    6  -- Default value in case there are other types not specified",
+              ")",
+              ""
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "155ca257-a311-44cc-a5c3-af7efa9bb0b9",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "49490b84-0fd2-49a3-ba9b-1307bb450219",
+        "partitions": [
+          {
+            "name": "Type of vertebrate",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Species_extinction\\Threatened vertebrates.xlsx\"), null, true),",
+                "    #\"Threatened vertebrates_Sheet\" = Source{[Item=\"Threatened vertebrates\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Threatened vertebrates_Sheet\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Category\", type text}, {\"Subcategory\", type text}, {\"Description\", type text}, {\"Value\", Int64.Type}}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Changed Type\",{\"Subcategory\"}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Duplicates\",{{\"Subcategory\", \"Type of Vertebrate\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Species Analysis Type",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Species Sampling Method",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4190e6b6-b775-413b-abf7-76afbea20279",
+            "sourceColumn": "Species Sampling Method",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "79089350-ac8e-4d11-801e-354555af5642",
+        "partitions": [
+          {
+            "name": "Species Analysis Type",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Species_extinction\\Threatened vertebrates.xlsx\"), null, true),",
+                "    #\"Threatened vertebrates_Sheet\" = Source{[Item=\"Threatened vertebrates\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Threatened vertebrates_Sheet\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Category\", type text}, {\"Subcategory\", type text}, {\"Description\", type text}, {\"Value\", Int64.Type}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"Subcategory\", \"Type of Vertebrate\"}}),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Renamed Columns\",{\"Description\"}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Other Columns\"),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Duplicates\",{{\"Description\", \"Species Sampling Method\"}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Renamed Columns1\",\"Number of species evaluated by 2022\",\"Number of species evaluated\",Replacer.ReplaceText,{\"Species Sampling Method\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"Number of threatened species by 2022\",\"Number of threatened species\",Replacer.ReplaceText,{\"Species Sampling Method\"})",
+                "in",
+                "    #\"Replaced Value1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Measures table",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "lineageTag": "b07dcd58-9f22-4a02-9dd8-1f532ba50905",
+        "measures": [
+          {
+            "name": "Total Estimated Species 2022",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Species Fact Table'[Value]),",
+              "    'Species Fact Table'[Species Sampling Method] = \"Estimated number of described species\"",
+              ")",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "82b5e6a3-4182-4ca6-a5c7-9cab9598392c"
+          },
+          {
+            "name": "Total Species Evaluated 2022",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Species Fact Table'[Value]),",
+              "    'Species Fact Table'[Species Sampling Method] = \"Number of species evaluated\"",
+              ")",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "57afc997-96f1-4e1f-be12-7b9b0c850203"
+          },
+          {
+            "name": "Total Threatened Species 2022",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('Species Fact Table'[Value]),",
+              "    'Species Fact Table'[Species Sampling Method] = \"Number of threatened species\"",
+              ")",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "5ecc955c-c3e9-44b1-92f0-80380c5665c8"
+          },
+          {
+            "name": "% of species in danger",
+            "expression": "DIVIDE([Total Threatened Species 2022],[Total Species Evaluated 2022])",
+            "formatString": "0%;-0%;0%",
+            "lineageTag": "8b4dab8c-9c48-4b9d-a64f-da2cbd560563"
+          },
+          {
+            "name": "total species",
+            "expression": "SUM('Species fact table'[Value])",
+            "formatString": "#,0",
+            "lineageTag": "097805fa-2151-4e37-8034-acca6ffbe0cc"
+          },
+          {
+            "name": "Total threat factors",
+            "expression": "SUM('Amphibian threat factors'[Number of Species])",
+            "formatString": "0",
+            "lineageTag": "85515fd0-a21f-4ec0-8f01-95460ad12e7e"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measures table",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
+                "in",
+                "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Amphibian threat factors",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Threat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "36a33ccf-9b7c-4dde-9377-de642dc3f051",
+            "sourceColumn": "Threat",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Number of Species",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6a760958-6fa2-4b17-b205-7432e73c426e",
+            "sourceColumn": "Number of Species",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "054b25f6-3f77-4f35-b841-110f55c4c511",
+        "partitions": [
+          {
+            "name": "Amphibian threat factors",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Species_extinction\\Factors affecting amphebians.xlsx\"), null, true),",
+                "    #\"Source Data_Sheet\" = Source{[Item=\"Source Data\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Source Data_Sheet\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Threat\", type text}, {\"Number of Species\", Int64.Type}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Threat type",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Threat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "73bb4aa2-e7e4-48c7-8b10-3f919fefe13a",
+            "sourceColumn": "Threat",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "c4f0fbd8-4da6-4e51-8a08-3e29e8a5138d",
+        "partitions": [
+          {
+            "name": "Threat type",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\perei1j\\OneDrive - UK Power Networks\\EnviroMetrics\\Enviro_Metrics_Source_Data_And_Code\\Species_extinction\\Factors affecting amphebians.xlsx\"), null, true),",
+                "    #\"Source Data_Sheet\" = Source{[Item=\"Source Data\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Source Data_Sheet\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Threat\", type text}, {\"Number of Species\", Int64.Type}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Number of Species\"}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Columns\")",
+                "in",
+                "    #\"Removed Duplicates\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
